@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
+		701018811DC2E27D008D927F /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187E1DC2E27D008D927F /* PhotoManager.swift */; };
+		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
 		70A6CC821DC1238C00ED2D23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC811DC1238C00ED2D23 /* ViewController.swift */; };
 		70A6CC851DC1238C00ED2D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC831DC1238C00ED2D23 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
+		7010187E1DC2E27D008D927F /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A6CC811DC1238C00ED2D23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				7010187D1DC2E27D008D927F /* PostVotingController.swift */,
+				7010187E1DC2E27D008D927F /* PhotoManager.swift */,
+				7010187F1DC2E27D008D927F /* MainViewController.swift */,
 				70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */,
 				70A6CC811DC1238C00ED2D23 /* ViewController.swift */,
 				70A6CC831DC1238C00ED2D23 /* Main.storyboard */,
@@ -200,8 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701018801DC2E27D008D927F /* PostVotingController.swift in Sources */,
 				70A6CC821DC1238C00ED2D23 /* ViewController.swift in Sources */,
+				701018811DC2E27D008D927F /* PhotoManager.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
+				701018821DC2E27D008D927F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				70A6CC9B1DC1238C00ED2D23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70A6CC9C1DC1238C00ED2D23 /* Build configuration list for PBXNativeTarget "trump-alarmTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				70A6CC9E1DC1238C00ED2D23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

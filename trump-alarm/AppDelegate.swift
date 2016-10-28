@@ -13,6 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func setPostVotingAsRoot() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "PostVotingController")
+                
+        self.window?.makeKeyAndVisible()
+    }
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
