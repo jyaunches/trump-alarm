@@ -16,15 +16,19 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     var photoManager = PhotoManager()
     var locationManager = LocationManager()
+    var countdownManager = CountdownManager()
+    var civicInfoInteractor = GoogleCivicInformationInteractor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        countdownManager.translatePollClosingTime(pollTimes: "6 am - 9 pm")
+        
         locationManager.requestPermission(onSuccess: {
-                (location: String) in
+            (location: String) in
             
-            //API CALL
-            
-            print(location)
+//            self.civicInfoInteractor.getPollInfo(address: location, completion: { (success, pollHours) in
+//                print(pollHours?.string)
         },
         onFailure: {
             (error: Error) in

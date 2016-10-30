@@ -28,7 +28,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     func requestLocation(currentLocation: CLLocation) {
-
         CLGeocoder().reverseGeocodeLocation(currentLocation) { (placemarks, error) in
             if let _ = error {
                 return
@@ -48,10 +47,10 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.locationManager.stopUpdatingLocation()
         guard let currentLocation = locations.last else {
             return
         }
-        self.locationManager.stopUpdatingLocation()
         self.requestLocation(currentLocation: currentLocation)
     }
 }

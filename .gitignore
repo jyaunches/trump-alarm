@@ -3,6 +3,9 @@
 !/log/.keep
 /tmp
 
+.xcuserstate
+*.xcuserstate
+
 *.xcuserdatad
 .xcuserdatad
 .xcbkptlist
