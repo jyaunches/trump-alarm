@@ -51,7 +51,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         guard let currentLocation = locations.last else {
             return
         }
-        self.requestLocation(currentLocation: currentLocation)
         self.locationManager.stopUpdatingLocation()
+        self.requestLocation(currentLocation: currentLocation)
     }
 }

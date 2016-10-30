@@ -10,6 +10,7 @@
 		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
 		17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */; };
 		17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71521DC5334100E6BBD5 /* LocationManager.swift */; };
+		17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71581DC57A0F00E6BBD5 /* Secrets.swift */; };
 		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
 		701018811DC2E27D008D927F /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187E1DC2E27D008D927F /* PhotoManager.swift */; };
 		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
@@ -35,6 +36,7 @@
 		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		17AD71581DC57A0F00E6BBD5 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
 		7010187E1DC2E27D008D927F /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
 				17AD714D1DC51A1200E6BBD5 /* Environment.swift */,
+				17AD71581DC57A0F00E6BBD5 /* Secrets.swift */,
 			);
 			path = "trump-alarm";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				701018801DC2E27D008D927F /* PostVotingController.swift in Sources */,
+				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
 				70A6CC821DC1238C00ED2D23 /* ViewController.swift in Sources */,
 				701018811DC2E27D008D927F /* PhotoManager.swift in Sources */,
 				17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */,
