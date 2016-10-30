@@ -18,6 +18,23 @@ class CountdownManager: NSObject {
         return calendar.date(from: components)!
     }
     
+    func translatePollOpeningTime(pollTimes: String) -> Array<String> {
+        let hour: String
+        let minute: String
+        let seconds = "00"
+        
+        let dashSeperated = pollTimes.components(separatedBy: " - ")
+        let wsSeperated = dashSeperated[0].components(separatedBy: " ")
+        let hourAndMinute = wsSeperated[0].components(separatedBy: ":")
+        hour = hourAndMinute[0]
+        if hourAndMinute.count == 2 {
+            minute = hourAndMinute[1]
+        } else {
+            minute = "00"
+        }
+        return [hour, minute, seconds]
+    }
+    
     func translatePollClosingTime(pollTimes: String) -> Array<String> {
         let hour: String
         let minute: String

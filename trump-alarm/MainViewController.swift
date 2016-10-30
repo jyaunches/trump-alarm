@@ -24,13 +24,12 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         let secondsLeft = countdownManager.getCountdownData(pollHours: "6 am - 9 pm")
         
-        print (secondsLeft)
-        
         locationManager.requestPermission(onSuccess: {
             (location: String) in
             
-//            self.civicInfoInteractor.getPollInfo(address: location, completion: { (success, pollHours) in
-//                print(pollHours?.string)
+            self.civicInfoInteractor.getPollInfo(params:["address": location, "fields": "pollingLocations/pollingHours"], completion: { (success, pollHours) in
+                    print(pollHours)
+            })
         },
         onFailure: {
             (error: Error) in

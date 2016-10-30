@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		175549B61DC69F1200B62473 /* TrumpQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549B41DC69F1200B62473 /* TrumpQuote.swift */; };
-		175549B71DC69F1200B62473 /* VoterInformationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549B51DC69F1200B62473 /* VoterInformationInteractor.swift */; };
 		175549D61DC6A01800B62473 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D21DC6A01800B62473 /* NotificationManager.swift */; };
 		175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D31DC6A01800B62473 /* PhotoManager.swift */; };
 		175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		175549B41DC69F1200B62473 /* TrumpQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpQuote.swift; sourceTree = "<group>"; };
-		175549B51DC69F1200B62473 /* VoterInformationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoterInformationInteractor.swift; sourceTree = "<group>"; };
 		175549D21DC6A01800B62473 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = Services/NotificationManager.swift; sourceTree = "<group>"; };
 		175549D31DC6A01800B62473 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoManager.swift; path = Services/PhotoManager.swift; sourceTree = "<group>"; };
 		175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpAlarmUserDefaults.swift; path = Services/TrumpAlarmUserDefaults.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				175549D11DC69FF600B62473 /* Services */,
 				175549C81DC69F9200B62473 /* SoundBites */,
 				175549B41DC69F1200B62473 /* TrumpQuote.swift */,
-				175549B51DC69F1200B62473 /* VoterInformationInteractor.swift */,
 				70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */,
 				7010187D1DC2E27D008D927F /* PostVotingController.swift */,
 				17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */,
@@ -268,7 +265,6 @@
 				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
 				17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */,
 				175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */,
-				175549B71DC69F1200B62473 /* VoterInformationInteractor.swift in Sources */,
 				17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */,
 				175549D61DC6A01800B62473 /* NotificationManager.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
