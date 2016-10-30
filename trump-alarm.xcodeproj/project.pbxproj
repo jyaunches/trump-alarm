@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
 		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
 		701018811DC2E27D008D927F /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187E1DC2E27D008D927F /* PhotoManager.swift */; };
 		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
 		7010187E1DC2E27D008D927F /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				70A6CC861DC1238C00ED2D23 /* Assets.xcassets */,
 				70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
+				17AD714D1DC51A1200E6BBD5 /* Environment.swift */,
 			);
 			path = "trump-alarm";
 			sourceTree = "<group>";
@@ -155,11 +158,12 @@
 				TargetAttributes = {
 					70A6CC7B1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T34EE4GLT2;
+						DevelopmentTeam = 78BEW79T42;
 						ProvisioningStyle = Automatic;
 					};
 					70A6CC8F1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 78BEW79T42;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 70A6CC7B1DC1238C00ED2D23;
 					};
@@ -214,6 +218,7 @@
 				701018811DC2E27D008D927F /* PhotoManager.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
 				701018821DC2E27D008D927F /* MainViewController.swift in Sources */,
+				17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T34EE4GLT2;
+				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
@@ -366,7 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T34EE4GLT2;
+				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
@@ -381,6 +386,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = "trump-alarmTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yaunches.trump-alarmTests";
@@ -395,6 +401,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = "trump-alarmTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yaunches.trump-alarmTests";
