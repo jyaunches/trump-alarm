@@ -20,6 +20,29 @@
 		17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71581DC57A0F00E6BBD5 /* Secrets.swift */; };
 		17AD715B1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */; };
 		17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */; };
+		27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F61DC6A8040089139F /* nasty_woman.wav */; };
+		27C5050E1DC6A8040089139F /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F71DC6A8040089139F /* shoot_sombody.wav */; };
+		27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */; };
+		27C505101DC6A8040089139F /* muslim-shutdown.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F91DC6A8040089139F /* muslim-shutdown.wav */; };
+		27C505111DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FA1DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav */; };
+		27C505121DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FB1DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav */; };
+		27C505131DC6A8040089139F /* you're-the-puppet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FC1DC6A8040089139F /* you're-the-puppet.wav */; };
+		27C505141DC6A8040089139F /* waterboarding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FD1DC6A8040089139F /* waterboarding.wav */; };
+		27C505151DC6A8040089139F /* try-and-fuck-her-she-was-married.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FE1DC6A8040089139F /* try-and-fuck-her-she-was-married.wav */; };
+		27C505161DC6A8040089139F /* they're-rapist.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FF1DC6A8040089139F /* they're-rapist.wav */; };
+		27C505171DC6A8040089139F /* take-their-guns-away.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505001DC6A8040089139F /* take-their-guns-away.wav */; };
+		27C505181DC6A8040089139F /* second-ammendment.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505011DC6A8040089139F /* second-ammendment.wav */; };
+		27C505191DC6A8040089139F /* nasty-woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505021DC6A8040089139F /* nasty-woman.wav */; };
+		27C5051A1DC6A8040089139F /* meg-kelly-blood.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505031DC6A8040089139F /* meg-kelly-blood.wav */; };
+		27C5051B1DC6A8040089139F /* grab-em.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505041DC6A8040089139F /* grab-em.wav */; };
+		27C5051C1DC6A8040089139F /* hand-size.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505051DC6A8040089139F /* hand-size.wav */; };
+		27C5051D1DC6A8040089139F /* great-relationship-with-the-blacks.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505061DC6A8040089139F /* great-relationship-with-the-blacks.wav */; };
+		27C5051E1DC6A8040089139F /* I-could-shoot-somebody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505071DC6A8040089139F /* I-could-shoot-somebody.wav */; };
+		27C5051F1DC6A8040089139F /* dating-Ivanka.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505081DC6A8040089139F /* dating-Ivanka.wav */; };
+		27C505201DC6A8040089139F /* carried-out-in-a-stretcher.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505091DC6A8040089139F /* carried-out-in-a-stretcher.wav */; };
+		27C505211DC6A8040089139F /* build-a-wall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050A1DC6A8040089139F /* build-a-wall.wav */; };
+		27C505221DC6A8040089139F /* bomb-the-shit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050B1DC6A8040089139F /* bomb-the-shit.wav */; };
+		27C505231DC6A8040089139F /* creeping-miss-teen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */; };
 		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
 		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
@@ -51,6 +74,29 @@
 		17AD71581DC57A0F00E6BBD5 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCivicInfoInteractor.swift; sourceTree = "<group>"; };
 		17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
+		27C504F61DC6A8040089139F /* nasty_woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nasty_woman.wav; path = SoundBites/nasty_woman.wav; sourceTree = "<group>"; };
+		27C504F71DC6A8040089139F /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
+		27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dropping-to-your-knees.wav"; path = "SoundBites/dropping-to-your-knees.wav"; sourceTree = "<group>"; };
+		27C504F91DC6A8040089139F /* muslim-shutdown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "muslim-shutdown.wav"; path = "SoundBites/muslim-shutdown.wav"; sourceTree = "<group>"; };
+		27C504FA1DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "obama-clinton-co-founded-ISIS.wav"; path = "SoundBites/obama-clinton-co-founded-ISIS.wav"; sourceTree = "<group>"; };
+		27C504FB1DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "won't-rule-out-nuclear-weapons.wav"; path = "SoundBites/won't-rule-out-nuclear-weapons.wav"; sourceTree = "<group>"; };
+		27C504FC1DC6A8040089139F /* you're-the-puppet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "you're-the-puppet.wav"; path = "SoundBites/you're-the-puppet.wav"; sourceTree = "<group>"; };
+		27C504FD1DC6A8040089139F /* waterboarding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = waterboarding.wav; path = SoundBites/waterboarding.wav; sourceTree = "<group>"; };
+		27C504FE1DC6A8040089139F /* try-and-fuck-her-she-was-married.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "try-and-fuck-her-she-was-married.wav"; path = "SoundBites/try-and-fuck-her-she-was-married.wav"; sourceTree = "<group>"; };
+		27C504FF1DC6A8040089139F /* they're-rapist.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "they're-rapist.wav"; path = "SoundBites/they're-rapist.wav"; sourceTree = "<group>"; };
+		27C505001DC6A8040089139F /* take-their-guns-away.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "take-their-guns-away.wav"; path = "SoundBites/take-their-guns-away.wav"; sourceTree = "<group>"; };
+		27C505011DC6A8040089139F /* second-ammendment.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "second-ammendment.wav"; path = "SoundBites/second-ammendment.wav"; sourceTree = "<group>"; };
+		27C505021DC6A8040089139F /* nasty-woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "nasty-woman.wav"; path = "SoundBites/nasty-woman.wav"; sourceTree = "<group>"; };
+		27C505031DC6A8040089139F /* meg-kelly-blood.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "meg-kelly-blood.wav"; path = "SoundBites/meg-kelly-blood.wav"; sourceTree = "<group>"; };
+		27C505041DC6A8040089139F /* grab-em.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "grab-em.wav"; path = "SoundBites/grab-em.wav"; sourceTree = "<group>"; };
+		27C505051DC6A8040089139F /* hand-size.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hand-size.wav"; path = "SoundBites/hand-size.wav"; sourceTree = "<group>"; };
+		27C505061DC6A8040089139F /* great-relationship-with-the-blacks.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "great-relationship-with-the-blacks.wav"; path = "SoundBites/great-relationship-with-the-blacks.wav"; sourceTree = "<group>"; };
+		27C505071DC6A8040089139F /* I-could-shoot-somebody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "I-could-shoot-somebody.wav"; path = "SoundBites/I-could-shoot-somebody.wav"; sourceTree = "<group>"; };
+		27C505081DC6A8040089139F /* dating-Ivanka.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dating-Ivanka.wav"; path = "SoundBites/dating-Ivanka.wav"; sourceTree = "<group>"; };
+		27C505091DC6A8040089139F /* carried-out-in-a-stretcher.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "carried-out-in-a-stretcher.wav"; path = "SoundBites/carried-out-in-a-stretcher.wav"; sourceTree = "<group>"; };
+		27C5050A1DC6A8040089139F /* build-a-wall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "build-a-wall.wav"; path = "SoundBites/build-a-wall.wav"; sourceTree = "<group>"; };
+		27C5050B1DC6A8040089139F /* bomb-the-shit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "bomb-the-shit.wav"; path = "SoundBites/bomb-the-shit.wav"; sourceTree = "<group>"; };
+		27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "creeping-miss-teen.wav"; path = "SoundBites/creeping-miss-teen.wav"; sourceTree = "<group>"; };
 		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
 		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +131,29 @@
 		175549C81DC69F9200B62473 /* SoundBites */ = {
 			isa = PBXGroup;
 			children = (
+				27C504F61DC6A8040089139F /* nasty_woman.wav */,
+				27C504F71DC6A8040089139F /* shoot_sombody.wav */,
+				27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */,
+				27C504F91DC6A8040089139F /* muslim-shutdown.wav */,
+				27C504FA1DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav */,
+				27C504FB1DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav */,
+				27C504FC1DC6A8040089139F /* you're-the-puppet.wav */,
+				27C504FD1DC6A8040089139F /* waterboarding.wav */,
+				27C504FE1DC6A8040089139F /* try-and-fuck-her-she-was-married.wav */,
+				27C504FF1DC6A8040089139F /* they're-rapist.wav */,
+				27C505001DC6A8040089139F /* take-their-guns-away.wav */,
+				27C505011DC6A8040089139F /* second-ammendment.wav */,
+				27C505021DC6A8040089139F /* nasty-woman.wav */,
+				27C505031DC6A8040089139F /* meg-kelly-blood.wav */,
+				27C505041DC6A8040089139F /* grab-em.wav */,
+				27C505051DC6A8040089139F /* hand-size.wav */,
+				27C505061DC6A8040089139F /* great-relationship-with-the-blacks.wav */,
+				27C505071DC6A8040089139F /* I-could-shoot-somebody.wav */,
+				27C505081DC6A8040089139F /* dating-Ivanka.wav */,
+				27C505091DC6A8040089139F /* carried-out-in-a-stretcher.wav */,
+				27C5050A1DC6A8040089139F /* build-a-wall.wav */,
+				27C5050B1DC6A8040089139F /* bomb-the-shit.wav */,
+				27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */,
 			);
 			name = SoundBites;
 			sourceTree = "<group>";
@@ -242,7 +311,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C505231DC6A8040089139F /* creeping-miss-teen.wav in Resources */,
+				27C505221DC6A8040089139F /* bomb-the-shit.wav in Resources */,
+				27C505121DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav in Resources */,
+				27C505191DC6A8040089139F /* nasty-woman.wav in Resources */,
+				27C5051C1DC6A8040089139F /* hand-size.wav in Resources */,
+				27C505171DC6A8040089139F /* take-their-guns-away.wav in Resources */,
+				27C5051A1DC6A8040089139F /* meg-kelly-blood.wav in Resources */,
+				27C505131DC6A8040089139F /* you're-the-puppet.wav in Resources */,
+				27C5051D1DC6A8040089139F /* great-relationship-with-the-blacks.wav in Resources */,
+				27C505111DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav in Resources */,
 				70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */,
+				27C505141DC6A8040089139F /* waterboarding.wav in Resources */,
+				27C505151DC6A8040089139F /* try-and-fuck-her-she-was-married.wav in Resources */,
+				27C505161DC6A8040089139F /* they're-rapist.wav in Resources */,
+				27C505181DC6A8040089139F /* second-ammendment.wav in Resources */,
+				27C5051F1DC6A8040089139F /* dating-Ivanka.wav in Resources */,
+				27C505211DC6A8040089139F /* build-a-wall.wav in Resources */,
+				27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */,
+				27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */,
+				27C505201DC6A8040089139F /* carried-out-in-a-stretcher.wav in Resources */,
+				27C505101DC6A8040089139F /* muslim-shutdown.wav in Resources */,
+				27C5051E1DC6A8040089139F /* I-could-shoot-somebody.wav in Resources */,
+				27C5051B1DC6A8040089139F /* grab-em.wav in Resources */,
+				27C5050E1DC6A8040089139F /* shoot_sombody.wav in Resources */,
 				175549DC1DC6A1DF00B62473 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
