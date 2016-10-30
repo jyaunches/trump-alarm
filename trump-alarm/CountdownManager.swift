@@ -18,7 +18,7 @@ class CountdownManager: NSObject {
         return calendar.date(from: components)!
     }
     
-    func translatePollClosingTime(pollTimes: String) -> Date {
+    func translatePollClosingTime(pollTimes: String) -> Array<String> {
         let hour: String
         let minute: String
         let seconds = "00"
@@ -32,43 +32,26 @@ class CountdownManager: NSObject {
         } else {
             minute = "00"
         }
-        
-        let closingTime = hour + ":" + minute + ":" + seconds
-        
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "hh:mm:ss"
-        
-        var dateString = dateFormatter.date(from:closingTime)
-        
-        return dateFormatter.date(from: closingTime)!
+
+        return [hour, minute, seconds]
     }
     
-    func getCountdownData(pollClotingTime: String) {
+    func getCountdownData(pollHours: String) -> TimeInterval {
         
-        // here we set the due date. When the timer is supposed to finish
+        let timeComponents = translatePollClosingTime(pollTimes: pollHours)
         
         let pollComponent = NSDateComponents()
         pollComponent.year = 2016
         pollComponent.month = 11
         pollComponent.day = 8
-//        pollComponent.hour = hour!
-//        pollComponent.minute = minutes!
+        pollComponent.hour = Int(timeComponents[0])!
+        pollComponent.minute = Int(timeComponents[1])!
+        pollComponent.second = Int(timeComponents[2])!
         let pollClosingTime = calendar.date(from:pollComponent as DateComponents)!
+    
         
-        
-        // Here we compare the two dates
-//        pollClosingTime.timeIntervalSince(pollClosingTime)
-//        
-//        let dayCalendarUnit: NSCalendar.Unit = ([.day, .hour, .minute])
-//        
-//        //here we change the seconds to hours,minutes and days
-//        let countdownTime = calendar.compare(currentDate!, to: pollClosingTime, toGranularity: .second)
-//        
-//        var daysLeft = pollClosingTime.day
-//        var hoursLeft = pollClosingTime.hour
-//        var minutesLeft = pollClosingTime.minute
-//        
+        return pollClosingTime.timeIntervalSince(currentDate)
+
     }
     
     

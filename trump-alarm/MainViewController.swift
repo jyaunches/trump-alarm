@@ -22,7 +22,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        countdownManager.translatePollClosingTime(pollTimes: "6 am - 9 pm")
+        let secondsLeft = countdownManager.getCountdownData(pollHours: "6 am - 9 pm")
+        
+        print (secondsLeft)
         
         locationManager.requestPermission(onSuccess: {
             (location: String) in
