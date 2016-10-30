@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
+		17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */; };
+		17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71521DC5334100E6BBD5 /* LocationManager.swift */; };
 		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
 		701018811DC2E27D008D927F /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187E1DC2E27D008D927F /* PhotoManager.swift */; };
 		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
 		7010187E1DC2E27D008D927F /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +69,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17AD714F1DC5325B00E6BBD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70A6CC731DC1238C00ED2D23 = {
 			isa = PBXGroup;
 			children = (
 				70A6CC7E1DC1238C00ED2D23 /* trump-alarm */,
 				70A6CC931DC1238C00ED2D23 /* trump-alarmTests */,
 				70A6CC7D1DC1238C00ED2D23 /* Products */,
+				17AD714F1DC5325B00E6BBD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +101,7 @@
 			children = (
 				7010187D1DC2E27D008D927F /* PostVotingController.swift */,
 				7010187E1DC2E27D008D927F /* PhotoManager.swift */,
+				17AD71521DC5334100E6BBD5 /* LocationManager.swift */,
 				7010187F1DC2E27D008D927F /* MainViewController.swift */,
 				70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */,
 				70A6CC811DC1238C00ED2D23 /* ViewController.swift */,
@@ -216,6 +231,7 @@
 				701018801DC2E27D008D927F /* PostVotingController.swift in Sources */,
 				70A6CC821DC1238C00ED2D23 /* ViewController.swift in Sources */,
 				701018811DC2E27D008D927F /* PhotoManager.swift in Sources */,
+				17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
 				701018821DC2E27D008D927F /* MainViewController.swift in Sources */,
 				17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */,

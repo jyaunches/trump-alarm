@@ -10,14 +10,29 @@ import UIKit
 import Photos
 import AssetsLibrary
 
-class MainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var imagePicked: UIImageView!
     
     var photoManager = PhotoManager()
+    var locationManager = LocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.requestPermission(onSuccess: {
+                (location: String) in
+            
+            //API CALL
+            
+            print(location)
+        },
+        onFailure: {
+            (error: Error) in
+            let errorAlert = UIAlertController.init(title: "Error",
+                                                    message: "Failed to get your location",
+                                                    preferredStyle: .alert)
+            errorAlert.show(self, sender: nil)
+        })
     }
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -55,3 +70,5 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
 }
+
+
