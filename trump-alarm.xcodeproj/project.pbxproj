@@ -158,7 +158,7 @@
 				TargetAttributes = {
 					70A6CC7B1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 78BEW79T42;
+						DevelopmentTeam = T34EE4GLT2;
 						ProvisioningStyle = Automatic;
 					};
 					70A6CC8F1DC1238C00ED2D23 = {
@@ -357,7 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 78BEW79T42;
+				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
@@ -371,7 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 78BEW79T42;
+				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
