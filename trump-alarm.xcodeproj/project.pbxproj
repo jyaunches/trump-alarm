@@ -22,10 +22,12 @@
 		7048F4801DC57A4A001B7EA9 /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7048F47C1DC57A4A001B7EA9 /* shoot_sombody.wav */; };
 		708D9F861DC656660005B3E9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D9F851DC656660005B3E9 /* Secrets.swift */; };
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
-		70A6CC851DC1238C00ED2D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC831DC1238C00ED2D23 /* Main.storyboard */; };
 		70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC861DC1238C00ED2D23 /* Assets.xcassets */; };
 		70A6CC8A1DC1238C00ED2D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */; };
 		70A6CC951DC1238C00ED2D23 /* trump_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */; };
+		D1EE4A251DC663C500A4ED6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EE4A241DC663C500A4ED6D /* Main.storyboard */; };
+		D1EE4A281DC6640200A4ED6D /* TrumpFace.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EE4A261DC6640200A4ED6D /* TrumpFace.png */; };
+		D1EE4A291DC6640200A4ED6D /* TrumpMouth.png in Resources */ = {isa = PBXBuildFile; fileRef = D1EE4A271DC6640200A4ED6D /* TrumpMouth.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +57,15 @@
 		708D9F851DC656660005B3E9 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70A6CC841DC1238C00ED2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70A6CC861DC1238C00ED2D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70A6CC891DC1238C00ED2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70A6CC8B1DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70A6CC901DC1238C00ED2D23 /* trump-alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trump-alarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trump_alarmTests.swift; sourceTree = "<group>"; };
 		70A6CC961DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EE4A231DC663C500A4ED6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1EE4A261DC6640200A4ED6D /* TrumpFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrumpFace.png; path = "../../trump-alarm-update-storyboard/TrumpFace.png"; sourceTree = "<group>"; };
+		D1EE4A271DC6640200A4ED6D /* TrumpMouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrumpMouth.png; path = "../../trump-alarm-update-storyboard/TrumpMouth.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,13 +139,15 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				D1EE4A261DC6640200A4ED6D /* TrumpFace.png */,
+				D1EE4A271DC6640200A4ED6D /* TrumpMouth.png */,
 				7048F4701DC579F4001B7EA9 /* Services */,
 				7048F46F1DC579C4001B7EA9 /* SoundBites */,
 				7010187D1DC2E27D008D927F /* PostVotingController.swift */,
 				17AD71521DC5334100E6BBD5 /* LocationManager.swift */,
 				7010187F1DC2E27D008D927F /* MainViewController.swift */,
 				70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */,
-				70A6CC831DC1238C00ED2D23 /* Main.storyboard */,
+				D1EE4A241DC663C500A4ED6D /* Main.storyboard */,
 				70A6CC861DC1238C00ED2D23 /* Assets.xcassets */,
 				70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
@@ -245,13 +251,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EE4A251DC663C500A4ED6D /* Main.storyboard in Resources */,
 				7048F47E1DC57A4A001B7EA9 /* creeping-miss-teen.wav in Resources */,
 				7048F4801DC57A4A001B7EA9 /* shoot_sombody.wav in Resources */,
+				D1EE4A291DC6640200A4ED6D /* TrumpMouth.png in Resources */,
 				7048F47F1DC57A4A001B7EA9 /* nasty_woman.wav in Resources */,
 				7048F47D1DC57A4A001B7EA9 /* bomb-the-shit.wav in Resources */,
 				70A6CC8A1DC1238C00ED2D23 /* LaunchScreen.storyboard in Resources */,
 				70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */,
-				70A6CC851DC1238C00ED2D23 /* Main.storyboard in Resources */,
+				D1EE4A281DC6640200A4ED6D /* TrumpFace.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,20 +309,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		70A6CC831DC1238C00ED2D23 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70A6CC841DC1238C00ED2D23 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				70A6CC891DC1238C00ED2D23 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D1EE4A241DC663C500A4ED6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1EE4A231DC663C500A4ED6D /* Base */,
+			);
+			name = Main.storyboard;
+			path = "../../trump-alarm-update-storyboard/trump-alarm";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
