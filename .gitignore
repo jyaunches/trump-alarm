@@ -1,0 +1,9 @@
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+
+*.xcuserdatad
+.xcuserdatad
+.xcbkptlist
+.idea
