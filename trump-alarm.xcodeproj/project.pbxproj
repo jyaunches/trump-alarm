@@ -10,12 +10,18 @@
 		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
 		17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */; };
 		17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71521DC5334100E6BBD5 /* LocationManager.swift */; };
-		17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71581DC57A0F00E6BBD5 /* Secrets.swift */; };
 		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
-		701018811DC2E27D008D927F /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187E1DC2E27D008D927F /* PhotoManager.swift */; };
 		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
+		7048F4751DC57A02001B7EA9 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048F4711DC57A02001B7EA9 /* NotificationManager.swift */; };
+		7048F4761DC57A02001B7EA9 /* TrumpAlarmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048F4721DC57A02001B7EA9 /* TrumpAlarmUserDefaults.swift */; };
+		7048F4771DC57A02001B7EA9 /* TrumpQuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048F4731DC57A02001B7EA9 /* TrumpQuoteStore.swift */; };
+		7048F4781DC57A02001B7EA9 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048F4741DC57A02001B7EA9 /* PhotoManager.swift */; };
+		7048F47D1DC57A4A001B7EA9 /* bomb-the-shit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7048F4791DC57A4A001B7EA9 /* bomb-the-shit.wav */; };
+		7048F47E1DC57A4A001B7EA9 /* creeping-miss-teen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7048F47A1DC57A4A001B7EA9 /* creeping-miss-teen.wav */; };
+		7048F47F1DC57A4A001B7EA9 /* nasty_woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7048F47B1DC57A4A001B7EA9 /* nasty_woman.wav */; };
+		7048F4801DC57A4A001B7EA9 /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7048F47C1DC57A4A001B7EA9 /* shoot_sombody.wav */; };
+		708D9F861DC656660005B3E9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D9F851DC656660005B3E9 /* Secrets.swift */; };
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
-		70A6CC821DC1238C00ED2D23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC811DC1238C00ED2D23 /* ViewController.swift */; };
 		70A6CC851DC1238C00ED2D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC831DC1238C00ED2D23 /* Main.storyboard */; };
 		70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC861DC1238C00ED2D23 /* Assets.xcassets */; };
 		70A6CC8A1DC1238C00ED2D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */; };
@@ -36,13 +42,19 @@
 		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		17AD71581DC57A0F00E6BBD5 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
-		7010187E1DC2E27D008D927F /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7048F4711DC57A02001B7EA9 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = Services/NotificationManager.swift; sourceTree = "<group>"; };
+		7048F4721DC57A02001B7EA9 /* TrumpAlarmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpAlarmUserDefaults.swift; path = Services/TrumpAlarmUserDefaults.swift; sourceTree = "<group>"; };
+		7048F4731DC57A02001B7EA9 /* TrumpQuoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteStore.swift; path = Services/TrumpQuoteStore.swift; sourceTree = "<group>"; };
+		7048F4741DC57A02001B7EA9 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoManager.swift; path = Services/PhotoManager.swift; sourceTree = "<group>"; };
+		7048F4791DC57A4A001B7EA9 /* bomb-the-shit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "bomb-the-shit.wav"; path = "SoundBites/bomb-the-shit.wav"; sourceTree = "<group>"; };
+		7048F47A1DC57A4A001B7EA9 /* creeping-miss-teen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "creeping-miss-teen.wav"; path = "SoundBites/creeping-miss-teen.wav"; sourceTree = "<group>"; };
+		7048F47B1DC57A4A001B7EA9 /* nasty_woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nasty_woman.wav; path = SoundBites/nasty_woman.wav; sourceTree = "<group>"; };
+		7048F47C1DC57A4A001B7EA9 /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
+		708D9F851DC656660005B3E9 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70A6CC811DC1238C00ED2D23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70A6CC841DC1238C00ED2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70A6CC861DC1238C00ED2D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70A6CC891DC1238C00ED2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,6 +91,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7048F46F1DC579C4001B7EA9 /* SoundBites */ = {
+			isa = PBXGroup;
+			children = (
+				7048F4791DC57A4A001B7EA9 /* bomb-the-shit.wav */,
+				7048F47A1DC57A4A001B7EA9 /* creeping-miss-teen.wav */,
+				7048F47B1DC57A4A001B7EA9 /* nasty_woman.wav */,
+				7048F47C1DC57A4A001B7EA9 /* shoot_sombody.wav */,
+			);
+			name = SoundBites;
+			sourceTree = "<group>";
+		};
+		7048F4701DC579F4001B7EA9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7048F4711DC57A02001B7EA9 /* NotificationManager.swift */,
+				7048F4721DC57A02001B7EA9 /* TrumpAlarmUserDefaults.swift */,
+				7048F4731DC57A02001B7EA9 /* TrumpQuoteStore.swift */,
+				7048F4741DC57A02001B7EA9 /* PhotoManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		70A6CC731DC1238C00ED2D23 = {
 			isa = PBXGroup;
 			children = (
@@ -101,18 +135,18 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				7048F4701DC579F4001B7EA9 /* Services */,
+				7048F46F1DC579C4001B7EA9 /* SoundBites */,
 				7010187D1DC2E27D008D927F /* PostVotingController.swift */,
-				7010187E1DC2E27D008D927F /* PhotoManager.swift */,
 				17AD71521DC5334100E6BBD5 /* LocationManager.swift */,
 				7010187F1DC2E27D008D927F /* MainViewController.swift */,
 				70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */,
-				70A6CC811DC1238C00ED2D23 /* ViewController.swift */,
 				70A6CC831DC1238C00ED2D23 /* Main.storyboard */,
 				70A6CC861DC1238C00ED2D23 /* Assets.xcassets */,
 				70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
 				17AD714D1DC51A1200E6BBD5 /* Environment.swift */,
-				17AD71581DC57A0F00E6BBD5 /* Secrets.swift */,
+				708D9F851DC656660005B3E9 /* Secrets.swift */,
 			);
 			path = "trump-alarm";
 			sourceTree = "<group>";
@@ -211,6 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7048F47E1DC57A4A001B7EA9 /* creeping-miss-teen.wav in Resources */,
+				7048F4801DC57A4A001B7EA9 /* shoot_sombody.wav in Resources */,
+				7048F47F1DC57A4A001B7EA9 /* nasty_woman.wav in Resources */,
+				7048F47D1DC57A4A001B7EA9 /* bomb-the-shit.wav in Resources */,
 				70A6CC8A1DC1238C00ED2D23 /* LaunchScreen.storyboard in Resources */,
 				70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */,
 				70A6CC851DC1238C00ED2D23 /* Main.storyboard in Resources */,
@@ -232,13 +270,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				701018801DC2E27D008D927F /* PostVotingController.swift in Sources */,
-				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
-				70A6CC821DC1238C00ED2D23 /* ViewController.swift in Sources */,
-				701018811DC2E27D008D927F /* PhotoManager.swift in Sources */,
+				708D9F861DC656660005B3E9 /* Secrets.swift in Sources */,
+				7048F4771DC57A02001B7EA9 /* TrumpQuoteStore.swift in Sources */,
+				7048F4781DC57A02001B7EA9 /* PhotoManager.swift in Sources */,
 				17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
+				7048F4751DC57A02001B7EA9 /* NotificationManager.swift in Sources */,
 				701018821DC2E27D008D927F /* MainViewController.swift in Sources */,
 				17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */,
+				7048F4761DC57A02001B7EA9 /* TrumpAlarmUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
