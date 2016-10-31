@@ -20,12 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        NotificationManager.sharedInstance.setupPrePolling(pollingDate: Date() + 6.days)
+        
         
         if Date.endOfelectionDay <= Date() {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
             self.window?.makeKeyAndVisible()
         } else if !TrumpAlarmUserDefaults.hasSeenIntro {
+            NotificationManager.sharedInstance.setupPrePolling(pollingDate: Date.midnightOfelectionDay)
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "IntroNVC")
             self.window?.makeKeyAndVisible()
         } else if TrumpAlarmUserDefaults.hasVoted {
