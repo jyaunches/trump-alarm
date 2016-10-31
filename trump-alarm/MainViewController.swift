@@ -13,8 +13,14 @@ import AssetsLibrary
 class MainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var imagePicked: UIImageView!
+    @IBOutlet weak var hoursValueLabel: UILabel!
+    @IBOutlet weak var minutesValueLabel: UILabel!
+    @IBOutlet weak var secondsValueLabel: UILabel!
+    
     
     var countdownStartTime : TimeInterval?
+    var countdownEndDate = Date()
+    var remainingTime = TimeInterval()
     
     var photoManager = PhotoManager()
     var locationManager = LocationManager()
@@ -29,6 +35,21 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         //Commented out the below to avoid using the API call since I cannot run app on device. Uncomment to make call
         //self.startupApp()
         
+        let countdownEndTime = countdownManager.timeUntilPollsOpen()
+        countdownEndDate = NSDate(timeInterval: countdownEndTime, since: Date()) as Date
+ 
+        let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTick(timer:)), userInfo: nil, repeats: true)
+        timer.fire()
+    }
+    
+    func onTick(timer: Timer) {
+        remainingTime = countdownEndDate.timeIntervalSinceNow
+        let a = Int(remainingTime)/(60*60)
+        let b = Int(remainingTime)%(60*60)/60
+        let c = Int(remainingTime)%60
+        hoursValueLabel.text = "\(a)"
+        minutesValueLabel.text = "\(b)"
+        secondsValueLabel.text = "\(c)"
     }
             
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
