@@ -10,6 +10,13 @@ import Foundation
 
 extension Date {
     
+    static var endOfelectionDay: Date {
+        get {
+            //11pm EST Nov 8th
+            return Date(timeIntervalSinceReferenceDate: 500356800)
+        }
+    }
+    
     static func defaultPollsOpen() -> Date {
         let calendar = Calendar.current
         let closeComponent = NSDateComponents()

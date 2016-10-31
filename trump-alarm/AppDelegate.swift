@@ -12,17 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    
     func setPostVotingAsRoot() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "PostVotingController")                
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "PostVotingController")
         self.window?.makeKeyAndVisible()
     }
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         NotificationManager.sharedInstance.setupPrePolling(pollingDate: Date() + 6.days)
+        
+        if Date.endOfelectionDay <= Date() {
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
+            self.window?.makeKeyAndVisible()
+        } else if !TrumpAlarmUserDefaults.hasSeenIntro {
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "IntroNVC")
+            self.window?.makeKeyAndVisible()
+        } else if TrumpAlarmUserDefaults.hasVoted {
+            setPostVotingAsRoot()
+        } else {
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC")
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
 

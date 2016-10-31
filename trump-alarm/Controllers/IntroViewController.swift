@@ -24,24 +24,23 @@ class IntroViewController: UIViewController {
             (location: String) in
             self.civicInfoInteractor.getPollInfo(params: ["address": location, "fields": "pollingLocations/pollingHours"], completion: {
                 (success, pollHours) in
-                TrumpAlarmUserDefaults.userPollingHours = PollingAPIResponse(response: pollHours)
-                //self.countdownManager.storePollingHours(pollHours: pollHours!)
-                if !success {
-
-                    let pollErrorAlert = UIAlertController.init(title: "Error",
-                            message: "Failed to retrieve your local poll hours",
-                            preferredStyle: .alert)
-                    pollErrorAlert.show(self, sender: nil)
-                }
+                self.navigateToCountdown(userPollingHours: PollingAPIResponse(response: pollHours))
             })
-        },
-                onFailure: {
-                    (error: Error) in
-                    let locationError = UIAlertController.init(title: "Error",
-                            message: "Failed to get retrieve your location",
-                            preferredStyle: .alert)
-                    locationError.show(self, sender: nil)
-                })
+        }, onFailure: {
+            (error: Error) in
+                self.navigateToCountdown(userPollingHours: PollingAPIResponse())
+        })
+    }
+    
+    
+    
+    func navigateToCountdown(userPollingHours: PollingAPIResponse) {
+        TrumpAlarmUserDefaults.hasSeenIntro = true
+        TrumpAlarmUserDefaults.userPollingHours = userPollingHours
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC") as? MainViewController {
+            self.navigationController?.present(controller, animated: true, completion: nil)
+        }
     }
 
 }

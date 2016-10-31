@@ -3,9 +3,14 @@ import Foundation
 
 class TrumpAlarmUserDefaults: NSObject {
 
-    class func flagAsVoted() {
-        let defaults = UserDefaults.standard
-        defaults.set(true, forKey: "UserHasVoted")
+    class var hasVoted: Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: "UserHasVoted")
+        }
+        set {
+            UserDefaults.standard.set(true, forKey: "UserHasVoted")
+        }
+        
     }
     
     class var userPollingHours: PollingAPIResponse {
@@ -18,6 +23,15 @@ class TrumpAlarmUserDefaults: NSObject {
         set {
             UserDefaults.standard.set(newValue.pollsOpenDate, forKey: "userPollingOpeningHours")
             UserDefaults.standard.set(newValue.pollsCloseDate, forKey: "userPollingClosingHours")
+        }
+    }
+    
+    class var hasSeenIntro: Bool {
+        set {
+            UserDefaults.standard.set(true, forKey: "hasSeenIntro")
+        }
+        get {
+            return UserDefaults.standard.bool(forKey: "hasSeenIntro")
         }
     }
     

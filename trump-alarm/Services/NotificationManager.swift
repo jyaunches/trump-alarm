@@ -46,7 +46,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         })
     }
 
-    func setupPollingDay() {
+    func setupPollingDay(pollingHours: PollingAPIResponse) {
         let pollingDayQuotes = [
                 TrumpQuote(content: SoundBiteContent.waterboarding, audioFile: "waterboarding.wav", identifier: "foo234"),
                 TrumpQuote(content: SoundBiteContent.handSize, audioFile: "hand-size.wav", identifier: "foo234"),
@@ -70,7 +70,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         ]
 
         requestNotificationPermission(onAgree: {
-            for (index, interval) in Date.intervalsOnElectionDay(electionDayStart: ).enumerated() {
+            for (index, interval) in Date.intervalsOnElectionDay(electionDayStart: pollingHours.pollsOpenDate, electionDayEnd: pollingHours.pollsCloseDate).enumerated() {
                 let quote = pollingDayQuotes[index]
                 self.schedule(quote: quote, interval: interval)
             }
