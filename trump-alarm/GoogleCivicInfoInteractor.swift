@@ -51,7 +51,7 @@ class GoogleCivicInformationInteractor: NSObject {
             DispatchQueue.main.async {
                 if success {
                     let json = JSON(object)
-                    let time = json["pollingLocations"]["pollingHours"].stringValue
+                    let time = json["pollingLocations"][0]["pollingHours"].stringValue
                     
                     completion(true, time)
                 } else {
