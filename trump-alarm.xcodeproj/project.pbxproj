@@ -22,6 +22,7 @@
 		17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */; };
 		27573DB71DC79BF10095F0BF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB61DC79BF10095F0BF /* IntroViewController.swift */; };
 		27573DB91DC7A1560095F0BF /* PollingAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */; };
+		27573DBB1DC7E09A0095F0BF /* TrumpFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */; };
 		27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F61DC6A8040089139F /* nasty_woman.wav */; };
 		27C5050E1DC6A8040089139F /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F71DC6A8040089139F /* shoot_sombody.wav */; };
 		27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */; };
@@ -103,6 +104,7 @@
 		17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
 		27573DB61DC79BF10095F0BF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = Controllers/IntroViewController.swift; sourceTree = "<group>"; };
 		27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollingAPIResponse.swift; path = Services/PollingAPIResponse.swift; sourceTree = "<group>"; };
+		27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpFace.swift; sourceTree = "<group>"; };
 		27C504F61DC6A8040089139F /* nasty_woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nasty_woman.wav; path = SoundBites/nasty_woman.wav; sourceTree = "<group>"; };
 		27C504F71DC6A8040089139F /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
 		27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dropping-to-your-knees.wav"; path = "SoundBites/dropping-to-your-knees.wav"; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				17AD714D1DC51A1200E6BBD5 /* Environment.swift */,
 				17AD71581DC57A0F00E6BBD5 /* Secrets.swift */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
+				27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */,
 			);
 			path = "trump-alarm";
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				70FD04921DC6B02900489C79 /* Commons.swift in Sources */,
 				70FD04AB1DC6C9CC00489C79 /* SoundBiteContent.swift in Sources */,
 				70FD04A41DC6B02900489C79 /* TimeInterval+Extensions.swift in Sources */,
+				27573DBB1DC7E09A0095F0BF /* TrumpFace.swift in Sources */,
 				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
 				70FD049F1DC6B02900489C79 /* Extensions.swift in Sources */,
 				17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */,

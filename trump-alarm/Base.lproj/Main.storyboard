@@ -252,7 +252,7 @@ Sending you alarms between now and election day of the importance of your vote!
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpFace" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-nr-Cl0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpFace" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-nr-Cl0" customClass="TrumpFace" customModule="trump_alarm" customModuleProvider="target">
                                 <rect key="frame" x="53.5" y="159.5" width="268" height="268"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6xI-nr-Cl0" secondAttribute="height" multiplier="1:1" id="WdW-6h-gDo"/>
@@ -309,7 +309,7 @@ Sending you alarms between now and election day of the importance of your vote!
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="P8i-bB-dWc" userLabel="sec">
-                                        <rect key="frame" x="229.5" y="0.0" width="57" height="34.5"/>
+                                        <rect key="frame" x="229.5" y="0.0" width="58" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -383,6 +383,7 @@ Sending you alarms between now and election day of the importance of your vote!
                         <outlet property="hoursValueLabel" destination="dek-gl-trB" id="l4a-EH-93G"/>
                         <outlet property="minutesValueLabel" destination="XEb-SA-JxM" id="bu5-wN-SK3"/>
                         <outlet property="secondsValueLabel" destination="P8i-bB-dWc" id="sGh-zJ-439"/>
+                        <outlet property="trumpFaceImage" destination="6xI-nr-Cl0" id="LyQ-3H-WiC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXb-6K-2sq" sceneMemberID="firstResponder"/>

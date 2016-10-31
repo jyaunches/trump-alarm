@@ -15,6 +15,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var hoursValueLabel: UILabel!
     @IBOutlet weak var minutesValueLabel: UILabel!
     @IBOutlet weak var secondsValueLabel: UILabel!
+    @IBOutlet weak var trumpFaceImage: TrumpFace!
     
     var countdownEndDate = Date()
     var photoManager = PhotoManager()
@@ -22,7 +23,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: false)
+        navigationItem.setHidesBackButton(true, animated: false)        
+        trumpFaceImage.setup()
         
         countdownEndDate = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
  
