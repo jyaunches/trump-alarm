@@ -27,12 +27,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-Ab-s2r">
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEN-Sm-8w5" userLabel="AND VOTE AGAIN">
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,56 +41,58 @@
                                     <constraint firstAttribute="width" secondItem="6xI-nr-Cl0" secondAttribute="height" multiplier="1:1" id="WdW-6h-gDo"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ASB-Eo-WN2" userLabel="Labels">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ASB-Eo-WN2" userLabel="Labels">
+                                <frame key="frameInset" minX="16" minY="400" width="343" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-wn-wta">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTES" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-2I-Qlp">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-oE-NBF">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="J3u-4X-aRs" userLabel="HMS">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="J3u-4X-aRs" userLabel="HMS">
+                                <frame key="frameInset" minX="45" minY="430" width="287" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="dek-gl-trB" userLabel="hours">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="796-bo-2nm" userLabel="BTW H &amp; M">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-SA-JxM" userLabel="min">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="6B4-JW-Uxh" userLabel="BTW M &amp; S">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="P8i-bB-dWc" userLabel="sec">
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNTIL POLLS CLOSE" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c9-Iz-d9o">
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -117,27 +119,27 @@
                         <color key="backgroundColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6xI-nr-Cl0" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="1Ng-lP-8OD"/>
-                            <constraint firstItem="z0o-lJ-OxP" firstAttribute="top" secondItem="lEq-eR-dri" secondAttribute="bottom" constant="20" id="4cG-N0-238"/>
+                            <constraint firstItem="z0o-lJ-OxP" firstAttribute="top" secondItem="lEq-eR-dri" secondAttribute="bottom" constant="14" id="4cG-N0-238"/>
                             <constraint firstItem="Uhp-Ab-s2r" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="7Dn-8G-gFB"/>
                             <constraint firstItem="ASB-Eo-WN2" firstAttribute="leading" secondItem="VSx-82-UWQ" secondAttribute="leadingMargin" id="CGv-zh-Ubv"/>
+                            <constraint firstItem="gcl-hW-JSS" firstAttribute="top" secondItem="zkW-aY-92r" secondAttribute="bottom" constant="30" id="Fl1-m2-NS4"/>
+                            <constraint firstItem="6c9-Iz-d9o" firstAttribute="top" secondItem="J3u-4X-aRs" secondAttribute="bottom" constant="15" id="Gjq-GI-wfE"/>
+                            <constraint firstItem="zkW-aY-92r" firstAttribute="top" secondItem="6c9-Iz-d9o" secondAttribute="bottom" constant="24" id="JHI-n2-M5E"/>
                             <constraint firstItem="zkW-aY-92r" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="OO9-z8-1aY"/>
-                            <constraint firstItem="6c9-Iz-d9o" firstAttribute="top" secondItem="J3u-4X-aRs" secondAttribute="bottom" constant="20" id="PMj-Re-MgR"/>
                             <constraint firstItem="6xI-nr-Cl0" firstAttribute="top" secondItem="yEN-Sm-8w5" secondAttribute="bottom" id="Qaa-oz-2G5"/>
                             <constraint firstItem="ASB-Eo-WN2" firstAttribute="trailing" secondItem="VSx-82-UWQ" secondAttribute="trailingMargin" id="Tqj-xx-tKw"/>
                             <constraint firstItem="yEN-Sm-8w5" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="WCk-lE-cBa"/>
+                            <constraint firstItem="J3u-4X-aRs" firstAttribute="top" secondItem="ASB-Eo-WN2" secondAttribute="bottom" constant="12" id="cG0-tg-1Zp"/>
                             <constraint firstItem="z0o-lJ-OxP" firstAttribute="leading" secondItem="VSx-82-UWQ" secondAttribute="leading" id="cvH-S0-zmN"/>
                             <constraint firstItem="dek-gl-trB" firstAttribute="centerX" secondItem="7Oe-wn-wta" secondAttribute="centerX" id="gSw-aS-xVN"/>
                             <constraint firstItem="6xI-nr-Cl0" firstAttribute="height" secondItem="VSx-82-UWQ" secondAttribute="height" multiplier="0.4" constant="1" id="jzB-tT-e8R"/>
-                            <constraint firstItem="6xI-nr-Cl0" firstAttribute="bottom" secondItem="ASB-Eo-WN2" secondAttribute="top" constant="-25" id="m56-fW-klc"/>
                             <constraint firstItem="6c9-Iz-d9o" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="opF-rp-hfv"/>
                             <constraint firstItem="XEb-SA-JxM" firstAttribute="centerX" secondItem="YSm-2I-Qlp" secondAttribute="centerX" id="oys-sq-uyj"/>
-                            <constraint firstItem="J3u-4X-aRs" firstAttribute="top" secondItem="ASB-Eo-WN2" secondAttribute="bottom" constant="5" id="pX3-Ps-BQ8"/>
                             <constraint firstItem="Uhp-Ab-s2r" firstAttribute="top" secondItem="z0o-lJ-OxP" secondAttribute="bottom" constant="10" id="qmx-ra-wLs"/>
                             <constraint firstItem="J3u-4X-aRs" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="rqt-Wj-B97"/>
                             <constraint firstItem="z0o-lJ-OxP" firstAttribute="trailing" secondItem="VSx-82-UWQ" secondAttribute="trailing" id="uEJ-99-sBp"/>
                             <constraint firstItem="P8i-bB-dWc" firstAttribute="centerX" secondItem="G5P-oE-NBF" secondAttribute="centerX" id="vSE-tE-A5Z"/>
                             <constraint firstItem="yEN-Sm-8w5" firstAttribute="top" secondItem="Uhp-Ab-s2r" secondAttribute="bottom" constant="2" id="yCx-nR-BuI"/>
-                            <constraint firstItem="zkW-aY-92r" firstAttribute="top" secondItem="6c9-Iz-d9o" secondAttribute="bottom" constant="25" id="z7d-kg-JAM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YeX-tI-Y3E">
