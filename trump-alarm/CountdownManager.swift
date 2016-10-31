@@ -53,7 +53,7 @@ class CountdownManager: NSObject {
         return [hour, minute, seconds]
     }
     
-    func timeUntilPollsOpen() -> TimeInterval {
+    func timeUntilPollsOpen() -> Date {
         let openArray = getOpeningTimeComponents(openTime: UserDefaults.standard.string(forKey: "pollStartString")!)
         
         let openComponent = NSDateComponents()
@@ -63,13 +63,10 @@ class CountdownManager: NSObject {
         openComponent.hour = Int(openArray[0])!
         openComponent.minute = Int(openArray[1])!
         openComponent.second = Int(openArray[2])!
-        let openingTime = calendar.date(from:openComponent as DateComponents)!
-        
-        return openingTime.timeIntervalSince(currentDate)
-        
+        return calendar.date(from:openComponent as DateComponents)!
     }
     
-    func timeUntilPollsClose() -> TimeInterval {
+    func timeUntilPollsClose() -> Date {
         let closeArray = getClosingTimeComponents(closeTime: UserDefaults.standard.string(forKey: "pollEndString")!)
         
         let closeComponent = NSDateComponents()
@@ -79,10 +76,7 @@ class CountdownManager: NSObject {
         closeComponent.hour = Int(closeArray[0])! + 12
         closeComponent.minute = Int(closeArray[1])!
         closeComponent.second = Int(closeArray[2])!
-        let closingTime = calendar.date(from:closeComponent as DateComponents)!
-        
-        return closingTime.timeIntervalSince(currentDate)
-
+        return calendar.date(from:closeComponent as DateComponents)!
     }
     
     func timeUntilNextElection() -> TimeInterval{
@@ -114,19 +108,4 @@ class CountdownManager: NSObject {
         TrumpAlarmUserDefaults.storePollEndString(hour: dashSeperated[1])
     }
     
-    
-    public func getCountdownData(pollHours: String) -> TimeInterval {
-        
-        setTimeDefaults(pollHours: pollHours)
-        
-        if timeUntilPollsOpen() > 0 {
-            return timeUntilPollsOpen()
-        }
-        else if timeUntilPollsClose() > 0 {
-            return timeUntilPollsClose()
-        }
-        else {
-            return timeBetweenOpenAndClose()
-        }
-    }
 }

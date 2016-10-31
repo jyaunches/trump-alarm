@@ -10,10 +10,30 @@ import Foundation
 
 extension Date {
     
-    func electionDayMidnight() -> Date {
-        return Date(timeIntervalSinceReferenceDate: 500274000)
+    static func defaultPollsOpen() -> Date {
+        let calendar = Calendar.current
+        let closeComponent = NSDateComponents()
+        closeComponent.year = 2016
+        closeComponent.month = 11
+        closeComponent.day = 8
+        closeComponent.hour = 8
+        closeComponent.minute = 0
+        closeComponent.second = 0
+        return calendar.date(from:closeComponent as DateComponents)!
     }
     
+    static func defaultPollsClose() -> Date {
+        let calendar = Calendar.current
+        let closeComponent = NSDateComponents()
+        closeComponent.year = 2016
+        closeComponent.month = 11
+        closeComponent.day = 8
+        closeComponent.hour = 22
+        closeComponent.minute = 0
+        closeComponent.second = 0
+        return calendar.date(from:closeComponent as DateComponents)!
+    }
+            
     func standardPrint() -> String? {
         if inRegion().isToday {
             return "Today \(timeOnly())"
@@ -21,7 +41,7 @@ extension Date {
             return "\(dayPrint()) \(timeOnly())"
         }
     }
-
+    
     func timeOnly() -> String {
         return inRegion().string(format: DateFormat.custom("HH:mm.ss"))
     }
@@ -31,8 +51,8 @@ extension Date {
     }
 
     static func intervalsUntilElectionDay() -> [TimeInterval] {
-        let electionDay = electionDayMidnight()
-                
+        let electionDay = Date(timeIntervalSinceReferenceDate: 500274000)
+        
         print("Election day: \(electionDay.standardPrint())")
         
         //TODO: update the 0 below to Date() on Nov 1
@@ -60,8 +80,9 @@ extension Date {
     
     static func intervalsOnElectionDay(electionDayStart: Date, electionDayEnd: Date) -> [TimeInterval] {
         var intervals: [TimeInterval] = []
+        let today = NSDate()
 
-        let startHour = electionDayStart.hour
+        var startHour = electionDayStart.hour
         let endHour = electionDayEnd.hour
 
         while startHour < endHour {

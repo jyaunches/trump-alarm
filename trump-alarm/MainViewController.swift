@@ -24,35 +24,13 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
              
-        self.countdownStartTime = self.countdownManager.getCountdownData(pollHours: "8 am - 8 pm")
+        //self.countdownStartTime = self.countdownManager.getCountdownData(pollHours: "8 am - 8 pm")
 
         //Commented out the below to avoid using the API call since I cannot run app on device. Uncomment to make call
         //self.startupApp()
         
     }
-    
-    private func startupApp() {
-        locationManager.requestPermission(onSuccess: {
-            (location: String) in
-                        self.civicInfoInteractor.getPollInfo(params:["address": location, "fields": "pollingLocations/pollingHours"], completion: { (success, pollHours) in
-                self.countdownStartTime = self.countdownManager.getCountdownData(pollHours: pollHours!)
-                if !success {
-                    
-                    let pollErrorAlert = UIAlertController.init(title: "Error",
-                                                                message: "Failed to retrieve your local poll hours",
-                                                                preferredStyle: .alert)
-                    pollErrorAlert.show(self, sender: nil)                }
-            })
-        },
-                                          onFailure: {
-                                            (error: Error) in
-                                            let locationError = UIAlertController.init(title: "Error",
-                                                                                       message: "Failed to get retrieve your location",
-                                                                                       preferredStyle: .alert)
-                                            locationError.show(self, sender: nil)
-        })
-    }
-    
+            
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     
         if let tempImage = info[UIImagePickerControllerOriginalImage] as? UIImage {

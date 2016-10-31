@@ -20,6 +20,8 @@
 		17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71581DC57A0F00E6BBD5 /* Secrets.swift */; };
 		17AD715B1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */; };
 		17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */; };
+		27573DB71DC79BF10095F0BF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB61DC79BF10095F0BF /* IntroViewController.swift */; };
+		27573DB91DC7A1560095F0BF /* PollingAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */; };
 		27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F61DC6A8040089139F /* nasty_woman.wav */; };
 		27C5050E1DC6A8040089139F /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F71DC6A8040089139F /* shoot_sombody.wav */; };
 		27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */; };
@@ -99,6 +101,8 @@
 		17AD71581DC57A0F00E6BBD5 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCivicInfoInteractor.swift; sourceTree = "<group>"; };
 		17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
+		27573DB61DC79BF10095F0BF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = Controllers/IntroViewController.swift; sourceTree = "<group>"; };
+		27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollingAPIResponse.swift; path = Services/PollingAPIResponse.swift; sourceTree = "<group>"; };
 		27C504F61DC6A8040089139F /* nasty_woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nasty_woman.wav; path = SoundBites/nasty_woman.wav; sourceTree = "<group>"; };
 		27C504F71DC6A8040089139F /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
 		27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dropping-to-your-knees.wav"; path = "SoundBites/dropping-to-your-knees.wav"; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 		175549D11DC69FF600B62473 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */,
 				175549D21DC6A01800B62473 /* NotificationManager.swift */,
 				175549D31DC6A01800B62473 /* PhotoManager.swift */,
 				175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */,
@@ -227,6 +232,14 @@
 				17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27573DB51DC79BC10095F0BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27573DB61DC79BF10095F0BF /* IntroViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		70A6CC731DC1238C00ED2D23 = {
@@ -251,6 +264,7 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				27573DB51DC79BC10095F0BF /* Controllers */,
 				27C505241DC6D02B0089139F /* SwiftyJSON.swift */,
 				175549E11DC6CD6D00B62473 /* BorderedButton.swift */,
 				70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */,
@@ -361,7 +375,7 @@
 				TargetAttributes = {
 					70A6CC7B1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XX76CENS3P;
+						DevelopmentTeam = T34EE4GLT2;
 						ProvisioningStyle = Automatic;
 					};
 					70A6CC8F1DC1238C00ED2D23 = {
@@ -458,6 +472,7 @@
 				70FD049E1DC6B02900489C79 /* DateTimeInterval.swift in Sources */,
 				70FD04941DC6B02900489C79 /* Date+Components.swift in Sources */,
 				175549D61DC6A01800B62473 /* NotificationManager.swift in Sources */,
+				27573DB91DC7A1560095F0BF /* PollingAPIResponse.swift in Sources */,
 				70FD04971DC6B02900489C79 /* DateComponents+Extension.swift in Sources */,
 				70FD049B1DC6B02900489C79 /* DateInRegion+Formatter.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
@@ -465,6 +480,7 @@
 				70FD04911DC6B02900489C79 /* CalendarName.swift in Sources */,
 				701018821DC2E27D008D927F /* MainViewController.swift in Sources */,
 				70FD04A81DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift in Sources */,
+				27573DB71DC79BF10095F0BF /* IntroViewController.swift in Sources */,
 				70FD049C1DC6B02900489C79 /* DateInRegion+Math.swift in Sources */,
 				17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */,
 				70FD04A01DC6B02900489C79 /* ISO8601DateTimeFormatter.swift in Sources */,
@@ -615,7 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XX76CENS3P;
+				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
@@ -630,7 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XX76CENS3P;
+				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
