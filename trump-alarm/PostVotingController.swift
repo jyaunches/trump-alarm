@@ -9,8 +9,7 @@
 import UIKit
 
 class PostVotingController: UIViewController {
-
-    @IBOutlet weak var iVotedLabel: UILabel!
+   
     @IBOutlet weak var votingImage: UIImageView!
     var photoManager = PhotoManager()
     
@@ -19,8 +18,6 @@ class PostVotingController: UIViewController {
         if let photo = photoManager.getImage() {
             votingImage.image = photo
         }
-        
-        iVotedLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 5)
     }
 
     override func didReceiveMemoryWarning() {
