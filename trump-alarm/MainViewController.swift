@@ -40,6 +40,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
         
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            TrumpAlarmUserDefaults.hasVoted = true
             appDelegate.setPostVotingAsRoot()
         }
     }
