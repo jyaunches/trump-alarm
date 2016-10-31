@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location Plzzzz</string>
+	<string>The Trump Alarm will customize your alarms based on the hours your particular polling place is open.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -25,7 +25,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Gotta get that pic of you voting!</string>
+	<string>Let&apos;s get that pic of your voting self!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Let&apos;s get that pic of your voting self!</string>
 	<key>UILaunchStoryboardName</key>
