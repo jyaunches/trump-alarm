@@ -25,7 +25,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         locationManager.requestPermission(onSuccess: {
             (location: String) in
             self.civicInfoInteractor.getPollInfo(params:["address": location, "fields": "pollingLocations/pollingHours"], completion: { (success, pollHours) in
-                let thing = self.countdownManager.getCountdownData(pollHours: pollHours!)
+                let secondsUntilPollCloses = self.countdownManager.getCountdownData(pollHours: pollHours!)
                 if !success {
                     
                     // unable to retrieve poll hours: default hours
