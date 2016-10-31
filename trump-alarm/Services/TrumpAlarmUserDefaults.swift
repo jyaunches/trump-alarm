@@ -15,10 +15,9 @@ class TrumpAlarmUserDefaults: NSObject {
     
     class var userPollingHours: PollingAPIResponse {
         get {
-            if let pollingHours = UserDefaults.standard.object(forKey: "userPollingHours") as? PollingAPIResponse {
-                return pollingHours
-            }
-            return PollingAPIResponse()
+            let pollsOpen = UserDefaults.standard.object(forKey: "userPollingOpeningHours") as? Date
+            let pollsClose = UserDefaults.standard.object(forKey: "userPollingClosingHours") as? Date
+            return PollingAPIResponse(pollsOpen: pollsOpen, pollsClose: pollsClose)
         }
         set {
             UserDefaults.standard.set(newValue.pollsOpenDate, forKey: "userPollingOpeningHours")

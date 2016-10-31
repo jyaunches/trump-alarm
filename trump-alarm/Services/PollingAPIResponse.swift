@@ -28,6 +28,13 @@ class PollingAPIResponse: NSObject {
         }
     }
     
+    convenience init(pollsOpen: Date?, pollsClose: Date?) {
+        self.init()
+        
+        self.pollsOpenDate = pollsOpen ?? Date.defaultPollsOpen()
+        self.pollsCloseDate = pollsClose ?? Date.defaultPollsClose()
+    }
+    
     func timeUntilPollsOpen(timeArray: [String]) -> Date {
         let openComponent = NSDateComponents()
         openComponent.year = 2016
