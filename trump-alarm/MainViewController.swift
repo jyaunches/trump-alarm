@@ -23,13 +23,18 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
+             
+        self.countdownStartTime = self.countdownManager.getCountdownData(pollHours: "8 am - 8 pm")
+
+        //Commented out the below to avoid using the API call since I cannot run app on device. Uncomment to make call
+        //self.startupApp()
         
     }
     
     private func startupApp() {
         locationManager.requestPermission(onSuccess: {
             (location: String) in
-            self.civicInfoInteractor.getPollInfo(params:["address": location, "fields": "pollingLocations/pollingHours"], completion: { (success, pollHours) in
+                        self.civicInfoInteractor.getPollInfo(params:["address": location, "fields": "pollingLocations/pollingHours"], completion: { (success, pollHours) in
                 self.countdownStartTime = self.countdownManager.getCountdownData(pollHours: pollHours!)
                 if !success {
                     

@@ -53,7 +53,7 @@ class CountdownManager: NSObject {
         return [hour, minute, seconds]
     }
     
-    private func timeUntilPollsOpen() -> TimeInterval {
+    func timeUntilPollsOpen() -> TimeInterval {
         let openArray = getOpeningTimeComponents(openTime: UserDefaults.standard.string(forKey: "pollStartString")!)
         
         let openComponent = NSDateComponents()
@@ -69,14 +69,14 @@ class CountdownManager: NSObject {
         
     }
     
-    private func timeUntilPollsClose() -> TimeInterval {
-        let closeArray = getClosingTimeComponents(closeTime: UserDefaults.standard.string(forKey: "pollStartString")!)
+    func timeUntilPollsClose() -> TimeInterval {
+        let closeArray = getClosingTimeComponents(closeTime: UserDefaults.standard.string(forKey: "pollEndString")!)
         
         let closeComponent = NSDateComponents()
         closeComponent.year = 2016
         closeComponent.month = 11
         closeComponent.day = 8
-        closeComponent.hour = Int(closeArray[0])!
+        closeComponent.hour = Int(closeArray[0])! + 12
         closeComponent.minute = Int(closeArray[1])!
         closeComponent.second = Int(closeArray[2])!
         let closingTime = calendar.date(from:closeComponent as DateComponents)!
@@ -85,7 +85,19 @@ class CountdownManager: NSObject {
 
     }
     
-    private func timeBetweenOpenAndClose() -> TimeInterval {
+    func timeUntilNextElection() -> TimeInterval{
+        let electionComponent = NSDateComponents()
+        electionComponent.year = 2020
+        electionComponent.month = 11
+        electionComponent.day = 3
+        
+        let electionDay = calendar.date(from:electionComponent as DateComponents)!
+     
+        return electionDay.timeIntervalSince(currentDate)
+
+    }
+    
+    func timeBetweenOpenAndClose() -> TimeInterval {
 
         let timeUntilPollsClose = self.timeUntilPollsClose()
         let timeUntilPollsOpen = self.timeUntilPollsOpen()
