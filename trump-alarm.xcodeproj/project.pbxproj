@@ -13,6 +13,7 @@
 		175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */; };
 		175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */; };
 		175549DC1DC6A1DF00B62473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175549DA1DC6A1DF00B62473 /* Main.storyboard */; };
+		175549E01DC6C87100B62473 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549DF1DC6C87100B62473 /* SwiftyJSON.swift */; };
 		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
 		17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */; };
 		17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71521DC5334100E6BBD5 /* LocationManager.swift */; };
@@ -44,6 +45,7 @@
 		175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteStore.swift; path = Services/TrumpQuoteStore.swift; sourceTree = "<group>"; };
 		175549DB1DC6A1DF00B62473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		175549DD1DC6C14700B62473 /* trump-alarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "trump-alarm.entitlements"; sourceTree = "<group>"; };
+		175549DF1DC6C87100B62473 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../Downloads/SwiftyJSON-master/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
 		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		175549DE1DC6C81000B62473 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				175549DF1DC6C87100B62473 /* SwiftyJSON.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		17AD714F1DC5325B00E6BBD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				175549DE1DC6C81000B62473 /* Helpers */,
 				175549DD1DC6C14700B62473 /* trump-alarm.entitlements */,
 				175549DA1DC6A1DF00B62473 /* Main.storyboard */,
 				175549D11DC69FF600B62473 /* Services */,
@@ -208,7 +219,8 @@
 				TargetAttributes = {
 					70A6CC7B1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 78BEW79T42;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 0;
@@ -270,6 +282,7 @@
 				175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */,
 				175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */,
 				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
+				175549E01DC6C87100B62473 /* SwiftyJSON.swift in Sources */,
 				17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */,
 				175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */,
 				17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */,
@@ -416,7 +429,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
@@ -430,7 +444,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
