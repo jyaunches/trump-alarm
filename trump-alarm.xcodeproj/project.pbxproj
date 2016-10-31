@@ -23,6 +23,7 @@
 		27573DB71DC79BF10095F0BF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB61DC79BF10095F0BF /* IntroViewController.swift */; };
 		27573DB91DC7A1560095F0BF /* PollingAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */; };
 		27573DBB1DC7E09A0095F0BF /* TrumpFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */; };
+		2774187B1DC800550076AB7B /* TrumpLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2774187A1DC800550076AB7B /* TrumpLaunch.storyboard */; };
 		27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F61DC6A8040089139F /* nasty_woman.wav */; };
 		27C5050E1DC6A8040089139F /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F71DC6A8040089139F /* shoot_sombody.wav */; };
 		27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */; };
@@ -105,6 +106,7 @@
 		27573DB61DC79BF10095F0BF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = Controllers/IntroViewController.swift; sourceTree = "<group>"; };
 		27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollingAPIResponse.swift; path = Services/PollingAPIResponse.swift; sourceTree = "<group>"; };
 		27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpFace.swift; sourceTree = "<group>"; };
+		2774187A1DC800550076AB7B /* TrumpLaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TrumpLaunch.storyboard; sourceTree = "<group>"; };
 		27C504F61DC6A8040089139F /* nasty_woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nasty_woman.wav; path = SoundBites/nasty_woman.wav; sourceTree = "<group>"; };
 		27C504F71DC6A8040089139F /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
 		27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dropping-to-your-knees.wav"; path = "SoundBites/dropping-to-your-knees.wav"; sourceTree = "<group>"; };
@@ -134,7 +136,6 @@
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A6CC861DC1238C00ED2D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		70A6CC891DC1238C00ED2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70A6CC8B1DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70A6CC901DC1238C00ED2D23 /* trump-alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trump-alarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trump_alarmTests.swift; sourceTree = "<group>"; };
@@ -283,11 +284,11 @@
 				17AD71521DC5334100E6BBD5 /* LocationManager.swift */,
 				7010187F1DC2E27D008D927F /* MainViewController.swift */,
 				70A6CC861DC1238C00ED2D23 /* Assets.xcassets */,
-				70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */,
 				17AD714D1DC51A1200E6BBD5 /* Environment.swift */,
 				17AD71581DC57A0F00E6BBD5 /* Secrets.swift */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
 				27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */,
+				2774187A1DC800550076AB7B /* TrumpLaunch.storyboard */,
 			);
 			path = "trump-alarm";
 			sourceTree = "<group>";
@@ -429,6 +430,7 @@
 				27C505161DC6A8040089139F /* they're-rapist.wav in Resources */,
 				27C505181DC6A8040089139F /* second-ammendment.wav in Resources */,
 				27C5051F1DC6A8040089139F /* dating-Ivanka.wav in Resources */,
+				2774187B1DC800550076AB7B /* TrumpLaunch.storyboard in Resources */,
 				27C505211DC6A8040089139F /* build-a-wall.wav in Resources */,
 				27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */,
 				27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */,
@@ -524,14 +526,6 @@
 				175549DB1DC6A1DF00B62473 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70A6CC891DC1238C00ED2D23 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
