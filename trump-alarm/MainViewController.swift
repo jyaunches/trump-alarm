@@ -22,13 +22,14 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let secondsLeft = countdownManager.getCountdownData(pollHours: "6 am - 9 pm")
-        
         locationManager.requestPermission(onSuccess: {
             (location: String) in
-            
             self.civicInfoInteractor.getPollInfo(params:["address": location, "fields": "pollingLocations/pollingHours"], completion: { (success, pollHours) in
-                    print(pollHours)
+                let secondsUntilPollCloses = self.countdownManager.getCountdownData(pollHours: pollHours!)
+                if !success {
+                    
+                    // unable to retrieve poll hours: default hours
+                }
             })
         },
         onFailure: {

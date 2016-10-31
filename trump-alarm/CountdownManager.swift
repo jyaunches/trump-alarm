@@ -55,17 +55,20 @@ class CountdownManager: NSObject {
     
     func getCountdownData(pollHours: String) -> TimeInterval {
         
-        let timeComponents = translatePollClosingTime(pollTimes: pollHours)
+        let endComponents = translatePollClosingTime(pollTimes: pollHours)
+        let startComponents = translatePollOpeningTime(pollTimes: pollHours)
         
         let pollComponent = NSDateComponents()
         pollComponent.year = 2016
         pollComponent.month = 11
         pollComponent.day = 8
-        pollComponent.hour = Int(timeComponents[0])!
-        pollComponent.minute = Int(timeComponents[1])!
-        pollComponent.second = Int(timeComponents[2])!
+        pollComponent.hour = Int(endComponents[0])!
+        pollComponent.minute = Int(endComponents[1])!
+        pollComponent.second = Int(endComponents[2])!
         let pollClosingTime = calendar.date(from:pollComponent as DateComponents)!
     
+        TrumpAlarmUserDefaults.storePollStart(hour: currentDate.hour)
+        TrumpAlarmUserDefaults.storePollEnd(hour: Int(startComponents[0])!)
         
         return pollClosingTime.timeIntervalSince(currentDate)
 
