@@ -9,14 +9,21 @@
 import Foundation
 
 extension Date {
-    
+
     static var endOfelectionDay: Date {
         get {
             //11pm EST Nov 8th
             return Date(timeIntervalSinceReferenceDate: 500356800)
         }
     }
-    
+
+    static var midnightOfelectionDay: Date {
+        get {
+            //11pm EST Nov 8th
+            return Date(timeIntervalSinceReferenceDate: 500274000)
+        }
+    }
+
     static func defaultPollsOpen() -> Date {
         let calendar = Calendar.current
         let closeComponent = NSDateComponents()
@@ -26,9 +33,9 @@ extension Date {
         closeComponent.hour = 8
         closeComponent.minute = 0
         closeComponent.second = 0
-        return calendar.date(from:closeComponent as DateComponents)!
+        return calendar.date(from: closeComponent as DateComponents)!
     }
-    
+
     static func defaultPollsClose() -> Date {
         let calendar = Calendar.current
         let closeComponent = NSDateComponents()
@@ -38,9 +45,9 @@ extension Date {
         closeComponent.hour = 22
         closeComponent.minute = 0
         closeComponent.second = 0
-        return calendar.date(from:closeComponent as DateComponents)!
+        return calendar.date(from: closeComponent as DateComponents)!
     }
-            
+
     func standardPrint() -> String? {
         if inRegion().isToday {
             return "Today \(timeOnly())"
@@ -48,7 +55,7 @@ extension Date {
             return "\(dayPrint()) \(timeOnly())"
         }
     }
-    
+
     func timeOnly() -> String {
         return inRegion().string(format: DateFormat.custom("HH:mm.ss"))
     }
@@ -58,33 +65,36 @@ extension Date {
     }
 
     static func intervalsUntilElectionDay() -> [TimeInterval] {
-        let electionDay = Date(timeIntervalSinceReferenceDate: 500274000)
-        
+        let electionDay = Date.midnightOfelectionDay
         print("Election day: \(electionDay.standardPrint())")
         
-        //TODO: update the 0 below to Date() on Nov 1
         let today = Date()
-        let daysLeft = electionDay.day - 0
+        var intervals: [TimeInterval] = []
         
-        let todaysInterval = (22.minutes.fromNow() ?? Date()).timeIntervalSinceReferenceDate  - today.timeIntervalSinceReferenceDate
-        var intervals: [TimeInterval] = [todaysInterval]
-        
-        var dayIntervalIndex = 1
-        while dayIntervalIndex < daysLeft {
-            let randomSec = Int.random(range: 0..<60)
-            let randomMin = Int.random(range: 0..<60)
-            let randomHour = Int.random(range: 9..<20)
-            
-            let alertDate = electionDay - dayIntervalIndex.days
-            
-            let intervalDate = try! alertDate.atTime(hour: randomHour, minute: randomMin, second: randomSec)
-            intervals.append(intervalDate.timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate)
-            dayIntervalIndex += 1
+        if electionDay > Date() {
+            //TODO: update the 0 below to Date() on Nov 1
+            let daysLeft = electionDay.day
+
+            let todaysInterval = (22.minutes.fromNow() ?? Date()).timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate
+            intervals.append(todaysInterval)
+
+            var dayIntervalIndex = 1
+            while dayIntervalIndex < daysLeft {
+                let randomSec = Int.random(range: 0 ..< 60)
+                let randomMin = Int.random(range: 0 ..< 60)
+                let randomHour = Int.random(range: 9 ..< 20)
+
+                let alertDate = electionDay - dayIntervalIndex.days
+
+                let intervalDate = try! alertDate.atTime(hour: randomHour, minute: randomMin, second: randomSec)
+                intervals.append(intervalDate.timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate)
+                dayIntervalIndex += 1
+            }
         }
-        
+
         return intervals
     }
-    
+
     static func intervalsOnElectionDay(electionDayStart: Date, electionDayEnd: Date) -> [TimeInterval] {
         var intervals: [TimeInterval] = []
         let today = NSDate()
@@ -93,10 +103,10 @@ extension Date {
         let endHour = electionDayEnd.hour
 
         while startHour < endHour {
-            let randomSec = Int.random(range: 0..<60)
-            let randomMin = Int.random(range: 0..<60)
+            let randomSec = Int.random(range: 0 ..< 60)
+            let randomMin = Int.random(range: 0 ..< 60)
 
-            let intervalDate = try! electionDayStart.atTime(hour:startHour, minute: randomMin, second: randomSec)
+            let intervalDate = try! electionDayStart.atTime(hour: startHour, minute: randomMin, second: randomSec)
             intervals.append(intervalDate.timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate)
             startHour += 1
         }
@@ -105,5 +115,5 @@ extension Date {
         let utcDate = (Date() + 5.second).inRegion()
         return [utcDate.timeIntervalSinceReferenceDate]
     }
-    
+
 }
