@@ -48,6 +48,7 @@
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
 		70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC861DC1238C00ED2D23 /* Assets.xcassets */; };
 		70A6CC951DC1238C00ED2D23 /* trump_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */; };
+		817CC0501DC6C9E100A9F509 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CC04F1DC6C9E100A9F509 /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		70A6CC901DC1238C00ED2D23 /* trump-alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trump-alarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trump_alarmTests.swift; sourceTree = "<group>"; };
 		70A6CC961DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817CC04F1DC6C9E100A9F509 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				817CC04F1DC6C9E100A9F509 /* BorderedButton.swift */,
 				175549DA1DC6A1DF00B62473 /* Main.storyboard */,
 				175549D11DC69FF600B62473 /* Services */,
 				175549C81DC69F9200B62473 /* SoundBites */,
@@ -358,6 +361,7 @@
 				175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */,
 				175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */,
 				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
+				817CC0501DC6C9E100A9F509 /* BorderedButton.swift in Sources */,
 				17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */,
 				175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */,
 				175549B71DC69F1200B62473 /* VoterInformationInteractor.swift in Sources */,

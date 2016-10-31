@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="34f-e6-ILq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="250-qW-4Uh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -9,6 +9,186 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="o2y-2N-Pn6">
+            <objects>
+                <viewController id="e6y-yh-Oim" customClass="MainViewController" customModule="trump_alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lfe-KH-R2H"/>
+                        <viewControllerLayoutGuide type="bottom" id="nQh-Di-VRf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pUE-BK-DLB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSj-bw-CiW">
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evz-aY-QCC">
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzO-5B-uV1" userLabel="AND VOTE AGAIN">
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpMouth" translatesAutoresizingMaskIntoConstraints="NO" id="VOL-oO-S0T">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VOL-oO-S0T" secondAttribute="height" multiplier="1:1" id="tBi-8H-M70"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-i7-etL" customClass="BorderedButton" customModule="trump_alarm" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="ggL-JX-J3e"/>
+                                    <constraint firstAttribute="height" constant="50" id="tTm-uv-xBs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <state key="normal" title="I VOTED">
+                                    <color key="titleColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&quot;I MOVED ON HER LIKE A BITCH...&quot;" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyN-rT-YzS">
+                                <frame key="frameInset" minX="49" minY="465" width="279" height="18"/>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VOL-oO-S0T" firstAttribute="height" secondItem="pUE-BK-DLB" secondAttribute="height" multiplier="0.4" constant="1" id="38I-Fj-Gdt"/>
+                            <constraint firstItem="VOL-oO-S0T" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="3HY-Sz-a2r"/>
+                            <constraint firstItem="peG-dX-d0W" firstAttribute="top" secondItem="TyN-rT-YzS" secondAttribute="bottom" constant="10" id="Cxc-wt-jWc"/>
+                            <constraint firstItem="xSj-bw-CiW" firstAttribute="leading" secondItem="pUE-BK-DLB" secondAttribute="leading" id="D9Z-vA-5zj"/>
+                            <constraint firstItem="xSj-bw-CiW" firstAttribute="trailing" secondItem="pUE-BK-DLB" secondAttribute="trailing" id="Hcz-de-wW4"/>
+                            <constraint firstItem="KhD-i7-etL" firstAttribute="top" secondItem="peG-dX-d0W" secondAttribute="bottom" constant="78" id="Kcw-xO-obq"/>
+                            <constraint firstItem="KhD-i7-etL" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="QGe-FC-2E1"/>
+                            <constraint firstItem="VzO-5B-uV1" firstAttribute="top" secondItem="evz-aY-QCC" secondAttribute="bottom" constant="2" id="RM2-SO-8mw"/>
+                            <constraint firstItem="VOL-oO-S0T" firstAttribute="top" secondItem="VzO-5B-uV1" secondAttribute="bottom" id="TeW-1M-9NC"/>
+                            <constraint firstItem="xSj-bw-CiW" firstAttribute="top" secondItem="Lfe-KH-R2H" secondAttribute="bottom" constant="14" id="Yro-GC-XIT"/>
+                            <constraint firstItem="evz-aY-QCC" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="bIx-ni-Z3N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="peG-dX-d0W" secondAttribute="trailing" constant="31" id="cNm-6U-W7b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TyN-rT-YzS" secondAttribute="trailing" constant="31" id="cOD-7U-6ng"/>
+                            <constraint firstItem="nQh-Di-VRf" firstAttribute="top" secondItem="KhD-i7-etL" secondAttribute="bottom" constant="30" id="fSj-nN-1oP"/>
+                            <constraint firstItem="evz-aY-QCC" firstAttribute="top" secondItem="xSj-bw-CiW" secondAttribute="bottom" constant="10" id="r0f-L1-gd2"/>
+                            <constraint firstItem="VzO-5B-uV1" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="sfF-B3-AaQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZOt-Vj-R16">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="aSv-m1-COv">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ND-cC-if3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119" y="856"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="p5C-Ge-tBf">
+            <objects>
+                <viewController id="250-qW-4Uh" customClass="MainViewController" customModule="trump_alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="klA-Pk-Sub"/>
+                        <viewControllerLayoutGuide type="bottom" id="Slq-Q5-3X7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cwe-mJ-6N4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaZ-yk-jBs">
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIa-iP-CAW">
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvg-BT-yAb" userLabel="AND VOTE AGAIN">
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpFace" translatesAutoresizingMaskIntoConstraints="NO" id="F48-d0-axO">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F48-d0-axO" secondAttribute="height" multiplier="1:1" id="V7i-7Z-5kn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lab-zM-dxP" customClass="BorderedButton" customModule="trump_alarm" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ojh-J3-gyJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="iNX-St-T8D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <state key="normal" title="GOT IT!">
+                                    <color key="titleColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxV-g7-zeq">
+                                <string key="text">The only way to turn off the Trump Alarm is by clicking the "I VOTED" button and taking a picture of yourself. Sorry. Wake up and vote for Hillary.</string>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EaZ-yk-jBs" firstAttribute="top" secondItem="klA-Pk-Sub" secondAttribute="bottom" constant="14" id="0Sh-8l-lzw"/>
+                            <constraint firstItem="xIa-iP-CAW" firstAttribute="top" secondItem="EaZ-yk-jBs" secondAttribute="bottom" constant="10" id="0pe-j4-uGO"/>
+                            <constraint firstItem="EaZ-yk-jBs" firstAttribute="leading" secondItem="cwe-mJ-6N4" secondAttribute="leading" id="BaJ-rr-rWO"/>
+                            <constraint firstItem="kxV-g7-zeq" firstAttribute="top" secondItem="F48-d0-axO" secondAttribute="bottom" constant="30" id="IF7-WP-pAx"/>
+                            <constraint firstItem="xIa-iP-CAW" firstAttribute="centerX" secondItem="cwe-mJ-6N4" secondAttribute="centerX" id="L8T-qr-K1x"/>
+                            <constraint firstItem="kxV-g7-zeq" firstAttribute="centerX" secondItem="cwe-mJ-6N4" secondAttribute="centerX" id="MGy-t6-jpQ"/>
+                            <constraint firstItem="zvg-BT-yAb" firstAttribute="centerX" secondItem="cwe-mJ-6N4" secondAttribute="centerX" id="Nob-sf-qcf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kxV-g7-zeq" secondAttribute="trailing" id="PZX-if-0pd"/>
+                            <constraint firstItem="F48-d0-axO" firstAttribute="top" secondItem="zvg-BT-yAb" secondAttribute="bottom" id="SQU-FD-7rJ"/>
+                            <constraint firstItem="F48-d0-axO" firstAttribute="centerX" secondItem="cwe-mJ-6N4" secondAttribute="centerX" id="XJR-lL-MdC"/>
+                            <constraint firstItem="Slq-Q5-3X7" firstAttribute="top" secondItem="Lab-zM-dxP" secondAttribute="bottom" constant="30" id="bzP-1j-mbH"/>
+                            <constraint firstItem="Lab-zM-dxP" firstAttribute="centerX" secondItem="cwe-mJ-6N4" secondAttribute="centerX" id="hKj-fb-m9d"/>
+                            <constraint firstItem="F48-d0-axO" firstAttribute="height" secondItem="cwe-mJ-6N4" secondAttribute="height" multiplier="0.4" constant="1" id="i8d-zC-4sH"/>
+                            <constraint firstItem="zvg-BT-yAb" firstAttribute="top" secondItem="xIa-iP-CAW" secondAttribute="bottom" constant="2" id="lBV-aw-byD"/>
+                            <constraint firstItem="EaZ-yk-jBs" firstAttribute="trailing" secondItem="cwe-mJ-6N4" secondAttribute="trailing" id="mH2-I6-bUP"/>
+                            <constraint firstItem="kxV-g7-zeq" firstAttribute="leading" secondItem="cwe-mJ-6N4" secondAttribute="leadingMargin" id="xza-HS-21k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="P7S-8i-ezw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="a6w-qd-IUX">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjP-gG-xGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="855.9220389805098"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="RdX-BK-HxC">
             <objects>
@@ -238,6 +418,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wD9-wb-Ge0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="188" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mte-JL-edU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IYO-QY-N98" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="faV-rR-cHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e6y-yh-Oim" kind="relationship" relationship="rootViewController" id="itI-6N-6c7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hA0-9y-IbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="856"/>
         </scene>
     </scenes>
     <resources>
