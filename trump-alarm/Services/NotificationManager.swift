@@ -70,7 +70,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         ]
 
         requestNotificationPermission(onAgree: {
-            for (index, interval) in Date.intervalsOnElectionDay().enumerated() {
+            for (index, interval) in Date.intervalsOnElectionDay(electionDayStart: ).enumerated() {
                 let quote = pollingDayQuotes[index]
                 self.schedule(quote: quote, interval: interval)
             }
