@@ -14,6 +14,8 @@ class PhotoManager: NSObject {
     
     public let applicationDocumentsDirectory: URL? = {
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        //let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return urls.last! as URL
     }()
     
