@@ -9,7 +9,6 @@
 import UIKit
 
 class GoogleCivicInformationInteractor: NSObject {
-
     
     private func dataTask(request: NSMutableURLRequest, method: String, completion: @escaping (_ success: Bool, _ object: AnyObject?) -> ()) {
         request.httpMethod = method
@@ -32,33 +31,33 @@ class GoogleCivicInformationInteractor: NSObject {
         dataTask(request: request, method: "GET", completion: completion)
     }
     
-    private func clientURLRequest(address: String) -> NSMutableURLRequest {
-        guard let encodedLoc = address.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
-            return NSMutableURLRequest()
+    private func clientURLRequest(params: Dictionary<String, String>) -> NSMutableURLRequest {
+        var requestString = ""
+        
+        for (key, value) in params {
+            let encodedKey = key.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            let endcodedValue = value.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            requestString += encodedKey! + "=" + endcodedValue! + "&"
         }
-        let paramString =  "?address=\(encodedLoc))"
-        let paramKey = "&key=\(Secret.googleCivicInfoAPIKey)"
-        let request = NSMutableURLRequest(url: NSURL(string: Environment.Path.googleCivicInfoAPIPath + paramString + paramKey) as! URL)
         
-
-        
-        
-        print(request)
+        let request = NSMutableURLRequest(url: NSURL(string: Environment.Path.googleCivicInfoAPIPath + "/?" + requestString + Environment.Path.googleCovovInfoAPIKeyName + "=" + Secret.googleCivicInfoAPIKey) as! URL)
         
         return request
     }
 
-    func getPollInfo(address: String, completion: @escaping (_ success: Bool, _ message: AnyObject?) -> ()) {
-        get(request: clientURLRequest(address: address), completion: { (success, object) in
+    func getPollInfo(params: Dictionary<String, String>, completion: @escaping (_ success: Bool, _ message: AnyObject?) -> ()) {
+        
+        get(request: clientURLRequest(params: params), completion: { (success, object) in
             DispatchQueue.main.async {
+                
                 if success {
-                    completion(true, nil)
+                    
+                    let json = JSON(object)
+                    let time = json["pollingLocations"]["pollingHours"]
+                    
+                    completion(true, object)
                 } else {
-                    var message = "there was an error"
-                    if let object = object, let passedMessage = object["message"] as? String {
-                        message = passedMessage
-                    }
-                    completion(true, message as AnyObject?)
+                    completion(false, nil)
                 }
             }
         })

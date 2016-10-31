@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		175549B61DC69F1200B62473 /* TrumpQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549B41DC69F1200B62473 /* TrumpQuote.swift */; };
-		175549B71DC69F1200B62473 /* VoterInformationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549B51DC69F1200B62473 /* VoterInformationInteractor.swift */; };
 		175549D61DC6A01800B62473 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D21DC6A01800B62473 /* NotificationManager.swift */; };
 		175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D31DC6A01800B62473 /* PhotoManager.swift */; };
 		175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */; };
 		175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */; };
 		175549DC1DC6A1DF00B62473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175549DA1DC6A1DF00B62473 /* Main.storyboard */; };
+		175549E21DC6CD6D00B62473 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549E11DC6CD6D00B62473 /* BorderedButton.swift */; };
 		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
 		17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */; };
 		17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71521DC5334100E6BBD5 /* LocationManager.swift */; };
@@ -43,12 +43,34 @@
 		27C505211DC6A8040089139F /* build-a-wall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050A1DC6A8040089139F /* build-a-wall.wav */; };
 		27C505221DC6A8040089139F /* bomb-the-shit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050B1DC6A8040089139F /* bomb-the-shit.wav */; };
 		27C505231DC6A8040089139F /* creeping-miss-teen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */; };
+		27C505251DC6D02B0089139F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C505241DC6D02B0089139F /* SwiftyJSON.swift */; };
 		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
 		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
 		70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC861DC1238C00ED2D23 /* Assets.xcassets */; };
 		70A6CC951DC1238C00ED2D23 /* trump_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */; };
-		817CC0501DC6C9E100A9F509 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CC04F1DC6C9E100A9F509 /* BorderedButton.swift */; };
+		70FD04911DC6B02900489C79 /* CalendarName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047C1DC6B02900489C79 /* CalendarName.swift */; };
+		70FD04921DC6B02900489C79 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047D1DC6B02900489C79 /* Commons.swift */; };
+		70FD04931DC6B02900489C79 /* Date+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047E1DC6B02900489C79 /* Date+Compare.swift */; };
+		70FD04941DC6B02900489C79 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047F1DC6B02900489C79 /* Date+Components.swift */; };
+		70FD04951DC6B02900489C79 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04801DC6B02900489C79 /* Date+Formatter.swift */; };
+		70FD04961DC6B02900489C79 /* Date+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04811DC6B02900489C79 /* Date+Math.swift */; };
+		70FD04971DC6B02900489C79 /* DateComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04821DC6B02900489C79 /* DateComponents+Extension.swift */; };
+		70FD04981DC6B02900489C79 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04831DC6B02900489C79 /* DateInRegion.swift */; };
+		70FD04991DC6B02900489C79 /* DateInRegion+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04841DC6B02900489C79 /* DateInRegion+Compare.swift */; };
+		70FD049A1DC6B02900489C79 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04851DC6B02900489C79 /* DateInRegion+Components.swift */; };
+		70FD049B1DC6B02900489C79 /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04861DC6B02900489C79 /* DateInRegion+Formatter.swift */; };
+		70FD049C1DC6B02900489C79 /* DateInRegion+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04871DC6B02900489C79 /* DateInRegion+Math.swift */; };
+		70FD049D1DC6B02900489C79 /* DateInRegionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04881DC6B02900489C79 /* DateInRegionFormatter.swift */; };
+		70FD049E1DC6B02900489C79 /* DateTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04891DC6B02900489C79 /* DateTimeInterval.swift */; };
+		70FD049F1DC6B02900489C79 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048A1DC6B02900489C79 /* Extensions.swift */; };
+		70FD04A01DC6B02900489C79 /* ISO8601DateTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048B1DC6B02900489C79 /* ISO8601DateTimeFormatter.swift */; };
+		70FD04A11DC6B02900489C79 /* LocaleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048C1DC6B02900489C79 /* LocaleName.swift */; };
+		70FD04A21DC6B02900489C79 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048D1DC6B02900489C79 /* Region.swift */; };
+		70FD04A41DC6B02900489C79 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048F1DC6B02900489C79 /* TimeInterval+Extensions.swift */; };
+		70FD04A51DC6B02900489C79 /* TimeZoneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04901DC6B02900489C79 /* TimeZoneName.swift */; };
+		70FD04A81DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */; };
+		70FD04A91DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +85,12 @@
 
 /* Begin PBXFileReference section */
 		175549B41DC69F1200B62473 /* TrumpQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpQuote.swift; sourceTree = "<group>"; };
-		175549B51DC69F1200B62473 /* VoterInformationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoterInformationInteractor.swift; sourceTree = "<group>"; };
 		175549D21DC6A01800B62473 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = Services/NotificationManager.swift; sourceTree = "<group>"; };
 		175549D31DC6A01800B62473 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoManager.swift; path = Services/PhotoManager.swift; sourceTree = "<group>"; };
 		175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpAlarmUserDefaults.swift; path = Services/TrumpAlarmUserDefaults.swift; sourceTree = "<group>"; };
 		175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteStore.swift; path = Services/TrumpQuoteStore.swift; sourceTree = "<group>"; };
 		175549DB1DC6A1DF00B62473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		175549E11DC6CD6D00B62473 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -98,6 +120,7 @@
 		27C5050A1DC6A8040089139F /* build-a-wall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "build-a-wall.wav"; path = "SoundBites/build-a-wall.wav"; sourceTree = "<group>"; };
 		27C5050B1DC6A8040089139F /* bomb-the-shit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "bomb-the-shit.wav"; path = "SoundBites/bomb-the-shit.wav"; sourceTree = "<group>"; };
 		27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "creeping-miss-teen.wav"; path = "SoundBites/creeping-miss-teen.wav"; sourceTree = "<group>"; };
+		27C505241DC6D02B0089139F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
 		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +131,28 @@
 		70A6CC901DC1238C00ED2D23 /* trump-alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trump-alarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trump_alarmTests.swift; sourceTree = "<group>"; };
 		70A6CC961DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		817CC04F1DC6C9E100A9F509 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		70FD047C1DC6B02900489C79 /* CalendarName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarName.swift; path = SwiftDate/CalendarName.swift; sourceTree = "<group>"; };
+		70FD047D1DC6B02900489C79 /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Commons.swift; path = SwiftDate/Commons.swift; sourceTree = "<group>"; };
+		70FD047E1DC6B02900489C79 /* Date+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Compare.swift"; path = "SwiftDate/Date+Compare.swift"; sourceTree = "<group>"; };
+		70FD047F1DC6B02900489C79 /* Date+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Components.swift"; path = "SwiftDate/Date+Components.swift"; sourceTree = "<group>"; };
+		70FD04801DC6B02900489C79 /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Formatter.swift"; path = "SwiftDate/Date+Formatter.swift"; sourceTree = "<group>"; };
+		70FD04811DC6B02900489C79 /* Date+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Math.swift"; path = "SwiftDate/Date+Math.swift"; sourceTree = "<group>"; };
+		70FD04821DC6B02900489C79 /* DateComponents+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateComponents+Extension.swift"; path = "SwiftDate/DateComponents+Extension.swift"; sourceTree = "<group>"; };
+		70FD04831DC6B02900489C79 /* DateInRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
+		70FD04841DC6B02900489C79 /* DateInRegion+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Compare.swift"; path = "SwiftDate/DateInRegion+Compare.swift"; sourceTree = "<group>"; };
+		70FD04851DC6B02900489C79 /* DateInRegion+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		70FD04861DC6B02900489C79 /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
+		70FD04871DC6B02900489C79 /* DateInRegion+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Math.swift"; path = "SwiftDate/DateInRegion+Math.swift"; sourceTree = "<group>"; };
+		70FD04881DC6B02900489C79 /* DateInRegionFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateInRegionFormatter.swift; path = SwiftDate/DateInRegionFormatter.swift; sourceTree = "<group>"; };
+		70FD04891DC6B02900489C79 /* DateTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTimeInterval.swift; path = SwiftDate/DateTimeInterval.swift; sourceTree = "<group>"; };
+		70FD048A1DC6B02900489C79 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftDate/Extensions.swift; sourceTree = "<group>"; };
+		70FD048B1DC6B02900489C79 /* ISO8601DateTimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ISO8601DateTimeFormatter.swift; path = SwiftDate/ISO8601DateTimeFormatter.swift; sourceTree = "<group>"; };
+		70FD048C1DC6B02900489C79 /* LocaleName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocaleName.swift; path = SwiftDate/LocaleName.swift; sourceTree = "<group>"; };
+		70FD048D1DC6B02900489C79 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Region.swift; path = SwiftDate/Region.swift; sourceTree = "<group>"; };
+		70FD048F1DC6B02900489C79 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extensions.swift"; path = "SwiftDate/TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		70FD04901DC6B02900489C79 /* TimeZoneName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZoneName.swift; path = SwiftDate/TimeZoneName.swift; sourceTree = "<group>"; };
+		70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrumpAlarmDate+Extensions.swift"; sourceTree = "<group>"; };
+		70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrumpAlarmInt+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,12 +245,15 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
-				817CC04F1DC6C9E100A9F509 /* BorderedButton.swift */,
+				27C505241DC6D02B0089139F /* SwiftyJSON.swift */,
+				175549E11DC6CD6D00B62473 /* BorderedButton.swift */,
+				70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */,
+				70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */,
+				70FD047B1DC6B01700489C79 /* SwiftDate */,
 				175549DA1DC6A1DF00B62473 /* Main.storyboard */,
 				175549D11DC69FF600B62473 /* Services */,
 				175549C81DC69F9200B62473 /* SoundBites */,
 				175549B41DC69F1200B62473 /* TrumpQuote.swift */,
-				175549B51DC69F1200B62473 /* VoterInformationInteractor.swift */,
 				70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */,
 				7010187D1DC2E27D008D927F /* PostVotingController.swift */,
 				17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */,
@@ -229,6 +276,33 @@
 				70A6CC961DC1238C00ED2D23 /* Info.plist */,
 			);
 			path = "trump-alarmTests";
+			sourceTree = "<group>";
+		};
+		70FD047B1DC6B01700489C79 /* SwiftDate */ = {
+			isa = PBXGroup;
+			children = (
+				70FD047C1DC6B02900489C79 /* CalendarName.swift */,
+				70FD047D1DC6B02900489C79 /* Commons.swift */,
+				70FD047E1DC6B02900489C79 /* Date+Compare.swift */,
+				70FD047F1DC6B02900489C79 /* Date+Components.swift */,
+				70FD04801DC6B02900489C79 /* Date+Formatter.swift */,
+				70FD04811DC6B02900489C79 /* Date+Math.swift */,
+				70FD04821DC6B02900489C79 /* DateComponents+Extension.swift */,
+				70FD04831DC6B02900489C79 /* DateInRegion.swift */,
+				70FD04841DC6B02900489C79 /* DateInRegion+Compare.swift */,
+				70FD04851DC6B02900489C79 /* DateInRegion+Components.swift */,
+				70FD04861DC6B02900489C79 /* DateInRegion+Formatter.swift */,
+				70FD04871DC6B02900489C79 /* DateInRegion+Math.swift */,
+				70FD04881DC6B02900489C79 /* DateInRegionFormatter.swift */,
+				70FD04891DC6B02900489C79 /* DateTimeInterval.swift */,
+				70FD048A1DC6B02900489C79 /* Extensions.swift */,
+				70FD048B1DC6B02900489C79 /* ISO8601DateTimeFormatter.swift */,
+				70FD048C1DC6B02900489C79 /* LocaleName.swift */,
+				70FD048D1DC6B02900489C79 /* Region.swift */,
+				70FD048F1DC6B02900489C79 /* TimeInterval+Extensions.swift */,
+				70FD04901DC6B02900489C79 /* TimeZoneName.swift */,
+			);
+			name = SwiftDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +355,8 @@
 				TargetAttributes = {
 					70A6CC7B1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = T34EE4GLT2;
+						ProvisioningStyle = Automatic;
 					};
 					70A6CC8F1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
@@ -358,18 +433,40 @@
 			files = (
 				17AD715B1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift in Sources */,
 				701018801DC2E27D008D927F /* PostVotingController.swift in Sources */,
+				175549E21DC6CD6D00B62473 /* BorderedButton.swift in Sources */,
+				70FD04A11DC6B02900489C79 /* LocaleName.swift in Sources */,
+				70FD04931DC6B02900489C79 /* Date+Compare.swift in Sources */,
 				175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */,
+				27C505251DC6D02B0089139F /* SwiftyJSON.swift in Sources */,
 				175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */,
+				70FD04921DC6B02900489C79 /* Commons.swift in Sources */,
+				70FD04A41DC6B02900489C79 /* TimeInterval+Extensions.swift in Sources */,
 				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
-				817CC0501DC6C9E100A9F509 /* BorderedButton.swift in Sources */,
+				70FD049F1DC6B02900489C79 /* Extensions.swift in Sources */,
 				17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */,
 				175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */,
-				175549B71DC69F1200B62473 /* VoterInformationInteractor.swift in Sources */,
+				70FD04A21DC6B02900489C79 /* Region.swift in Sources */,
 				17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */,
+				70FD049E1DC6B02900489C79 /* DateTimeInterval.swift in Sources */,
+				70FD04941DC6B02900489C79 /* Date+Components.swift in Sources */,
 				175549D61DC6A01800B62473 /* NotificationManager.swift in Sources */,
+				70FD04971DC6B02900489C79 /* DateComponents+Extension.swift in Sources */,
+				70FD049B1DC6B02900489C79 /* DateInRegion+Formatter.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
+				70FD04A91DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift in Sources */,
+				70FD04911DC6B02900489C79 /* CalendarName.swift in Sources */,
 				701018821DC2E27D008D927F /* MainViewController.swift in Sources */,
+				70FD04A81DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift in Sources */,
+				70FD049C1DC6B02900489C79 /* DateInRegion+Math.swift in Sources */,
 				17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */,
+				70FD04A01DC6B02900489C79 /* ISO8601DateTimeFormatter.swift in Sources */,
+				70FD049A1DC6B02900489C79 /* DateInRegion+Components.swift in Sources */,
+				70FD04A51DC6B02900489C79 /* TimeZoneName.swift in Sources */,
+				70FD04961DC6B02900489C79 /* Date+Math.swift in Sources */,
+				70FD049D1DC6B02900489C79 /* DateInRegionFormatter.swift in Sources */,
+				70FD04991DC6B02900489C79 /* DateInRegion+Compare.swift in Sources */,
+				70FD04951DC6B02900489C79 /* Date+Formatter.swift in Sources */,
+				70FD04981DC6B02900489C79 /* DateInRegion.swift in Sources */,
 				175549B61DC69F1200B62473 /* TrumpQuote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +606,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
@@ -523,7 +621,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";

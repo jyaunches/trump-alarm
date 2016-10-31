@@ -14,7 +14,11 @@ xcuserdata
 
 *.xcuserdatad
 .xcuserdatad
+
 .xcbkptlist
+*.xcbkptlist
 .idea
+
+.xcbkptlist
 
 Secrets.swift

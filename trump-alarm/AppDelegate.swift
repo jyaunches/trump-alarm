@@ -22,13 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let notifictionManager = NotificationManager.sharedInstance
-        notifictionManager.requestNotificationPermission(onAgree: {
-            notifictionManager.schedule(filename: "nasty_woman.wav", interval: 5, body: "Such a nasty woman.", identifier: "nasty-woman")
-            notifictionManager.schedule(filename: "bomb-the-shit.wav", interval: 10, body: "Bomb the shit out of em.", identifier: "bomb-the-shit")
-            notifictionManager.schedule(filename: "creeping-miss-teen.wav", interval: 20, body: "Creeping miss teen.", identifier: "creeping-miss-teen")
-            
-        })
+        NotificationManager.sharedInstance.setupPrePolling(pollingDate: Date() + 6.days)
         return true
     }
 

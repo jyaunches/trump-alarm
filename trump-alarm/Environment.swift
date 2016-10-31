@@ -11,6 +11,7 @@ import UIKit
 struct Environment {
     
     struct Path {
+        static let googleCovovInfoAPIKeyName = "key"
         static let googleCivicInfoAPIPath = "https://www.googleapis.com/civicinfo/v2/voterinfo"
     }
     
