@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nQh-Di-VRf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pUE-BK-DLB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSj-bw-CiW">
@@ -430,9 +430,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IYO-QY-N98" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="faV-rR-cHV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="faV-rR-cHV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -448,4 +449,5 @@
         <image name="TrumpFace" width="4267" height="4267"/>
         <image name="TrumpMouth" width="4267" height="4267"/>
     </resources>
+    <color key="tintColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
