@@ -24,14 +24,15 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
 
     func setupPrePolling(pollingDate: Date) {
         let prePollsQuotes = [
-                TrumpQuote(content: SoundBiteContent.grabEm, audioFile: "grab-em.wav", identifier: "nasty-woman"),
-                TrumpQuote(content: SoundBiteContent.datingIvanka, audioFile: "dating-Ivanka.wav", identifier: "bomb-the-shit"),
-                TrumpQuote(content: SoundBiteContent.droppingToKnees, audioFile: "dropping-to-your-knees.wav", identifier: "creeping-miss-teen"),
-                TrumpQuote(content: SoundBiteContent.muslimShutdown, audioFile: "muslim-shutdown.wav", identifier: "foo123"),
-                TrumpQuote(content: SoundBiteContent.meganKelly, audioFile: "megan-kelly-blood.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.nastyWoman, audioFile: "nasty_woman.wav", identifier: "foo345"),
-                TrumpQuote(content: SoundBiteContent.fifthAve, audioFile: "I-could-shoot-somebody.wav", identifier: "foo678"),
-                TrumpQuote(content: SoundBiteContent.bombTheShit, audioFile: "bomb-the-shit.wav", identifier: "foo567"),
+                TrumpQuote(content: SoundBiteContent.grabEm, audioFile: "grab-em.wav", identifier: "pre-polling-nasty-woman"),
+                TrumpQuote(content: SoundBiteContent.datingIvanka, audioFile: "dating-Ivanka.wav", identifier: "pre-polling-bomb-the-shit"),
+                TrumpQuote(content: SoundBiteContent.droppingToKnees, audioFile: "dropping-to-your-knees.wav", identifier: "pre-polling-creeping-miss-teen"),
+                TrumpQuote(content: SoundBiteContent.muslimShutdown, audioFile: "muslim-shutdown.wav", identifier: "pre-polling-muslim-shutdown"),
+                TrumpQuote(content: SoundBiteContent.meganKelly, audioFile: "megan-kelly-blood.wav", identifier: "pre-polling-megan-kelly-blood"),
+                TrumpQuote(content: SoundBiteContent.nastyWoman, audioFile: "nasty_woman.wav", identifier: "pre-polling-nasty_woman"),
+                TrumpQuote(content: SoundBiteContent.fifthAve, audioFile: "I-could-shoot-somebody.wav", identifier: "pre-polling-I-could-shoot-somebody"),
+                TrumpQuote(content: SoundBiteContent.bombTheShit, audioFile: "bomb-the-shit.wav", identifier: "pre-polling-bomb-the-shit"),
+                TrumpQuote(content: SoundBiteContent.waterboarding, audioFile: "waterboarding.wav", identifier: "pre-polling-waterboarding")
         ]
 
         requestNotificationPermission(onAgree: {
@@ -48,20 +49,20 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
 
     func setupPollingDay(pollingHours: PollingAPIResponse) {
         let pollingDayQuotes = [
-                TrumpQuote(content: SoundBiteContent.waterboarding, audioFile: "waterboarding.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.handSize, audioFile: "hand-size.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.obamaCofoundedIsis, audioFile: "obama-clinton-co-founded-ISIS.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.fuckHerSheWasMarried, audioFile: "try-and-fuck-her-she-was-married.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.mccainNotAHero, audioFile: "not-a-war-hero.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.secondAmendment, audioFile: "second-ammendment.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.takeTheirGuns, audioFile: "take-their-guns-away.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.buildAWall, audioFile: "build-a-wall.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.noPuppet, audioFile: "you're-the-puppet.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.nucs, audioFile: "won't-rule-out-nuclear-weapons.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.relationshipWithTheBlacks, audioFile: "great-relationship-with-the-blacks.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.teenCreeping, audioFile: "creeping-miss-teen.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.theyreRapists, audioFile: "they're-rapist.wav", identifier: "foo234"),
-                TrumpQuote(content: SoundBiteContent.carryOutInAStretcher, audioFile: "carried-out-in-a-stretcher.wav", identifier: "foo234"),
+                TrumpQuote(content: SoundBiteContent.waterboarding, audioFile: "waterboarding.wav", identifier: "polling-day-waterboarding"),
+                TrumpQuote(content: SoundBiteContent.handSize, audioFile: "hand-size.wav", identifier: "polling-day-hand-size"),
+                TrumpQuote(content: SoundBiteContent.obamaCofoundedIsis, audioFile: "obama-clinton-co-founded-ISIS.wav", identifier: "polling-day-obama-clinton-co-founded-ISIS"),
+                TrumpQuote(content: SoundBiteContent.fuckHerSheWasMarried, audioFile: "try-and-fuck-her-she-was-married.wav", identifier: "polling-day-try-and-fuck-her-she-was-married"),
+                TrumpQuote(content: SoundBiteContent.mccainNotAHero, audioFile: "not-a-war-hero.wav", identifier: "polling-day-not-a-war-hero"),
+                TrumpQuote(content: SoundBiteContent.secondAmendment, audioFile: "second-ammendment.wav", identifier: "polling-day-second-ammendment"),
+                TrumpQuote(content: SoundBiteContent.takeTheirGuns, audioFile: "take-their-guns-away.wav", identifier: "polling-day-take-their-guns-away"),
+                TrumpQuote(content: SoundBiteContent.buildAWall, audioFile: "build-a-wall.wav", identifier: "polling-day-build-a-wall"),
+                TrumpQuote(content: SoundBiteContent.noPuppet, audioFile: "you're-the-puppet.wav", identifier: "polling-day-you're-the-puppet"),
+                TrumpQuote(content: SoundBiteContent.nucs, audioFile: "won't-rule-out-nuclear-weapons.wav", identifier: "polling-day-won't-rule-out-nuclear-weapons"),
+                TrumpQuote(content: SoundBiteContent.relationshipWithTheBlacks, audioFile: "great-relationship-with-the-blacks.wav", identifier: "polling-day-great-relationship-with-the-blacks"),
+                TrumpQuote(content: SoundBiteContent.teenCreeping, audioFile: "creeping-miss-teen.wav", identifier: "polling-day-creeping-miss-teen"),
+                TrumpQuote(content: SoundBiteContent.theyreRapists, audioFile: "they're-rapist.wav", identifier: "polling-day-they're-rapist"),
+                TrumpQuote(content: SoundBiteContent.carryOutInAStretcher, audioFile: "carried-out-in-a-stretcher.wav", identifier: "polling-day-   carried-out-in-a-stretcher"),
                 /*
                 TrumpQuote(content: SoundBiteContent.obamaPositiveImactOnThugs, audioFile: "bomb-the-shit.wav", identifier: "foo234"),
                 TrumpQuote(content: SoundBiteContent.iWontLoseAPenny, audioFile: "bomb-the-shit.wav", identifier: "foo234")
