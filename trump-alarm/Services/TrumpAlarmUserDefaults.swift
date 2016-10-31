@@ -18,4 +18,14 @@ class TrumpAlarmUserDefaults: NSObject {
         let defaults = UserDefaults.standard
         defaults.set(true, forKey: "storePollEnd")
     }
+    
+    class func storePollStartString(hour: String) {
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "pollStartString")
+    }
+    
+    class func storePollEndString(hour: String) {
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "pollEndString")
+    }
 }
