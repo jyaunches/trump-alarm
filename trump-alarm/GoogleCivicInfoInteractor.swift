@@ -53,7 +53,6 @@ class GoogleCivicInformationInteractor: NSObject {
                 if success {
                     completion(true, object)
                 } else {
-                    
                     completion(false, nil)
                 }
             }

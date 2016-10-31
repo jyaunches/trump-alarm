@@ -43,6 +43,7 @@
 		175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpAlarmUserDefaults.swift; path = Services/TrumpAlarmUserDefaults.swift; sourceTree = "<group>"; };
 		175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteStore.swift; path = Services/TrumpQuoteStore.swift; sourceTree = "<group>"; };
 		175549DB1DC6A1DF00B62473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		175549DD1DC6C14700B62473 /* trump-alarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "trump-alarm.entitlements"; sourceTree = "<group>"; };
 		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				175549DD1DC6C14700B62473 /* trump-alarm.entitlements */,
 				175549DA1DC6A1DF00B62473 /* Main.storyboard */,
 				175549D11DC69FF600B62473 /* Services */,
 				175549C81DC69F9200B62473 /* SoundBites */,
@@ -207,6 +209,11 @@
 					70A6CC7B1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					70A6CC8F1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
