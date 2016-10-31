@@ -65,7 +65,23 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
     
-    @IBAction func openCameraButton(sender: AnyObject) {
+    @IBAction func readyToVoteClicked(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "Are you at you're polling station?", message: "You must must get photo evidence of yourself voting to silence these awful alarms! (while respecting your local polling places rules around photography.)", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let DestructiveAction = UIAlertAction(title: "Cancel", style: .cancel) { (result : UIAlertAction) -> Void in
+            alertController.dismiss(animated: true, completion: nil)
+        }
+        let okAction = UIAlertAction(title: "I'M VOTING", style: .default) { (result : UIAlertAction) -> Void in
+            self.openCamera()
+        }
+        alertController.addAction(DestructiveAction)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    func openCamera() {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
