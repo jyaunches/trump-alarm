@@ -149,9 +149,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void) {
-        let sound = response.notification.request.content.sound as UNNotificationSound {
-            
-        }
+        
         print("Tapped in notification")
     }
 }
