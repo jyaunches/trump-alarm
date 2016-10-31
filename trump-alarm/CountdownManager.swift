@@ -35,7 +35,7 @@ class CountdownManager: NSObject {
         return [hour, minute, seconds]
     }
     
-    func getClosingTimeComponents(closeTime: String) -> Array<String> {
+    private func getClosingTimeComponents(closeTime: String) -> Array<String> {
         let hour: String
         let minute: String
         let seconds = "00"
@@ -53,7 +53,7 @@ class CountdownManager: NSObject {
         return [hour, minute, seconds]
     }
     
-    func timeUntilPollsOpen() -> TimeInterval {
+    private func timeUntilPollsOpen() -> TimeInterval {
         let openArray = getOpeningTimeComponents(openTime: UserDefaults.standard.string(forKey: "pollStartString")!)
         
         let openComponent = NSDateComponents()
@@ -69,7 +69,7 @@ class CountdownManager: NSObject {
         
     }
     
-    func timeUntilPollsClose() -> TimeInterval {
+    private func timeUntilPollsClose() -> TimeInterval {
         let closeArray = getClosingTimeComponents(closeTime: UserDefaults.standard.string(forKey: "pollStartString")!)
         
         let closeComponent = NSDateComponents()
@@ -85,7 +85,7 @@ class CountdownManager: NSObject {
 
     }
     
-    func timeBetweenOpenAndClose() -> TimeInterval {
+    private func timeBetweenOpenAndClose() -> TimeInterval {
 
         let timeUntilPollsClose = self.timeUntilPollsClose()
         let timeUntilPollsOpen = self.timeUntilPollsOpen()
@@ -94,7 +94,7 @@ class CountdownManager: NSObject {
         
     }
     
-    func setTimeDefaults(pollHours: String) {
+    private func setTimeDefaults(pollHours: String) {
         
         let dashSeperated = pollHours.components(separatedBy: " - ")
 
@@ -103,7 +103,7 @@ class CountdownManager: NSObject {
     }
     
     
-    func getCountdownData(pollHours: String) -> TimeInterval {
+    public func getCountdownData(pollHours: String) -> TimeInterval {
         
         setTimeDefaults(pollHours: pollHours)
         

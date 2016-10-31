@@ -14,6 +14,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     @IBOutlet weak var imagePicked: UIImageView!
     
+    var countdownStartTime : TimeInterval?
+    
     var photoManager = PhotoManager()
     var locationManager = LocationManager()
     var countdownManager = CountdownManager()
@@ -22,22 +24,27 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    private func startupApp() {
         locationManager.requestPermission(onSuccess: {
             (location: String) in
             self.civicInfoInteractor.getPollInfo(params:["address": location, "fields": "pollingLocations/pollingHours"], completion: { (success, pollHours) in
-                let secondsUntilPollCloses = self.countdownManager.getCountdownData(pollHours: pollHours!)
+                self.countdownStartTime = self.countdownManager.getCountdownData(pollHours: pollHours!)
                 if !success {
                     
-                    // unable to retrieve poll hours: default hours
-                }
+                    let pollErrorAlert = UIAlertController.init(title: "Error",
+                                                                message: "Failed to retrieve your local poll hours",
+                                                                preferredStyle: .alert)
+                    pollErrorAlert.show(self, sender: nil)                }
             })
         },
-        onFailure: {
-            (error: Error) in
-            let errorAlert = UIAlertController.init(title: "Error",
-                                                    message: "Failed to get your location",
-                                                    preferredStyle: .alert)
-            errorAlert.show(self, sender: nil)
+                                          onFailure: {
+                                            (error: Error) in
+                                            let locationError = UIAlertController.init(title: "Error",
+                                                                                       message: "Failed to get retrieve your location",
+                                                                                       preferredStyle: .alert)
+                                            locationError.show(self, sender: nil)
         })
     }
     
@@ -76,5 +83,3 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
 }
-
-
