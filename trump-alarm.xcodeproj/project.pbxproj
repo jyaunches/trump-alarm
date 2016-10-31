@@ -71,6 +71,8 @@
 		70FD04A51DC6B02900489C79 /* TimeZoneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04901DC6B02900489C79 /* TimeZoneName.swift */; };
 		70FD04A81DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */; };
 		70FD04A91DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */; };
+		70FD04AB1DC6C9CC00489C79 /* SoundBiteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04AA1DC6C9CC00489C79 /* SoundBiteContent.swift */; };
+		70FD04AD1DC6D39400489C79 /* not-a-war-hero.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70FD04AC1DC6D39400489C79 /* not-a-war-hero.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +155,8 @@
 		70FD04901DC6B02900489C79 /* TimeZoneName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZoneName.swift; path = SwiftDate/TimeZoneName.swift; sourceTree = "<group>"; };
 		70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrumpAlarmDate+Extensions.swift"; sourceTree = "<group>"; };
 		70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrumpAlarmInt+Extensions.swift"; sourceTree = "<group>"; };
+		70FD04AA1DC6C9CC00489C79 /* SoundBiteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundBiteContent.swift; path = SoundBites/SoundBiteContent.swift; sourceTree = "<group>"; };
+		70FD04AC1DC6D39400489C79 /* not-a-war-hero.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "not-a-war-hero.wav"; path = "SoundBites/not-a-war-hero.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 		175549C81DC69F9200B62473 /* SoundBites */ = {
 			isa = PBXGroup;
 			children = (
+				70FD04AC1DC6D39400489C79 /* not-a-war-hero.wav */,
 				27C504F61DC6A8040089139F /* nasty_woman.wav */,
 				27C504F71DC6A8040089139F /* shoot_sombody.wav */,
 				27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */,
@@ -200,6 +205,7 @@
 				27C5050A1DC6A8040089139F /* build-a-wall.wav */,
 				27C5050B1DC6A8040089139F /* bomb-the-shit.wav */,
 				27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */,
+				70FD04AA1DC6C9CC00489C79 /* SoundBiteContent.swift */,
 			);
 			name = SoundBites;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				27C505231DC6A8040089139F /* creeping-miss-teen.wav in Resources */,
 				27C505221DC6A8040089139F /* bomb-the-shit.wav in Resources */,
 				27C505121DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav in Resources */,
+				70FD04AD1DC6D39400489C79 /* not-a-war-hero.wav in Resources */,
 				27C505191DC6A8040089139F /* nasty-woman.wav in Resources */,
 				27C5051C1DC6A8040089139F /* hand-size.wav in Resources */,
 				27C505171DC6A8040089139F /* take-their-guns-away.wav in Resources */,
@@ -440,6 +447,7 @@
 				27C505251DC6D02B0089139F /* SwiftyJSON.swift in Sources */,
 				175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */,
 				70FD04921DC6B02900489C79 /* Commons.swift in Sources */,
+				70FD04AB1DC6C9CC00489C79 /* SoundBiteContent.swift in Sources */,
 				70FD04A41DC6B02900489C79 /* TimeInterval+Extensions.swift in Sources */,
 				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
 				70FD049F1DC6B02900489C79 /* Extensions.swift in Sources */,
