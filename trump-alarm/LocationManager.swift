@@ -21,7 +21,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         self.onSuccess = onSuccess
         self.onFailure = onFailure
         locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()

@@ -27,8 +27,8 @@ class GoogleCivicInformationInteractor: NSObject {
         }.resume()
     }
     
-    private func get(request: NSMutableURLRequest, completion: @escaping (_ success: Bool, _ object: AnyObject?) -> ()) {
-        dataTask(request: request, method: "GET", completion: completion)
+    private func get(request: NSMutableURLRequest, requestCompletion: @escaping (_ success: Bool, _ object: AnyObject?) -> ()) {
+        dataTask(request: request, method: "GET", completion: requestCompletion)
     }
     
     private func clientURLRequest(params: Dictionary<String, String>) -> NSMutableURLRequest {
@@ -40,24 +40,22 @@ class GoogleCivicInformationInteractor: NSObject {
             requestString += encodedKey! + "=" + endcodedValue! + "&"
         }
         
-        let request = NSMutableURLRequest(url: NSURL(string: Environment.Path.googleCivicInfoAPIPath + "/?" + requestString + Environment.Path.googleCovovInfoAPIKeyName + "=" + Secret.googleCivicInfoAPIKey) as! URL)
+        let request = NSMutableURLRequest(url: NSURL(string: Environment.Path.googleCivicInfoAPIPath + "/?" + requestString + Environment.Path.googleCivicInfoAPIKeyName + "=" + Secret.googleCivicInfoAPIKey) as! URL)
         
         return request
     }
 
-    func getPollInfo(params: Dictionary<String, String>, completion: @escaping (_ success: Bool, _ message: AnyObject?) -> ()) {
+    func getPollInfo(params: Dictionary<String, String>, completion: @escaping (_ success: Bool, _ message: String?) -> ()) {
         
-        get(request: clientURLRequest(params: params), completion: { (success, object) in
+        get(request: clientURLRequest(params: params), requestCompletion: { (success, object) in
             DispatchQueue.main.async {
-                
                 if success {
-                    
                     let json = JSON(object)
-                    let time = json["pollingLocations"]["pollingHours"]
+                    let time = json["pollingLocations"]["pollingHours"].stringValue
                     
-                    completion(true, object)
+                    completion(true, time)
                 } else {
-                    completion(false, nil)
+                    completion(false, "8 am - 8 pm")
                 }
             }
         })
