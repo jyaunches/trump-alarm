@@ -14,7 +14,6 @@
 		175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */; };
 		175549DC1DC6A1DF00B62473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175549DA1DC6A1DF00B62473 /* Main.storyboard */; };
 		175549E21DC6CD6D00B62473 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549E11DC6CD6D00B62473 /* BorderedButton.swift */; };
-		175549E41DC6CDEF00B62473 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549E31DC6CDEF00B62473 /* SwiftyJSON.swift */; };
 		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
 		17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */; };
 		17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71521DC5334100E6BBD5 /* LocationManager.swift */; };
@@ -44,6 +43,7 @@
 		27C505211DC6A8040089139F /* build-a-wall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050A1DC6A8040089139F /* build-a-wall.wav */; };
 		27C505221DC6A8040089139F /* bomb-the-shit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050B1DC6A8040089139F /* bomb-the-shit.wav */; };
 		27C505231DC6A8040089139F /* creeping-miss-teen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */; };
+		27C505251DC6D02B0089139F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C505241DC6D02B0089139F /* SwiftyJSON.swift */; };
 		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
 		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
@@ -91,7 +91,6 @@
 		175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteStore.swift; path = Services/TrumpQuoteStore.swift; sourceTree = "<group>"; };
 		175549DB1DC6A1DF00B62473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		175549E11DC6CD6D00B62473 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
-		175549E31DC6CDEF00B62473 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../Downloads/SwiftyJSON-master/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
 		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 		27C5050A1DC6A8040089139F /* build-a-wall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "build-a-wall.wav"; path = "SoundBites/build-a-wall.wav"; sourceTree = "<group>"; };
 		27C5050B1DC6A8040089139F /* bomb-the-shit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "bomb-the-shit.wav"; path = "SoundBites/bomb-the-shit.wav"; sourceTree = "<group>"; };
 		27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "creeping-miss-teen.wav"; path = "SoundBites/creeping-miss-teen.wav"; sourceTree = "<group>"; };
+		27C505241DC6D02B0089139F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
 		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,7 +245,7 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
-				175549E31DC6CDEF00B62473 /* SwiftyJSON.swift */,
+				27C505241DC6D02B0089139F /* SwiftyJSON.swift */,
 				175549E11DC6CD6D00B62473 /* BorderedButton.swift */,
 				70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */,
 				70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */,
@@ -434,10 +434,10 @@
 				17AD715B1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift in Sources */,
 				701018801DC2E27D008D927F /* PostVotingController.swift in Sources */,
 				175549E21DC6CD6D00B62473 /* BorderedButton.swift in Sources */,
-				175549E41DC6CDEF00B62473 /* SwiftyJSON.swift in Sources */,
 				70FD04A11DC6B02900489C79 /* LocaleName.swift in Sources */,
 				70FD04931DC6B02900489C79 /* Date+Compare.swift in Sources */,
 				175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */,
+				27C505251DC6D02B0089139F /* SwiftyJSON.swift in Sources */,
 				175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */,
 				70FD04921DC6B02900489C79 /* Commons.swift in Sources */,
 				70FD04A41DC6B02900489C79 /* TimeInterval+Extensions.swift in Sources */,
