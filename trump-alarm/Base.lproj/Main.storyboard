@@ -214,6 +214,9 @@ Sending you alarms between now and election day of the importance of your vote!
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <segue destination="h1h-pq-3dQ" kind="show" identifier="ShowCountDownFromIntroSegue" id="ZNx-Sr-BVB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjP-gG-xGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

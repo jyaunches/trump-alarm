@@ -53,8 +53,11 @@ class GoogleCivicInformationInteractor: NSObject {
                     let json = JSON(object)
                     let time = json["pollingLocations"][0]["pollingHours"].stringValue
                     
+                    // HERE IS SOURCE
                     completion(true, time)
                 } else {
+                    // HERE IS SOURCE
+                    // HERE IS SOURCE
                     completion(false, "8 am - 8 pm")
                 }
             }

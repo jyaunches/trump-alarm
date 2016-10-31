@@ -15,7 +15,7 @@ class IntroViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.setHidesBackButton(true, animated: false)
         // Do any additional setup after loading the view.
     }
 
@@ -23,7 +23,7 @@ class IntroViewController: UIViewController {
         locationManager.requestPermission(onSuccess: {
             (location: String) in
             self.civicInfoInteractor.getPollInfo(params: ["address": location, "fields": "pollingLocations/pollingHours"], completion: {
-                (success, pollHours) in
+                (success, pollHours) in                
                 self.navigateToCountdown(userPollingHours: PollingAPIResponse(response: pollHours))
             })
         }, onFailure: {
@@ -37,10 +37,7 @@ class IntroViewController: UIViewController {
     func navigateToCountdown(userPollingHours: PollingAPIResponse) {
         TrumpAlarmUserDefaults.hasSeenIntro = true
         TrumpAlarmUserDefaults.userPollingHours = userPollingHours
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let controller = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC") as? MainViewController {
-            self.navigationController?.present(controller, animated: true, completion: nil)
-        }
+        self.performSegue(withIdentifier: "ShowCountDownFromIntroSegue", sender: self)                
     }
 
 }

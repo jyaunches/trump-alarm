@@ -32,8 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else if TrumpAlarmUserDefaults.hasVoted {
             setPostVotingAsRoot()
         } else {
-            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC")
-            self.window?.makeKeyAndVisible()
+            if let rootNav = storyboard.instantiateViewController(withIdentifier: "IntroNVC") as? UINavigationController {
+                let countDownVC = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC")
+                rootNav.viewControllers = [countDownVC]
+                self.window?.rootViewController = rootNav
+                self.window?.makeKeyAndVisible()
+            }
         }
         return true
     }

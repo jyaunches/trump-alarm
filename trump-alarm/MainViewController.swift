@@ -22,6 +22,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
         countdownEndDate = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
  

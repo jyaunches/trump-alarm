@@ -15,7 +15,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     var delegate: CLLocationManagerDelegate!
     var onSuccess: ((String) -> ())?
     var onFailure: ((Error) -> ())?
-
+    var returnedPlacemark: CLPlacemark?
     
     func requestPermission(onSuccess: ((String) -> ())?, onFailure: @escaping ((Error) -> ())) {
         self.onSuccess = onSuccess
@@ -29,16 +29,19 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     }
     func requestLocation(currentLocation: CLLocation) {
         CLGeocoder().reverseGeocodeLocation(currentLocation) { (placemarks, error) in
+            print("geocoder returning: \(placemarks)")
             if let _ = error {
                 return
             }
-            if (placemarks?.count ?? 0)  > 0 {
-                let placemark = placemarks!.last!
-                 self.onSuccess?([placemark.subThoroughfare, placemark.thoroughfare, placemark.postalCode, placemark.locality, placemark.administrativeArea, placemark.country].flatMap{$0}.joined(separator: " "))
-                
-            } else {
-                print(error?.localizedDescription ?? "")
+            if let placemarks = placemarks {
+                if (placemarks.count > 0) && (self.returnedPlacemark == nil) {
+                    if let thePlacemark = placemarks.last {
+                        self.returnedPlacemark = thePlacemark
+                        self.onSuccess?([thePlacemark.subThoroughfare, thePlacemark.thoroughfare, thePlacemark.postalCode, thePlacemark.locality, thePlacemark.administrativeArea, thePlacemark.country].flatMap{$0}.joined(separator: " "))
+                    }
+                }
             }
+            
         }
     }
     
