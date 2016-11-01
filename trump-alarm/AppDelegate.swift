@@ -14,10 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let storyboardDirector = StoryboardDirector()
     
     func setPostVotingAsRoot() {
         self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "PostVotingController")
         self.window?.makeKeyAndVisible()
+    }
+    
+    func setQuotePlaying(quote: TrumpQuote) {
+        if let quoteVC = storyboardDirector.buildQuotePlaying(quote: quote) {
+            setIntroNVCWith(root: quoteVC)
+        }
+        
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -33,11 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else if TrumpAlarmUserDefaults.hasVoted {
             setPostVotingAsRoot()
         } else {
-            if let rootNav = storyboard.instantiateViewController(withIdentifier: "IntroNVC") as? UINavigationController {
-                let countDownVC = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC")
-                rootNav.viewControllers = [countDownVC]
-                self.window?.rootViewController = rootNav
-                self.window?.makeKeyAndVisible()
+            if let mainCountDown = storyboardDirector.buildMainCountdown() {
+                setIntroNVCWith(root: mainCountDown)
             }
         }
         
@@ -46,6 +51,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("stuff happening")
         })
         return true
+    }
+    
+    func setIntroNVCWith(root: UIViewController) {
+        if let rootNav = storyboard.instantiateViewController(withIdentifier: "IntroNVC") as? UINavigationController {
+            rootNav.viewControllers = [root]
+            self.window?.rootViewController = rootNav
+            self.window?.makeKeyAndVisible()
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

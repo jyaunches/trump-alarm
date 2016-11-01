@@ -7,76 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		175549B61DC69F1200B62473 /* TrumpQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549B41DC69F1200B62473 /* TrumpQuote.swift */; };
-		175549D61DC6A01800B62473 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D21DC6A01800B62473 /* NotificationManager.swift */; };
-		175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D31DC6A01800B62473 /* PhotoManager.swift */; };
-		175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */; };
-		175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */; };
-		175549DC1DC6A1DF00B62473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175549DA1DC6A1DF00B62473 /* Main.storyboard */; };
-		175549E21DC6CD6D00B62473 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175549E11DC6CD6D00B62473 /* BorderedButton.swift */; };
-		17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD714D1DC51A1200E6BBD5 /* Environment.swift */; };
-		17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */; };
-		17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71521DC5334100E6BBD5 /* LocationManager.swift */; };
-		17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD71581DC57A0F00E6BBD5 /* Secrets.swift */; };
-		17AD715B1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */; };
-		17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */; };
-		27573DB71DC79BF10095F0BF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB61DC79BF10095F0BF /* IntroViewController.swift */; };
-		27573DB91DC7A1560095F0BF /* PollingAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */; };
-		27573DBB1DC7E09A0095F0BF /* TrumpFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */; };
-		2774187B1DC800550076AB7B /* TrumpLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2774187A1DC800550076AB7B /* TrumpLaunch.storyboard */; };
-		27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F61DC6A8040089139F /* nasty_woman.wav */; };
-		27C5050E1DC6A8040089139F /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F71DC6A8040089139F /* shoot_sombody.wav */; };
-		27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */; };
-		27C505101DC6A8040089139F /* muslim-shutdown.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504F91DC6A8040089139F /* muslim-shutdown.wav */; };
-		27C505111DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FA1DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav */; };
-		27C505121DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FB1DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav */; };
-		27C505131DC6A8040089139F /* you're-the-puppet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FC1DC6A8040089139F /* you're-the-puppet.wav */; };
-		27C505141DC6A8040089139F /* waterboarding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FD1DC6A8040089139F /* waterboarding.wav */; };
-		27C505151DC6A8040089139F /* try-and-fuck-her-she-was-married.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FE1DC6A8040089139F /* try-and-fuck-her-she-was-married.wav */; };
-		27C505161DC6A8040089139F /* they're-rapist.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C504FF1DC6A8040089139F /* they're-rapist.wav */; };
-		27C505171DC6A8040089139F /* take-their-guns-away.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505001DC6A8040089139F /* take-their-guns-away.wav */; };
-		27C505181DC6A8040089139F /* second-ammendment.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505011DC6A8040089139F /* second-ammendment.wav */; };
-		27C505191DC6A8040089139F /* nasty-woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505021DC6A8040089139F /* nasty-woman.wav */; };
-		27C5051A1DC6A8040089139F /* meg-kelly-blood.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505031DC6A8040089139F /* meg-kelly-blood.wav */; };
-		27C5051B1DC6A8040089139F /* grab-em.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505041DC6A8040089139F /* grab-em.wav */; };
-		27C5051C1DC6A8040089139F /* hand-size.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505051DC6A8040089139F /* hand-size.wav */; };
-		27C5051D1DC6A8040089139F /* great-relationship-with-the-blacks.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505061DC6A8040089139F /* great-relationship-with-the-blacks.wav */; };
-		27C5051E1DC6A8040089139F /* I-could-shoot-somebody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505071DC6A8040089139F /* I-could-shoot-somebody.wav */; };
-		27C5051F1DC6A8040089139F /* dating-Ivanka.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505081DC6A8040089139F /* dating-Ivanka.wav */; };
-		27C505201DC6A8040089139F /* carried-out-in-a-stretcher.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C505091DC6A8040089139F /* carried-out-in-a-stretcher.wav */; };
-		27C505211DC6A8040089139F /* build-a-wall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050A1DC6A8040089139F /* build-a-wall.wav */; };
-		27C505221DC6A8040089139F /* bomb-the-shit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050B1DC6A8040089139F /* bomb-the-shit.wav */; };
-		27C505231DC6A8040089139F /* creeping-miss-teen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */; };
-		27C505251DC6D02B0089139F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C505241DC6D02B0089139F /* SwiftyJSON.swift */; };
-		701018801DC2E27D008D927F /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187D1DC2E27D008D927F /* PostVotingController.swift */; };
-		701018821DC2E27D008D927F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010187F1DC2E27D008D927F /* MainViewController.swift */; };
+		7038D8B01DC840E000EECF42 /* TrumpFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8AE1DC840E000EECF42 /* TrumpFace.swift */; };
+		7038D8B11DC840E000EECF42 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8AF1DC840E000EECF42 /* BorderedButton.swift */; };
+		7038D8B71DC840EA00EECF42 /* StoryboardDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8B21DC840EA00EECF42 /* StoryboardDirector.swift */; };
+		7038D8B81DC840EA00EECF42 /* TrumpAlarmDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8B31DC840EA00EECF42 /* TrumpAlarmDate+Extensions.swift */; };
+		7038D8B91DC840EA00EECF42 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8B41DC840EA00EECF42 /* Environment.swift */; };
+		7038D8BA1DC840EA00EECF42 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8B51DC840EA00EECF42 /* SwiftyJSON.swift */; };
+		7038D8BB1DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8B61DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift */; };
+		7038D8D11DC840F400EECF42 /* CalendarName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8BC1DC840F400EECF42 /* CalendarName.swift */; };
+		7038D8D21DC840F400EECF42 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8BD1DC840F400EECF42 /* Commons.swift */; };
+		7038D8D31DC840F400EECF42 /* Date+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8BE1DC840F400EECF42 /* Date+Compare.swift */; };
+		7038D8D41DC840F400EECF42 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8BF1DC840F400EECF42 /* Date+Components.swift */; };
+		7038D8D51DC840F400EECF42 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C01DC840F400EECF42 /* Date+Formatter.swift */; };
+		7038D8D61DC840F400EECF42 /* Date+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C11DC840F400EECF42 /* Date+Math.swift */; };
+		7038D8D71DC840F400EECF42 /* DateComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C21DC840F400EECF42 /* DateComponents+Extension.swift */; };
+		7038D8D81DC840F400EECF42 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C31DC840F400EECF42 /* DateInRegion.swift */; };
+		7038D8D91DC840F400EECF42 /* DateInRegion+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C41DC840F400EECF42 /* DateInRegion+Compare.swift */; };
+		7038D8DA1DC840F400EECF42 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C51DC840F400EECF42 /* DateInRegion+Components.swift */; };
+		7038D8DB1DC840F400EECF42 /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C61DC840F400EECF42 /* DateInRegion+Formatter.swift */; };
+		7038D8DC1DC840F400EECF42 /* DateInRegion+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C71DC840F400EECF42 /* DateInRegion+Math.swift */; };
+		7038D8DD1DC840F400EECF42 /* DateInRegionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C81DC840F400EECF42 /* DateInRegionFormatter.swift */; };
+		7038D8DE1DC840F400EECF42 /* DateTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8C91DC840F400EECF42 /* DateTimeInterval.swift */; };
+		7038D8DF1DC840F400EECF42 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8CA1DC840F400EECF42 /* Extensions.swift */; };
+		7038D8E01DC840F400EECF42 /* ISO8601DateTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8CB1DC840F400EECF42 /* ISO8601DateTimeFormatter.swift */; };
+		7038D8E11DC840F400EECF42 /* LocaleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8CC1DC840F400EECF42 /* LocaleName.swift */; };
+		7038D8E21DC840F400EECF42 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8CD1DC840F400EECF42 /* Region.swift */; };
+		7038D8E41DC840F400EECF42 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8CF1DC840F400EECF42 /* TimeInterval+Extensions.swift */; };
+		7038D8E51DC840F400EECF42 /* TimeZoneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8D01DC840F400EECF42 /* TimeZoneName.swift */; };
+		7038D8FF1DC8410300EECF42 /* grab-em.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8E61DC8410300EECF42 /* grab-em.wav */; };
+		7038D9001DC8410300EECF42 /* great-relationship-with-the-blacks.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8E71DC8410300EECF42 /* great-relationship-with-the-blacks.wav */; };
+		7038D9011DC8410300EECF42 /* hand-size.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8E81DC8410300EECF42 /* hand-size.wav */; };
+		7038D9021DC8410300EECF42 /* meg-kelly-blood.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8E91DC8410300EECF42 /* meg-kelly-blood.wav */; };
+		7038D9031DC8410300EECF42 /* muslim-shutdown.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8EA1DC8410300EECF42 /* muslim-shutdown.wav */; };
+		7038D9041DC8410300EECF42 /* nasty_woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8EB1DC8410300EECF42 /* nasty_woman.wav */; };
+		7038D9051DC8410300EECF42 /* nasty-woman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8EC1DC8410300EECF42 /* nasty-woman.wav */; };
+		7038D9061DC8410300EECF42 /* not-a-war-hero.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8ED1DC8410300EECF42 /* not-a-war-hero.wav */; };
+		7038D9071DC8410300EECF42 /* obama-clinton-co-founded-ISIS.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8EE1DC8410300EECF42 /* obama-clinton-co-founded-ISIS.wav */; };
+		7038D9081DC8410300EECF42 /* second-ammendment.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8EF1DC8410300EECF42 /* second-ammendment.wav */; };
+		7038D9091DC8410300EECF42 /* shoot_sombody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F01DC8410300EECF42 /* shoot_sombody.wav */; };
+		7038D90A1DC8410300EECF42 /* take-their-guns-away.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F11DC8410300EECF42 /* take-their-guns-away.wav */; };
+		7038D90B1DC8410300EECF42 /* they're-rapist.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F21DC8410300EECF42 /* they're-rapist.wav */; };
+		7038D90C1DC8410300EECF42 /* try-and-fuck-her-she-was-married.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F31DC8410300EECF42 /* try-and-fuck-her-she-was-married.wav */; };
+		7038D90D1DC8410300EECF42 /* waterboarding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F41DC8410300EECF42 /* waterboarding.wav */; };
+		7038D90E1DC8410300EECF42 /* won't-rule-out-nuclear-weapons.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F51DC8410300EECF42 /* won't-rule-out-nuclear-weapons.wav */; };
+		7038D90F1DC8410300EECF42 /* you're-the-puppet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F61DC8410300EECF42 /* you're-the-puppet.wav */; };
+		7038D9101DC8410300EECF42 /* bomb-the-shit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F71DC8410300EECF42 /* bomb-the-shit.wav */; };
+		7038D9111DC8410300EECF42 /* build-a-wall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F81DC8410300EECF42 /* build-a-wall.wav */; };
+		7038D9121DC8410300EECF42 /* carried-out-in-a-stretcher.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8F91DC8410300EECF42 /* carried-out-in-a-stretcher.wav */; };
+		7038D9131DC8410300EECF42 /* creeping-miss-teen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8FA1DC8410300EECF42 /* creeping-miss-teen.wav */; };
+		7038D9141DC8410300EECF42 /* dating-Ivanka.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8FB1DC8410300EECF42 /* dating-Ivanka.wav */; };
+		7038D9151DC8410300EECF42 /* dropping-to-your-knees.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8FC1DC8410300EECF42 /* dropping-to-your-knees.wav */; };
+		7038D9161DC8410300EECF42 /* I-could-shoot-somebody.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7038D8FD1DC8410300EECF42 /* I-could-shoot-somebody.wav */; };
+		7038D9171DC8410300EECF42 /* SoundBiteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8FE1DC8410300EECF42 /* SoundBiteContent.swift */; };
+		7038D9201DC8410F00EECF42 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D9181DC8410F00EECF42 /* NotificationManager.swift */; };
+		7038D9211DC8410F00EECF42 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D9191DC8410F00EECF42 /* CountdownManager.swift */; };
+		7038D9221DC8410F00EECF42 /* GoogleCivicInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D91A1DC8410F00EECF42 /* GoogleCivicInfoInteractor.swift */; };
+		7038D9231DC8410F00EECF42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D91B1DC8410F00EECF42 /* LocationManager.swift */; };
+		7038D9241DC8410F00EECF42 /* PollingAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D91C1DC8410F00EECF42 /* PollingAPIResponse.swift */; };
+		7038D9251DC8410F00EECF42 /* TrumpAlarmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D91D1DC8410F00EECF42 /* TrumpAlarmUserDefaults.swift */; };
+		7038D9261DC8410F00EECF42 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D91E1DC8410F00EECF42 /* PhotoManager.swift */; };
+		7038D9271DC8410F00EECF42 /* TrumpQuoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D91F1DC8410F00EECF42 /* TrumpQuoteStore.swift */; };
+		7038D92A1DC8411D00EECF42 /* TrumpQuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D9281DC8411D00EECF42 /* TrumpQuoteLibrary.swift */; };
+		7038D92B1DC8411D00EECF42 /* TrumpQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D9291DC8411D00EECF42 /* TrumpQuote.swift */; };
+		7038D9301DC8412500EECF42 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D92C1DC8412500EECF42 /* MainViewController.swift */; };
+		7038D9311DC8412500EECF42 /* QuotePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D92D1DC8412500EECF42 /* QuotePlayViewController.swift */; };
+		7038D9321DC8412500EECF42 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D92E1DC8412500EECF42 /* IntroViewController.swift */; };
+		7038D9331DC8412500EECF42 /* PostVotingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D92F1DC8412500EECF42 /* PostVotingController.swift */; };
+		7038D9351DC8421300EECF42 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D9341DC8421300EECF42 /* Secret.swift */; };
+		7038D9371DC8448B00EECF42 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7038D9361DC8448B00EECF42 /* CoreLocation.framework */; };
 		70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */; };
+		70A6CC851DC1238C00ED2D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC831DC1238C00ED2D23 /* Main.storyboard */; };
 		70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC861DC1238C00ED2D23 /* Assets.xcassets */; };
+		70A6CC8A1DC1238C00ED2D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */; };
 		70A6CC951DC1238C00ED2D23 /* trump_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */; };
-		70FD04911DC6B02900489C79 /* CalendarName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047C1DC6B02900489C79 /* CalendarName.swift */; };
-		70FD04921DC6B02900489C79 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047D1DC6B02900489C79 /* Commons.swift */; };
-		70FD04931DC6B02900489C79 /* Date+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047E1DC6B02900489C79 /* Date+Compare.swift */; };
-		70FD04941DC6B02900489C79 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD047F1DC6B02900489C79 /* Date+Components.swift */; };
-		70FD04951DC6B02900489C79 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04801DC6B02900489C79 /* Date+Formatter.swift */; };
-		70FD04961DC6B02900489C79 /* Date+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04811DC6B02900489C79 /* Date+Math.swift */; };
-		70FD04971DC6B02900489C79 /* DateComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04821DC6B02900489C79 /* DateComponents+Extension.swift */; };
-		70FD04981DC6B02900489C79 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04831DC6B02900489C79 /* DateInRegion.swift */; };
-		70FD04991DC6B02900489C79 /* DateInRegion+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04841DC6B02900489C79 /* DateInRegion+Compare.swift */; };
-		70FD049A1DC6B02900489C79 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04851DC6B02900489C79 /* DateInRegion+Components.swift */; };
-		70FD049B1DC6B02900489C79 /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04861DC6B02900489C79 /* DateInRegion+Formatter.swift */; };
-		70FD049C1DC6B02900489C79 /* DateInRegion+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04871DC6B02900489C79 /* DateInRegion+Math.swift */; };
-		70FD049D1DC6B02900489C79 /* DateInRegionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04881DC6B02900489C79 /* DateInRegionFormatter.swift */; };
-		70FD049E1DC6B02900489C79 /* DateTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04891DC6B02900489C79 /* DateTimeInterval.swift */; };
-		70FD049F1DC6B02900489C79 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048A1DC6B02900489C79 /* Extensions.swift */; };
-		70FD04A01DC6B02900489C79 /* ISO8601DateTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048B1DC6B02900489C79 /* ISO8601DateTimeFormatter.swift */; };
-		70FD04A11DC6B02900489C79 /* LocaleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048C1DC6B02900489C79 /* LocaleName.swift */; };
-		70FD04A21DC6B02900489C79 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048D1DC6B02900489C79 /* Region.swift */; };
-		70FD04A41DC6B02900489C79 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD048F1DC6B02900489C79 /* TimeInterval+Extensions.swift */; };
-		70FD04A51DC6B02900489C79 /* TimeZoneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04901DC6B02900489C79 /* TimeZoneName.swift */; };
-		70FD04A81DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */; };
-		70FD04A91DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */; };
-		70FD04AB1DC6C9CC00489C79 /* SoundBiteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FD04AA1DC6C9CC00489C79 /* SoundBiteContent.swift */; };
-		70FD04AD1DC6D39400489C79 /* not-a-war-hero.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70FD04AC1DC6D39400489C79 /* not-a-war-hero.wav */; };
+		ED519B248C8F8FB39255A53D /* Pods_trump_alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E11DA3BAD928EB0F078115A /* Pods_trump_alarm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,80 +94,86 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		175549B41DC69F1200B62473 /* TrumpQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpQuote.swift; sourceTree = "<group>"; };
-		175549D21DC6A01800B62473 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = Services/NotificationManager.swift; sourceTree = "<group>"; };
-		175549D31DC6A01800B62473 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoManager.swift; path = Services/PhotoManager.swift; sourceTree = "<group>"; };
-		175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpAlarmUserDefaults.swift; path = Services/TrumpAlarmUserDefaults.swift; sourceTree = "<group>"; };
-		175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteStore.swift; path = Services/TrumpQuoteStore.swift; sourceTree = "<group>"; };
-		175549DB1DC6A1DF00B62473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		175549E11DC6CD6D00B62473 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
-		17AD714D1DC51A1200E6BBD5 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		17AD71521DC5334100E6BBD5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		17AD71581DC57A0F00E6BBD5 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
-		17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCivicInfoInteractor.swift; sourceTree = "<group>"; };
-		17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
-		27573DB61DC79BF10095F0BF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = Controllers/IntroViewController.swift; sourceTree = "<group>"; };
-		27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollingAPIResponse.swift; path = Services/PollingAPIResponse.swift; sourceTree = "<group>"; };
-		27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpFace.swift; sourceTree = "<group>"; };
-		2774187A1DC800550076AB7B /* TrumpLaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TrumpLaunch.storyboard; sourceTree = "<group>"; };
-		27C504F61DC6A8040089139F /* nasty_woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nasty_woman.wav; path = SoundBites/nasty_woman.wav; sourceTree = "<group>"; };
-		27C504F71DC6A8040089139F /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
-		27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dropping-to-your-knees.wav"; path = "SoundBites/dropping-to-your-knees.wav"; sourceTree = "<group>"; };
-		27C504F91DC6A8040089139F /* muslim-shutdown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "muslim-shutdown.wav"; path = "SoundBites/muslim-shutdown.wav"; sourceTree = "<group>"; };
-		27C504FA1DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "obama-clinton-co-founded-ISIS.wav"; path = "SoundBites/obama-clinton-co-founded-ISIS.wav"; sourceTree = "<group>"; };
-		27C504FB1DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "won't-rule-out-nuclear-weapons.wav"; path = "SoundBites/won't-rule-out-nuclear-weapons.wav"; sourceTree = "<group>"; };
-		27C504FC1DC6A8040089139F /* you're-the-puppet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "you're-the-puppet.wav"; path = "SoundBites/you're-the-puppet.wav"; sourceTree = "<group>"; };
-		27C504FD1DC6A8040089139F /* waterboarding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = waterboarding.wav; path = SoundBites/waterboarding.wav; sourceTree = "<group>"; };
-		27C504FE1DC6A8040089139F /* try-and-fuck-her-she-was-married.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "try-and-fuck-her-she-was-married.wav"; path = "SoundBites/try-and-fuck-her-she-was-married.wav"; sourceTree = "<group>"; };
-		27C504FF1DC6A8040089139F /* they're-rapist.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "they're-rapist.wav"; path = "SoundBites/they're-rapist.wav"; sourceTree = "<group>"; };
-		27C505001DC6A8040089139F /* take-their-guns-away.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "take-their-guns-away.wav"; path = "SoundBites/take-their-guns-away.wav"; sourceTree = "<group>"; };
-		27C505011DC6A8040089139F /* second-ammendment.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "second-ammendment.wav"; path = "SoundBites/second-ammendment.wav"; sourceTree = "<group>"; };
-		27C505021DC6A8040089139F /* nasty-woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "nasty-woman.wav"; path = "SoundBites/nasty-woman.wav"; sourceTree = "<group>"; };
-		27C505031DC6A8040089139F /* meg-kelly-blood.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "meg-kelly-blood.wav"; path = "SoundBites/meg-kelly-blood.wav"; sourceTree = "<group>"; };
-		27C505041DC6A8040089139F /* grab-em.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "grab-em.wav"; path = "SoundBites/grab-em.wav"; sourceTree = "<group>"; };
-		27C505051DC6A8040089139F /* hand-size.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hand-size.wav"; path = "SoundBites/hand-size.wav"; sourceTree = "<group>"; };
-		27C505061DC6A8040089139F /* great-relationship-with-the-blacks.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "great-relationship-with-the-blacks.wav"; path = "SoundBites/great-relationship-with-the-blacks.wav"; sourceTree = "<group>"; };
-		27C505071DC6A8040089139F /* I-could-shoot-somebody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "I-could-shoot-somebody.wav"; path = "SoundBites/I-could-shoot-somebody.wav"; sourceTree = "<group>"; };
-		27C505081DC6A8040089139F /* dating-Ivanka.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dating-Ivanka.wav"; path = "SoundBites/dating-Ivanka.wav"; sourceTree = "<group>"; };
-		27C505091DC6A8040089139F /* carried-out-in-a-stretcher.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "carried-out-in-a-stretcher.wav"; path = "SoundBites/carried-out-in-a-stretcher.wav"; sourceTree = "<group>"; };
-		27C5050A1DC6A8040089139F /* build-a-wall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "build-a-wall.wav"; path = "SoundBites/build-a-wall.wav"; sourceTree = "<group>"; };
-		27C5050B1DC6A8040089139F /* bomb-the-shit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "bomb-the-shit.wav"; path = "SoundBites/bomb-the-shit.wav"; sourceTree = "<group>"; };
-		27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "creeping-miss-teen.wav"; path = "SoundBites/creeping-miss-teen.wav"; sourceTree = "<group>"; };
-		27C505241DC6D02B0089139F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
-		7010187D1DC2E27D008D927F /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVotingController.swift; sourceTree = "<group>"; };
-		7010187F1DC2E27D008D927F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4E11DA3BAD928EB0F078115A /* Pods_trump_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trump_alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		603496EB1BB37306424435F1 /* Pods-trump-alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trump-alarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trump-alarm/Pods-trump-alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		7038D8AE1DC840E000EECF42 /* TrumpFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpFace.swift; path = Views/TrumpFace.swift; sourceTree = "<group>"; };
+		7038D8AF1DC840E000EECF42 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderedButton.swift; path = Views/BorderedButton.swift; sourceTree = "<group>"; };
+		7038D8B21DC840EA00EECF42 /* StoryboardDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardDirector.swift; path = Utilities/StoryboardDirector.swift; sourceTree = "<group>"; };
+		7038D8B31DC840EA00EECF42 /* TrumpAlarmDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TrumpAlarmDate+Extensions.swift"; path = "Utilities/TrumpAlarmDate+Extensions.swift"; sourceTree = "<group>"; };
+		7038D8B41DC840EA00EECF42 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = Utilities/Environment.swift; sourceTree = "<group>"; };
+		7038D8B51DC840EA00EECF42 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Utilities/SwiftyJSON.swift; sourceTree = "<group>"; };
+		7038D8B61DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TrumpAlarmInt+Extensions.swift"; path = "Utilities/TrumpAlarmInt+Extensions.swift"; sourceTree = "<group>"; };
+		7038D8BC1DC840F400EECF42 /* CalendarName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarName.swift; path = SwiftDate/CalendarName.swift; sourceTree = "<group>"; };
+		7038D8BD1DC840F400EECF42 /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Commons.swift; path = SwiftDate/Commons.swift; sourceTree = "<group>"; };
+		7038D8BE1DC840F400EECF42 /* Date+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Compare.swift"; path = "SwiftDate/Date+Compare.swift"; sourceTree = "<group>"; };
+		7038D8BF1DC840F400EECF42 /* Date+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Components.swift"; path = "SwiftDate/Date+Components.swift"; sourceTree = "<group>"; };
+		7038D8C01DC840F400EECF42 /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Formatter.swift"; path = "SwiftDate/Date+Formatter.swift"; sourceTree = "<group>"; };
+		7038D8C11DC840F400EECF42 /* Date+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Math.swift"; path = "SwiftDate/Date+Math.swift"; sourceTree = "<group>"; };
+		7038D8C21DC840F400EECF42 /* DateComponents+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateComponents+Extension.swift"; path = "SwiftDate/DateComponents+Extension.swift"; sourceTree = "<group>"; };
+		7038D8C31DC840F400EECF42 /* DateInRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
+		7038D8C41DC840F400EECF42 /* DateInRegion+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Compare.swift"; path = "SwiftDate/DateInRegion+Compare.swift"; sourceTree = "<group>"; };
+		7038D8C51DC840F400EECF42 /* DateInRegion+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		7038D8C61DC840F400EECF42 /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
+		7038D8C71DC840F400EECF42 /* DateInRegion+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Math.swift"; path = "SwiftDate/DateInRegion+Math.swift"; sourceTree = "<group>"; };
+		7038D8C81DC840F400EECF42 /* DateInRegionFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateInRegionFormatter.swift; path = SwiftDate/DateInRegionFormatter.swift; sourceTree = "<group>"; };
+		7038D8C91DC840F400EECF42 /* DateTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTimeInterval.swift; path = SwiftDate/DateTimeInterval.swift; sourceTree = "<group>"; };
+		7038D8CA1DC840F400EECF42 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftDate/Extensions.swift; sourceTree = "<group>"; };
+		7038D8CB1DC840F400EECF42 /* ISO8601DateTimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ISO8601DateTimeFormatter.swift; path = SwiftDate/ISO8601DateTimeFormatter.swift; sourceTree = "<group>"; };
+		7038D8CC1DC840F400EECF42 /* LocaleName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocaleName.swift; path = SwiftDate/LocaleName.swift; sourceTree = "<group>"; };
+		7038D8CD1DC840F400EECF42 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Region.swift; path = SwiftDate/Region.swift; sourceTree = "<group>"; };
+		7038D8CF1DC840F400EECF42 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extensions.swift"; path = "SwiftDate/TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		7038D8D01DC840F400EECF42 /* TimeZoneName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZoneName.swift; path = SwiftDate/TimeZoneName.swift; sourceTree = "<group>"; };
+		7038D8E61DC8410300EECF42 /* grab-em.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "grab-em.wav"; path = "SoundBites/grab-em.wav"; sourceTree = "<group>"; };
+		7038D8E71DC8410300EECF42 /* great-relationship-with-the-blacks.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "great-relationship-with-the-blacks.wav"; path = "SoundBites/great-relationship-with-the-blacks.wav"; sourceTree = "<group>"; };
+		7038D8E81DC8410300EECF42 /* hand-size.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hand-size.wav"; path = "SoundBites/hand-size.wav"; sourceTree = "<group>"; };
+		7038D8E91DC8410300EECF42 /* meg-kelly-blood.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "meg-kelly-blood.wav"; path = "SoundBites/meg-kelly-blood.wav"; sourceTree = "<group>"; };
+		7038D8EA1DC8410300EECF42 /* muslim-shutdown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "muslim-shutdown.wav"; path = "SoundBites/muslim-shutdown.wav"; sourceTree = "<group>"; };
+		7038D8EB1DC8410300EECF42 /* nasty_woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nasty_woman.wav; path = SoundBites/nasty_woman.wav; sourceTree = "<group>"; };
+		7038D8EC1DC8410300EECF42 /* nasty-woman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "nasty-woman.wav"; path = "SoundBites/nasty-woman.wav"; sourceTree = "<group>"; };
+		7038D8ED1DC8410300EECF42 /* not-a-war-hero.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "not-a-war-hero.wav"; path = "SoundBites/not-a-war-hero.wav"; sourceTree = "<group>"; };
+		7038D8EE1DC8410300EECF42 /* obama-clinton-co-founded-ISIS.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "obama-clinton-co-founded-ISIS.wav"; path = "SoundBites/obama-clinton-co-founded-ISIS.wav"; sourceTree = "<group>"; };
+		7038D8EF1DC8410300EECF42 /* second-ammendment.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "second-ammendment.wav"; path = "SoundBites/second-ammendment.wav"; sourceTree = "<group>"; };
+		7038D8F01DC8410300EECF42 /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
+		7038D8F11DC8410300EECF42 /* take-their-guns-away.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "take-their-guns-away.wav"; path = "SoundBites/take-their-guns-away.wav"; sourceTree = "<group>"; };
+		7038D8F21DC8410300EECF42 /* they're-rapist.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "they're-rapist.wav"; path = "SoundBites/they're-rapist.wav"; sourceTree = "<group>"; };
+		7038D8F31DC8410300EECF42 /* try-and-fuck-her-she-was-married.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "try-and-fuck-her-she-was-married.wav"; path = "SoundBites/try-and-fuck-her-she-was-married.wav"; sourceTree = "<group>"; };
+		7038D8F41DC8410300EECF42 /* waterboarding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = waterboarding.wav; path = SoundBites/waterboarding.wav; sourceTree = "<group>"; };
+		7038D8F51DC8410300EECF42 /* won't-rule-out-nuclear-weapons.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "won't-rule-out-nuclear-weapons.wav"; path = "SoundBites/won't-rule-out-nuclear-weapons.wav"; sourceTree = "<group>"; };
+		7038D8F61DC8410300EECF42 /* you're-the-puppet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "you're-the-puppet.wav"; path = "SoundBites/you're-the-puppet.wav"; sourceTree = "<group>"; };
+		7038D8F71DC8410300EECF42 /* bomb-the-shit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "bomb-the-shit.wav"; path = "SoundBites/bomb-the-shit.wav"; sourceTree = "<group>"; };
+		7038D8F81DC8410300EECF42 /* build-a-wall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "build-a-wall.wav"; path = "SoundBites/build-a-wall.wav"; sourceTree = "<group>"; };
+		7038D8F91DC8410300EECF42 /* carried-out-in-a-stretcher.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "carried-out-in-a-stretcher.wav"; path = "SoundBites/carried-out-in-a-stretcher.wav"; sourceTree = "<group>"; };
+		7038D8FA1DC8410300EECF42 /* creeping-miss-teen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "creeping-miss-teen.wav"; path = "SoundBites/creeping-miss-teen.wav"; sourceTree = "<group>"; };
+		7038D8FB1DC8410300EECF42 /* dating-Ivanka.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dating-Ivanka.wav"; path = "SoundBites/dating-Ivanka.wav"; sourceTree = "<group>"; };
+		7038D8FC1DC8410300EECF42 /* dropping-to-your-knees.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dropping-to-your-knees.wav"; path = "SoundBites/dropping-to-your-knees.wav"; sourceTree = "<group>"; };
+		7038D8FD1DC8410300EECF42 /* I-could-shoot-somebody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "I-could-shoot-somebody.wav"; path = "SoundBites/I-could-shoot-somebody.wav"; sourceTree = "<group>"; };
+		7038D8FE1DC8410300EECF42 /* SoundBiteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundBiteContent.swift; path = SoundBites/SoundBiteContent.swift; sourceTree = "<group>"; };
+		7038D9181DC8410F00EECF42 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = Services/NotificationManager.swift; sourceTree = "<group>"; };
+		7038D9191DC8410F00EECF42 /* CountdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountdownManager.swift; path = Services/CountdownManager.swift; sourceTree = "<group>"; };
+		7038D91A1DC8410F00EECF42 /* GoogleCivicInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleCivicInfoInteractor.swift; path = Services/GoogleCivicInfoInteractor.swift; sourceTree = "<group>"; };
+		7038D91B1DC8410F00EECF42 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Services/LocationManager.swift; sourceTree = "<group>"; };
+		7038D91C1DC8410F00EECF42 /* PollingAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollingAPIResponse.swift; path = Services/PollingAPIResponse.swift; sourceTree = "<group>"; };
+		7038D91D1DC8410F00EECF42 /* TrumpAlarmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpAlarmUserDefaults.swift; path = Services/TrumpAlarmUserDefaults.swift; sourceTree = "<group>"; };
+		7038D91E1DC8410F00EECF42 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoManager.swift; path = Services/PhotoManager.swift; sourceTree = "<group>"; };
+		7038D91F1DC8410F00EECF42 /* TrumpQuoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteStore.swift; path = Services/TrumpQuoteStore.swift; sourceTree = "<group>"; };
+		7038D9281DC8411D00EECF42 /* TrumpQuoteLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuoteLibrary.swift; path = Models/TrumpQuoteLibrary.swift; sourceTree = "<group>"; };
+		7038D9291DC8411D00EECF42 /* TrumpQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpQuote.swift; path = Models/TrumpQuote.swift; sourceTree = "<group>"; };
+		7038D92C1DC8412500EECF42 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		7038D92D1DC8412500EECF42 /* QuotePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotePlayViewController.swift; path = Controllers/QuotePlayViewController.swift; sourceTree = "<group>"; };
+		7038D92E1DC8412500EECF42 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = Controllers/IntroViewController.swift; sourceTree = "<group>"; };
+		7038D92F1DC8412500EECF42 /* PostVotingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostVotingController.swift; path = Controllers/PostVotingController.swift; sourceTree = "<group>"; };
+		7038D9341DC8421300EECF42 /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		7038D9361DC8448B00EECF42 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		70A6CC7C1DC1238C00ED2D23 /* trump-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trump-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70A6CC841DC1238C00ED2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70A6CC861DC1238C00ED2D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70A6CC891DC1238C00ED2D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70A6CC8B1DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70A6CC901DC1238C00ED2D23 /* trump-alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trump-alarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trump_alarmTests.swift; sourceTree = "<group>"; };
 		70A6CC961DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70FD047C1DC6B02900489C79 /* CalendarName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarName.swift; path = SwiftDate/CalendarName.swift; sourceTree = "<group>"; };
-		70FD047D1DC6B02900489C79 /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Commons.swift; path = SwiftDate/Commons.swift; sourceTree = "<group>"; };
-		70FD047E1DC6B02900489C79 /* Date+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Compare.swift"; path = "SwiftDate/Date+Compare.swift"; sourceTree = "<group>"; };
-		70FD047F1DC6B02900489C79 /* Date+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Components.swift"; path = "SwiftDate/Date+Components.swift"; sourceTree = "<group>"; };
-		70FD04801DC6B02900489C79 /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Formatter.swift"; path = "SwiftDate/Date+Formatter.swift"; sourceTree = "<group>"; };
-		70FD04811DC6B02900489C79 /* Date+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Math.swift"; path = "SwiftDate/Date+Math.swift"; sourceTree = "<group>"; };
-		70FD04821DC6B02900489C79 /* DateComponents+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateComponents+Extension.swift"; path = "SwiftDate/DateComponents+Extension.swift"; sourceTree = "<group>"; };
-		70FD04831DC6B02900489C79 /* DateInRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
-		70FD04841DC6B02900489C79 /* DateInRegion+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Compare.swift"; path = "SwiftDate/DateInRegion+Compare.swift"; sourceTree = "<group>"; };
-		70FD04851DC6B02900489C79 /* DateInRegion+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
-		70FD04861DC6B02900489C79 /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
-		70FD04871DC6B02900489C79 /* DateInRegion+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Math.swift"; path = "SwiftDate/DateInRegion+Math.swift"; sourceTree = "<group>"; };
-		70FD04881DC6B02900489C79 /* DateInRegionFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateInRegionFormatter.swift; path = SwiftDate/DateInRegionFormatter.swift; sourceTree = "<group>"; };
-		70FD04891DC6B02900489C79 /* DateTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTimeInterval.swift; path = SwiftDate/DateTimeInterval.swift; sourceTree = "<group>"; };
-		70FD048A1DC6B02900489C79 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftDate/Extensions.swift; sourceTree = "<group>"; };
-		70FD048B1DC6B02900489C79 /* ISO8601DateTimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ISO8601DateTimeFormatter.swift; path = SwiftDate/ISO8601DateTimeFormatter.swift; sourceTree = "<group>"; };
-		70FD048C1DC6B02900489C79 /* LocaleName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocaleName.swift; path = SwiftDate/LocaleName.swift; sourceTree = "<group>"; };
-		70FD048D1DC6B02900489C79 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Region.swift; path = SwiftDate/Region.swift; sourceTree = "<group>"; };
-		70FD048F1DC6B02900489C79 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extensions.swift"; path = "SwiftDate/TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
-		70FD04901DC6B02900489C79 /* TimeZoneName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZoneName.swift; path = SwiftDate/TimeZoneName.swift; sourceTree = "<group>"; };
-		70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrumpAlarmDate+Extensions.swift"; sourceTree = "<group>"; };
-		70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrumpAlarmInt+Extensions.swift"; sourceTree = "<group>"; };
-		70FD04AA1DC6C9CC00489C79 /* SoundBiteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundBiteContent.swift; path = SoundBites/SoundBiteContent.swift; sourceTree = "<group>"; };
-		70FD04AC1DC6D39400489C79 /* not-a-war-hero.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "not-a-war-hero.wav"; path = "SoundBites/not-a-war-hero.wav"; sourceTree = "<group>"; };
+		9C41937C63BE0E0F94F56150 /* Pods-trump-alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trump-alarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-trump-alarm/Pods-trump-alarm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +181,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17AD71511DC5325B00E6BBD5 /* CoreLocation.framework in Frameworks */,
+				7038D9371DC8448B00EECF42 /* CoreLocation.framework in Frameworks */,
+				ED519B248C8F8FB39255A53D /* Pods_trump_alarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,64 +196,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		175549C81DC69F9200B62473 /* SoundBites */ = {
+		7038D8A71DC840A600EECF42 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				70FD04AC1DC6D39400489C79 /* not-a-war-hero.wav */,
-				27C504F61DC6A8040089139F /* nasty_woman.wav */,
-				27C504F71DC6A8040089139F /* shoot_sombody.wav */,
-				27C504F81DC6A8040089139F /* dropping-to-your-knees.wav */,
-				27C504F91DC6A8040089139F /* muslim-shutdown.wav */,
-				27C504FA1DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav */,
-				27C504FB1DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav */,
-				27C504FC1DC6A8040089139F /* you're-the-puppet.wav */,
-				27C504FD1DC6A8040089139F /* waterboarding.wav */,
-				27C504FE1DC6A8040089139F /* try-and-fuck-her-she-was-married.wav */,
-				27C504FF1DC6A8040089139F /* they're-rapist.wav */,
-				27C505001DC6A8040089139F /* take-their-guns-away.wav */,
-				27C505011DC6A8040089139F /* second-ammendment.wav */,
-				27C505021DC6A8040089139F /* nasty-woman.wav */,
-				27C505031DC6A8040089139F /* meg-kelly-blood.wav */,
-				27C505041DC6A8040089139F /* grab-em.wav */,
-				27C505051DC6A8040089139F /* hand-size.wav */,
-				27C505061DC6A8040089139F /* great-relationship-with-the-blacks.wav */,
-				27C505071DC6A8040089139F /* I-could-shoot-somebody.wav */,
-				27C505081DC6A8040089139F /* dating-Ivanka.wav */,
-				27C505091DC6A8040089139F /* carried-out-in-a-stretcher.wav */,
-				27C5050A1DC6A8040089139F /* build-a-wall.wav */,
-				27C5050B1DC6A8040089139F /* bomb-the-shit.wav */,
-				27C5050C1DC6A8040089139F /* creeping-miss-teen.wav */,
-				70FD04AA1DC6C9CC00489C79 /* SoundBiteContent.swift */,
+				7038D92C1DC8412500EECF42 /* MainViewController.swift */,
+				7038D92D1DC8412500EECF42 /* QuotePlayViewController.swift */,
+				7038D92E1DC8412500EECF42 /* IntroViewController.swift */,
+				7038D92F1DC8412500EECF42 /* PostVotingController.swift */,
 			);
-			name = SoundBites;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
-		175549D11DC69FF600B62473 /* Services */ = {
+		7038D8A81DC840AC00EECF42 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				27573DB81DC7A1560095F0BF /* PollingAPIResponse.swift */,
-				175549D21DC6A01800B62473 /* NotificationManager.swift */,
-				175549D31DC6A01800B62473 /* PhotoManager.swift */,
-				175549D41DC6A01800B62473 /* TrumpAlarmUserDefaults.swift */,
-				175549D51DC6A01800B62473 /* TrumpQuoteStore.swift */,
+				7038D9281DC8411D00EECF42 /* TrumpQuoteLibrary.swift */,
+				7038D9291DC8411D00EECF42 /* TrumpQuote.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7038D8A91DC840B200EECF42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7038D9181DC8410F00EECF42 /* NotificationManager.swift */,
+				7038D9191DC8410F00EECF42 /* CountdownManager.swift */,
+				7038D91A1DC8410F00EECF42 /* GoogleCivicInfoInteractor.swift */,
+				7038D91B1DC8410F00EECF42 /* LocationManager.swift */,
+				7038D91C1DC8410F00EECF42 /* PollingAPIResponse.swift */,
+				7038D91D1DC8410F00EECF42 /* TrumpAlarmUserDefaults.swift */,
+				7038D91E1DC8410F00EECF42 /* PhotoManager.swift */,
+				7038D91F1DC8410F00EECF42 /* TrumpQuoteStore.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
 		};
-		17AD714F1DC5325B00E6BBD5 /* Frameworks */ = {
+		7038D8AA1DC840B800EECF42 /* SoundBites */ = {
 			isa = PBXGroup;
 			children = (
-				17AD71501DC5325B00E6BBD5 /* CoreLocation.framework */,
+				7038D8E61DC8410300EECF42 /* grab-em.wav */,
+				7038D8E71DC8410300EECF42 /* great-relationship-with-the-blacks.wav */,
+				7038D8E81DC8410300EECF42 /* hand-size.wav */,
+				7038D8E91DC8410300EECF42 /* meg-kelly-blood.wav */,
+				7038D8EA1DC8410300EECF42 /* muslim-shutdown.wav */,
+				7038D8EB1DC8410300EECF42 /* nasty_woman.wav */,
+				7038D8EC1DC8410300EECF42 /* nasty-woman.wav */,
+				7038D8ED1DC8410300EECF42 /* not-a-war-hero.wav */,
+				7038D8EE1DC8410300EECF42 /* obama-clinton-co-founded-ISIS.wav */,
+				7038D8EF1DC8410300EECF42 /* second-ammendment.wav */,
+				7038D8F01DC8410300EECF42 /* shoot_sombody.wav */,
+				7038D8F11DC8410300EECF42 /* take-their-guns-away.wav */,
+				7038D8F21DC8410300EECF42 /* they're-rapist.wav */,
+				7038D8F31DC8410300EECF42 /* try-and-fuck-her-she-was-married.wav */,
+				7038D8F41DC8410300EECF42 /* waterboarding.wav */,
+				7038D8F51DC8410300EECF42 /* won't-rule-out-nuclear-weapons.wav */,
+				7038D8F61DC8410300EECF42 /* you're-the-puppet.wav */,
+				7038D8F71DC8410300EECF42 /* bomb-the-shit.wav */,
+				7038D8F81DC8410300EECF42 /* build-a-wall.wav */,
+				7038D8F91DC8410300EECF42 /* carried-out-in-a-stretcher.wav */,
+				7038D8FA1DC8410300EECF42 /* creeping-miss-teen.wav */,
+				7038D8FB1DC8410300EECF42 /* dating-Ivanka.wav */,
+				7038D8FC1DC8410300EECF42 /* dropping-to-your-knees.wav */,
+				7038D8FD1DC8410300EECF42 /* I-could-shoot-somebody.wav */,
+				7038D8FE1DC8410300EECF42 /* SoundBiteContent.swift */,
 			);
-			name = Frameworks;
+			name = SoundBites;
 			sourceTree = "<group>";
 		};
-		27573DB51DC79BC10095F0BF /* Controllers */ = {
+		7038D8AB1DC840C000EECF42 /* SwiftDate */ = {
 			isa = PBXGroup;
 			children = (
-				27573DB61DC79BF10095F0BF /* IntroViewController.swift */,
+				7038D8BC1DC840F400EECF42 /* CalendarName.swift */,
+				7038D8BD1DC840F400EECF42 /* Commons.swift */,
+				7038D8BE1DC840F400EECF42 /* Date+Compare.swift */,
+				7038D8BF1DC840F400EECF42 /* Date+Components.swift */,
+				7038D8C01DC840F400EECF42 /* Date+Formatter.swift */,
+				7038D8C11DC840F400EECF42 /* Date+Math.swift */,
+				7038D8C21DC840F400EECF42 /* DateComponents+Extension.swift */,
+				7038D8C31DC840F400EECF42 /* DateInRegion.swift */,
+				7038D8C41DC840F400EECF42 /* DateInRegion+Compare.swift */,
+				7038D8C51DC840F400EECF42 /* DateInRegion+Components.swift */,
+				7038D8C61DC840F400EECF42 /* DateInRegion+Formatter.swift */,
+				7038D8C71DC840F400EECF42 /* DateInRegion+Math.swift */,
+				7038D8C81DC840F400EECF42 /* DateInRegionFormatter.swift */,
+				7038D8C91DC840F400EECF42 /* DateTimeInterval.swift */,
+				7038D8CA1DC840F400EECF42 /* Extensions.swift */,
+				7038D8CB1DC840F400EECF42 /* ISO8601DateTimeFormatter.swift */,
+				7038D8CC1DC840F400EECF42 /* LocaleName.swift */,
+				7038D8CD1DC840F400EECF42 /* Region.swift */,
+				7038D8CF1DC840F400EECF42 /* TimeInterval+Extensions.swift */,
+				7038D8D01DC840F400EECF42 /* TimeZoneName.swift */,
 			);
-			name = Controllers;
+			name = SwiftDate;
+			sourceTree = "<group>";
+		};
+		7038D8AC1DC840CA00EECF42 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7038D8B21DC840EA00EECF42 /* StoryboardDirector.swift */,
+				7038D8B31DC840EA00EECF42 /* TrumpAlarmDate+Extensions.swift */,
+				7038D8B41DC840EA00EECF42 /* Environment.swift */,
+				7038D8B51DC840EA00EECF42 /* SwiftyJSON.swift */,
+				7038D8B61DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		7038D8AD1DC840D100EECF42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7038D8AE1DC840E000EECF42 /* TrumpFace.swift */,
+				7038D8AF1DC840E000EECF42 /* BorderedButton.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		70A6CC731DC1238C00ED2D23 = {
@@ -251,7 +317,8 @@
 				70A6CC7E1DC1238C00ED2D23 /* trump-alarm */,
 				70A6CC931DC1238C00ED2D23 /* trump-alarmTests */,
 				70A6CC7D1DC1238C00ED2D23 /* Products */,
-				17AD714F1DC5325B00E6BBD5 /* Frameworks */,
+				FE129CF685EA5FC02568821F /* Pods */,
+				F37415E1F51E94B7CF1662C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,28 +334,19 @@
 		70A6CC7E1DC1238C00ED2D23 /* trump-alarm */ = {
 			isa = PBXGroup;
 			children = (
-				27573DB51DC79BC10095F0BF /* Controllers */,
-				27C505241DC6D02B0089139F /* SwiftyJSON.swift */,
-				175549E11DC6CD6D00B62473 /* BorderedButton.swift */,
-				70FD04A61DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift */,
-				70FD04A71DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift */,
-				70FD047B1DC6B01700489C79 /* SwiftDate */,
-				175549DA1DC6A1DF00B62473 /* Main.storyboard */,
-				175549D11DC69FF600B62473 /* Services */,
-				175549C81DC69F9200B62473 /* SoundBites */,
-				175549B41DC69F1200B62473 /* TrumpQuote.swift */,
+				7038D8AD1DC840D100EECF42 /* Views */,
+				7038D8AC1DC840CA00EECF42 /* Utilities */,
+				7038D8AB1DC840C000EECF42 /* SwiftDate */,
+				7038D8AA1DC840B800EECF42 /* SoundBites */,
+				7038D8A91DC840B200EECF42 /* Services */,
+				7038D8A81DC840AC00EECF42 /* Models */,
+				7038D8A71DC840A600EECF42 /* Controllers */,
 				70A6CC7F1DC1238C00ED2D23 /* AppDelegate.swift */,
-				7010187D1DC2E27D008D927F /* PostVotingController.swift */,
-				17AD715A1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift */,
-				17AD715E1DC5AB7600E6BBD5 /* CountdownManager.swift */,
-				17AD71521DC5334100E6BBD5 /* LocationManager.swift */,
-				7010187F1DC2E27D008D927F /* MainViewController.swift */,
+				70A6CC831DC1238C00ED2D23 /* Main.storyboard */,
 				70A6CC861DC1238C00ED2D23 /* Assets.xcassets */,
-				17AD714D1DC51A1200E6BBD5 /* Environment.swift */,
-				17AD71581DC57A0F00E6BBD5 /* Secrets.swift */,
+				70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
-				27573DBA1DC7E09A0095F0BF /* TrumpFace.swift */,
-				2774187A1DC800550076AB7B /* TrumpLaunch.storyboard */,
+				7038D9341DC8421300EECF42 /* Secret.swift */,
 			);
 			path = "trump-alarm";
 			sourceTree = "<group>";
@@ -302,31 +360,22 @@
 			path = "trump-alarmTests";
 			sourceTree = "<group>";
 		};
-		70FD047B1DC6B01700489C79 /* SwiftDate */ = {
+		F37415E1F51E94B7CF1662C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70FD047C1DC6B02900489C79 /* CalendarName.swift */,
-				70FD047D1DC6B02900489C79 /* Commons.swift */,
-				70FD047E1DC6B02900489C79 /* Date+Compare.swift */,
-				70FD047F1DC6B02900489C79 /* Date+Components.swift */,
-				70FD04801DC6B02900489C79 /* Date+Formatter.swift */,
-				70FD04811DC6B02900489C79 /* Date+Math.swift */,
-				70FD04821DC6B02900489C79 /* DateComponents+Extension.swift */,
-				70FD04831DC6B02900489C79 /* DateInRegion.swift */,
-				70FD04841DC6B02900489C79 /* DateInRegion+Compare.swift */,
-				70FD04851DC6B02900489C79 /* DateInRegion+Components.swift */,
-				70FD04861DC6B02900489C79 /* DateInRegion+Formatter.swift */,
-				70FD04871DC6B02900489C79 /* DateInRegion+Math.swift */,
-				70FD04881DC6B02900489C79 /* DateInRegionFormatter.swift */,
-				70FD04891DC6B02900489C79 /* DateTimeInterval.swift */,
-				70FD048A1DC6B02900489C79 /* Extensions.swift */,
-				70FD048B1DC6B02900489C79 /* ISO8601DateTimeFormatter.swift */,
-				70FD048C1DC6B02900489C79 /* LocaleName.swift */,
-				70FD048D1DC6B02900489C79 /* Region.swift */,
-				70FD048F1DC6B02900489C79 /* TimeInterval+Extensions.swift */,
-				70FD04901DC6B02900489C79 /* TimeZoneName.swift */,
+				7038D9361DC8448B00EECF42 /* CoreLocation.framework */,
+				4E11DA3BAD928EB0F078115A /* Pods_trump_alarm.framework */,
 			);
-			name = SwiftDate;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE129CF685EA5FC02568821F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				603496EB1BB37306424435F1 /* Pods-trump-alarm.debug.xcconfig */,
+				9C41937C63BE0E0F94F56150 /* Pods-trump-alarm.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,9 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70A6CC991DC1238C00ED2D23 /* Build configuration list for PBXNativeTarget "trump-alarm" */;
 			buildPhases = (
+				BC3EC1B32BCF803C31DF3D3A /* [CP] Check Pods Manifest.lock */,
 				70A6CC781DC1238C00ED2D23 /* Sources */,
 				70A6CC791DC1238C00ED2D23 /* Frameworks */,
 				70A6CC7A1DC1238C00ED2D23 /* Resources */,
+				008D83E8CC8CB1405AAAC42C /* [CP] Embed Pods Frameworks */,
+				CB17EF4D45B242381AABEFBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,33 +465,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C505231DC6A8040089139F /* creeping-miss-teen.wav in Resources */,
-				27C505221DC6A8040089139F /* bomb-the-shit.wav in Resources */,
-				27C505121DC6A8040089139F /* won't-rule-out-nuclear-weapons.wav in Resources */,
-				70FD04AD1DC6D39400489C79 /* not-a-war-hero.wav in Resources */,
-				27C505191DC6A8040089139F /* nasty-woman.wav in Resources */,
-				27C5051C1DC6A8040089139F /* hand-size.wav in Resources */,
-				27C505171DC6A8040089139F /* take-their-guns-away.wav in Resources */,
-				27C5051A1DC6A8040089139F /* meg-kelly-blood.wav in Resources */,
-				27C505131DC6A8040089139F /* you're-the-puppet.wav in Resources */,
-				27C5051D1DC6A8040089139F /* great-relationship-with-the-blacks.wav in Resources */,
-				27C505111DC6A8040089139F /* obama-clinton-co-founded-ISIS.wav in Resources */,
+				7038D90E1DC8410300EECF42 /* won't-rule-out-nuclear-weapons.wav in Resources */,
+				7038D9131DC8410300EECF42 /* creeping-miss-teen.wav in Resources */,
+				7038D9151DC8410300EECF42 /* dropping-to-your-knees.wav in Resources */,
+				70A6CC8A1DC1238C00ED2D23 /* LaunchScreen.storyboard in Resources */,
+				7038D9071DC8410300EECF42 /* obama-clinton-co-founded-ISIS.wav in Resources */,
+				7038D9051DC8410300EECF42 /* nasty-woman.wav in Resources */,
 				70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */,
-				27C505141DC6A8040089139F /* waterboarding.wav in Resources */,
-				27C505151DC6A8040089139F /* try-and-fuck-her-she-was-married.wav in Resources */,
-				27C505161DC6A8040089139F /* they're-rapist.wav in Resources */,
-				27C505181DC6A8040089139F /* second-ammendment.wav in Resources */,
-				27C5051F1DC6A8040089139F /* dating-Ivanka.wav in Resources */,
-				2774187B1DC800550076AB7B /* TrumpLaunch.storyboard in Resources */,
-				27C505211DC6A8040089139F /* build-a-wall.wav in Resources */,
-				27C5050F1DC6A8040089139F /* dropping-to-your-knees.wav in Resources */,
-				27C5050D1DC6A8040089139F /* nasty_woman.wav in Resources */,
-				27C505201DC6A8040089139F /* carried-out-in-a-stretcher.wav in Resources */,
-				27C505101DC6A8040089139F /* muslim-shutdown.wav in Resources */,
-				27C5051E1DC6A8040089139F /* I-could-shoot-somebody.wav in Resources */,
-				27C5051B1DC6A8040089139F /* grab-em.wav in Resources */,
-				27C5050E1DC6A8040089139F /* shoot_sombody.wav in Resources */,
-				175549DC1DC6A1DF00B62473 /* Main.storyboard in Resources */,
+				7038D9011DC8410300EECF42 /* hand-size.wav in Resources */,
+				7038D9001DC8410300EECF42 /* great-relationship-with-the-blacks.wav in Resources */,
+				7038D9111DC8410300EECF42 /* build-a-wall.wav in Resources */,
+				7038D90D1DC8410300EECF42 /* waterboarding.wav in Resources */,
+				7038D9161DC8410300EECF42 /* I-could-shoot-somebody.wav in Resources */,
+				7038D90B1DC8410300EECF42 /* they're-rapist.wav in Resources */,
+				7038D9141DC8410300EECF42 /* dating-Ivanka.wav in Resources */,
+				7038D9101DC8410300EECF42 /* bomb-the-shit.wav in Resources */,
+				7038D8FF1DC8410300EECF42 /* grab-em.wav in Resources */,
+				7038D9021DC8410300EECF42 /* meg-kelly-blood.wav in Resources */,
+				7038D9091DC8410300EECF42 /* shoot_sombody.wav in Resources */,
+				70A6CC851DC1238C00ED2D23 /* Main.storyboard in Resources */,
+				7038D90F1DC8410300EECF42 /* you're-the-puppet.wav in Resources */,
+				7038D9041DC8410300EECF42 /* nasty_woman.wav in Resources */,
+				7038D9031DC8410300EECF42 /* muslim-shutdown.wav in Resources */,
+				7038D90A1DC8410300EECF42 /* take-their-guns-away.wav in Resources */,
+				7038D9081DC8410300EECF42 /* second-ammendment.wav in Resources */,
+				7038D90C1DC8410300EECF42 /* try-and-fuck-her-she-was-married.wav in Resources */,
+				7038D9061DC8410300EECF42 /* not-a-war-hero.wav in Resources */,
+				7038D9121DC8410300EECF42 /* carried-out-in-a-stretcher.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,52 +504,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		008D83E8CC8CB1405AAAC42C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-trump-alarm/Pods-trump-alarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC3EC1B32BCF803C31DF3D3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB17EF4D45B242381AABEFBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-trump-alarm/Pods-trump-alarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70A6CC781DC1238C00ED2D23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17AD715B1DC57B6C00E6BBD5 /* GoogleCivicInfoInteractor.swift in Sources */,
-				701018801DC2E27D008D927F /* PostVotingController.swift in Sources */,
-				175549E21DC6CD6D00B62473 /* BorderedButton.swift in Sources */,
-				70FD04A11DC6B02900489C79 /* LocaleName.swift in Sources */,
-				70FD04931DC6B02900489C79 /* Date+Compare.swift in Sources */,
-				175549D71DC6A01800B62473 /* PhotoManager.swift in Sources */,
-				27C505251DC6D02B0089139F /* SwiftyJSON.swift in Sources */,
-				175549D91DC6A01800B62473 /* TrumpQuoteStore.swift in Sources */,
-				70FD04921DC6B02900489C79 /* Commons.swift in Sources */,
-				70FD04AB1DC6C9CC00489C79 /* SoundBiteContent.swift in Sources */,
-				70FD04A41DC6B02900489C79 /* TimeInterval+Extensions.swift in Sources */,
-				27573DBB1DC7E09A0095F0BF /* TrumpFace.swift in Sources */,
-				17AD71591DC57A0F00E6BBD5 /* Secrets.swift in Sources */,
-				70FD049F1DC6B02900489C79 /* Extensions.swift in Sources */,
-				17AD715F1DC5AB7600E6BBD5 /* CountdownManager.swift in Sources */,
-				175549D81DC6A01800B62473 /* TrumpAlarmUserDefaults.swift in Sources */,
-				70FD04A21DC6B02900489C79 /* Region.swift in Sources */,
-				17AD71531DC5334100E6BBD5 /* LocationManager.swift in Sources */,
-				70FD049E1DC6B02900489C79 /* DateTimeInterval.swift in Sources */,
-				70FD04941DC6B02900489C79 /* Date+Components.swift in Sources */,
-				175549D61DC6A01800B62473 /* NotificationManager.swift in Sources */,
-				27573DB91DC7A1560095F0BF /* PollingAPIResponse.swift in Sources */,
-				70FD04971DC6B02900489C79 /* DateComponents+Extension.swift in Sources */,
-				70FD049B1DC6B02900489C79 /* DateInRegion+Formatter.swift in Sources */,
+				7038D8DF1DC840F400EECF42 /* Extensions.swift in Sources */,
+				7038D92B1DC8411D00EECF42 /* TrumpQuote.swift in Sources */,
+				7038D92A1DC8411D00EECF42 /* TrumpQuoteLibrary.swift in Sources */,
+				7038D8E51DC840F400EECF42 /* TimeZoneName.swift in Sources */,
+				7038D8E11DC840F400EECF42 /* LocaleName.swift in Sources */,
+				7038D8B71DC840EA00EECF42 /* StoryboardDirector.swift in Sources */,
+				7038D8D71DC840F400EECF42 /* DateComponents+Extension.swift in Sources */,
+				7038D8B91DC840EA00EECF42 /* Environment.swift in Sources */,
+				7038D9271DC8410F00EECF42 /* TrumpQuoteStore.swift in Sources */,
+				7038D9321DC8412500EECF42 /* IntroViewController.swift in Sources */,
+				7038D9211DC8410F00EECF42 /* CountdownManager.swift in Sources */,
+				7038D8E21DC840F400EECF42 /* Region.swift in Sources */,
+				7038D8E01DC840F400EECF42 /* ISO8601DateTimeFormatter.swift in Sources */,
+				7038D8D21DC840F400EECF42 /* Commons.swift in Sources */,
+				7038D8D91DC840F400EECF42 /* DateInRegion+Compare.swift in Sources */,
+				7038D9311DC8412500EECF42 /* QuotePlayViewController.swift in Sources */,
 				70A6CC801DC1238C00ED2D23 /* AppDelegate.swift in Sources */,
-				70FD04A91DC6B10A00489C79 /* TrumpAlarmInt+Extensions.swift in Sources */,
-				70FD04911DC6B02900489C79 /* CalendarName.swift in Sources */,
-				701018821DC2E27D008D927F /* MainViewController.swift in Sources */,
-				70FD04A81DC6B10A00489C79 /* TrumpAlarmDate+Extensions.swift in Sources */,
-				27573DB71DC79BF10095F0BF /* IntroViewController.swift in Sources */,
-				70FD049C1DC6B02900489C79 /* DateInRegion+Math.swift in Sources */,
-				17AD714E1DC51A1200E6BBD5 /* Environment.swift in Sources */,
-				70FD04A01DC6B02900489C79 /* ISO8601DateTimeFormatter.swift in Sources */,
-				70FD049A1DC6B02900489C79 /* DateInRegion+Components.swift in Sources */,
-				70FD04A51DC6B02900489C79 /* TimeZoneName.swift in Sources */,
-				70FD04961DC6B02900489C79 /* Date+Math.swift in Sources */,
-				70FD049D1DC6B02900489C79 /* DateInRegionFormatter.swift in Sources */,
-				70FD04991DC6B02900489C79 /* DateInRegion+Compare.swift in Sources */,
-				70FD04951DC6B02900489C79 /* Date+Formatter.swift in Sources */,
-				70FD04981DC6B02900489C79 /* DateInRegion.swift in Sources */,
-				175549B61DC69F1200B62473 /* TrumpQuote.swift in Sources */,
+				7038D9221DC8410F00EECF42 /* GoogleCivicInfoInteractor.swift in Sources */,
+				7038D8DA1DC840F400EECF42 /* DateInRegion+Components.swift in Sources */,
+				7038D9231DC8410F00EECF42 /* LocationManager.swift in Sources */,
+				7038D9201DC8410F00EECF42 /* NotificationManager.swift in Sources */,
+				7038D9171DC8410300EECF42 /* SoundBiteContent.swift in Sources */,
+				7038D8D31DC840F400EECF42 /* Date+Compare.swift in Sources */,
+				7038D8DC1DC840F400EECF42 /* DateInRegion+Math.swift in Sources */,
+				7038D8D81DC840F400EECF42 /* DateInRegion.swift in Sources */,
+				7038D9331DC8412500EECF42 /* PostVotingController.swift in Sources */,
+				7038D9251DC8410F00EECF42 /* TrumpAlarmUserDefaults.swift in Sources */,
+				7038D8B01DC840E000EECF42 /* TrumpFace.swift in Sources */,
+				7038D8BB1DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift in Sources */,
+				7038D8D61DC840F400EECF42 /* Date+Math.swift in Sources */,
+				7038D9241DC8410F00EECF42 /* PollingAPIResponse.swift in Sources */,
+				7038D8B81DC840EA00EECF42 /* TrumpAlarmDate+Extensions.swift in Sources */,
+				7038D8BA1DC840EA00EECF42 /* SwiftyJSON.swift in Sources */,
+				7038D8DE1DC840F400EECF42 /* DateTimeInterval.swift in Sources */,
+				7038D8B11DC840E000EECF42 /* BorderedButton.swift in Sources */,
+				7038D8D11DC840F400EECF42 /* CalendarName.swift in Sources */,
+				7038D9261DC8410F00EECF42 /* PhotoManager.swift in Sources */,
+				7038D9351DC8421300EECF42 /* Secret.swift in Sources */,
+				7038D8D51DC840F400EECF42 /* Date+Formatter.swift in Sources */,
+				7038D8D41DC840F400EECF42 /* Date+Components.swift in Sources */,
+				7038D8DD1DC840F400EECF42 /* DateInRegionFormatter.swift in Sources */,
+				7038D8E41DC840F400EECF42 /* TimeInterval+Extensions.swift in Sources */,
+				7038D8DB1DC840F400EECF42 /* DateInRegion+Formatter.swift in Sources */,
+				7038D9301DC8412500EECF42 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,12 +623,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		175549DA1DC6A1DF00B62473 /* Main.storyboard */ = {
+		70A6CC831DC1238C00ED2D23 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				175549DB1DC6A1DF00B62473 /* Base */,
+				70A6CC841DC1238C00ED2D23 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A6CC891DC1238C00ED2D23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -626,9 +737,9 @@
 		};
 		70A6CC9A1DC1238C00ED2D23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603496EB1BB37306424435F1 /* Pods-trump-alarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -641,9 +752,9 @@
 		};
 		70A6CC9B1DC1238C00ED2D23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C41937C63BE0E0F94F56150 /* Pods-trump-alarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = T34EE4GLT2;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -659,7 +770,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "trump-alarmTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yaunches.trump-alarmTests";
@@ -674,7 +784,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "trump-alarmTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yaunches.trump-alarmTests";
