@@ -16,6 +16,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var minutesValueLabel: UILabel!
     @IBOutlet weak var secondsValueLabel: UILabel!
     @IBOutlet weak var trumpFaceImage: TrumpFace!
+    @IBOutlet weak var untilPollsLabel: UILabel!
     
     var countdownEndDate = Date()
     var photoManager = PhotoManager()
@@ -26,9 +27,19 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         navigationItem.setHidesBackButton(true, animated: false)        
         trumpFaceImage.setup()
         
-        countdownEndDate = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
- 
-        let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTick(timer:)), userInfo: nil, repeats: true)
+        let countdownPollsOpen = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
+        let countdownPollsClose = TrumpAlarmUserDefaults.userPollingHours.pollsCloseDate
+        
+        //countdownEndDate starts at today's date
+        if  countdownEndDate < countdownPollsOpen {
+            countdownEndDate = countdownPollsOpen
+            untilPollsLabel.text = "UNTIL POLLS OPEN"
+        } else if countdownEndDate < countdownPollsClose {
+            countdownEndDate = countdownPollsClose
+            untilPollsLabel.text = "UNTIL POLLS CLOSE"
+        }
+        
+        let timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(onTick(timer:)), userInfo: nil, repeats: true)
         timer.fire()
     }
     
