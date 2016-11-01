@@ -10,11 +10,24 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
+    @IBOutlet weak var reminderLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
+
     var civicInfoInteractor = GoogleCivicInformationInteractor()
     var locationManager = LocationManager()
 
+    override func viewWillAppear(_ animated: Bool) {
+
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.navigationItem.setHidesBackButton(true, animated: false)
         // Do any additional setup after loading the view.
     }
@@ -31,15 +44,6 @@ class IntroViewController: UIViewController {
                 self.navigateToCountdown(userPollingHours: PollingAPIResponse())
         })
     }
-    
-    @IBAction func shareButtonTapped(_ sender: Any) {
-        let copy = "Need a reminder of why you should wake up and vote for Hillary on November 8th? The Trump Alarm spews frightening Trump sounds bites every hour on the hour from the time the polls open to the time polls close on election day. The only way to turn off the most annoying, offensive alarm clock ever is by voting. Download and Make America Wake Up and Vote Again!"
-        if let url = NSURL(string: "http://www.trumpalarm.com") {
-            let activityVC = UIActivityViewController(activityItems: [copy as String, url], applicationActivities: nil)
-            present(activityVC, animated: true, completion: nil)
-        }
-    }
-    
     
     func navigateToCountdown(userPollingHours: PollingAPIResponse) {
         TrumpAlarmUserDefaults.hasSeenIntro = true

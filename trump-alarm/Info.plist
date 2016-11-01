@@ -27,7 +27,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The Trump Alarm will customize your alarms based on the hours your particular polling place is open.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Let's get that pic of your voting self!</string>
+	<string>Keep the evidence that you voted!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
