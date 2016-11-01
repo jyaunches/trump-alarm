@@ -55,10 +55,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     
-        if let tempImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+    if let tempImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        
             UIImageWriteToSavedPhotosAlbum(tempImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
             
-            photoManager.writeImage(image: tempImage)
+//            photoManager.writeImage(image: tempImage)
         }
         
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
@@ -80,7 +81,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func readyToVoteClicked(_ sender: Any) {
-        
         let alertController = UIAlertController(title: "Are you at you're polling station?", message: "You must must get photo evidence of yourself voting to silence these awful alarms! (while respecting your local polling places rules around photography.)", preferredStyle: UIAlertControllerStyle.alert)
         
         let DestructiveAction = UIAlertAction(title: "Cancel", style: .cancel) { (result : UIAlertAction) -> Void in

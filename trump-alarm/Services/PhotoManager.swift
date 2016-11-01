@@ -52,4 +52,7 @@ class PhotoManager: NSObject {
             
         }
     }
+
+
+    
 }

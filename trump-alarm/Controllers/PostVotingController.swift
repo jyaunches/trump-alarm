@@ -26,45 +26,14 @@ class PostVotingController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func overlayImageOnScreenshot() -> UIImage {
-        
-        let imageSize : CGSize = UIScreen.main.bounds.size
-        UIGraphicsBeginImageContextWithOptions(imageSize, false, 0)
- 
-        let context = UIGraphicsGetCurrentContext()
-        
-        for window in UIApplication.shared.windows {
-            if window.responds(to: #selector(getter: UIWindow.screen)) || window.screen == UIScreen.main {
-                context?.saveGState()
-                context?.ctm.translatedBy(x: window.center.x, y: window.center.y)
-                context?.ctm.concatenating(window.transform)
-                
-                context?.ctm.translatedBy(x: window.bounds.size.width * window.layer.anchorPoint.x,
-                                         y: window.bounds.size.height * window.layer.anchorPoint.y)
-                
-                window.layer.render(in: context!)
-                
-                context?.restoreGState()
-            }
-        }
-        
+    func takeSnapshot() -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
 
-    let image = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    return image!;
+        view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
