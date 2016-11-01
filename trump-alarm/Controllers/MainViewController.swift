@@ -104,4 +104,12 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func shareButtonTapped(_ sender: Any) {
+        let copy = "Need a reminder of why you should wake up and vote for Hillary on November 8th? The Trump Alarm spews frightening Trump sounds bites every hour on the hour from the time the polls open to the time polls close on election day. The only way to turn off the most annoying, offensive alarm clock ever is by voting. Download and Make America Wake Up and Vote Again!"
+        if let url = NSURL(string: "http://www.trumpalarm.com") {
+            let activityVC = UIActivityViewController(activityItems: [copy as String, url], applicationActivities: nil)
+            present(activityVC, animated: true, completion: nil)
+        }
+    }
 }
