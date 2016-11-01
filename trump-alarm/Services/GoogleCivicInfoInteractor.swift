@@ -50,7 +50,7 @@ class GoogleCivicInformationInteractor: NSObject {
         get(request: clientURLRequest(params: params), requestCompletion: { (success, object) in
             DispatchQueue.main.async {
                 if success {
-                    let json = JSON(object)
+                    let json = JSON(object as Any)
                     let time = json["pollingLocations"][0]["pollingHours"].stringValue
                     
                     // HERE IS SOURCE

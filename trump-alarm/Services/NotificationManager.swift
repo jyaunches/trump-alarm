@@ -70,7 +70,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
             TrumpQuote(content: SoundBiteContent.relationshipWithTheBlacks, audioFile: "great-relationship-with-the-blacks.wav", identifier: "polling-day-great-relationship-with-the-blacks"),
             TrumpQuote(content: SoundBiteContent.teenCreeping, audioFile: "creeping-miss-teen.wav", identifier: "polling-day-creeping-miss-teen"),
             TrumpQuote(content: SoundBiteContent.theyreRapists, audioFile: "they're-rapist.wav", identifier: "polling-day-they're-rapist"),
-            TrumpQuote(content: SoundBiteContent.carryOutInAStretcher, audioFile: "carried-out-in-a-stretcher.wav", identifier: "polling-day-   carried-out-in-a-stretcher"),
+            TrumpQuote(content: SoundBiteContent.carryOutInAStretcher, audioFile: "carried-out-in-a-stretcher.wav", identifier: "polling-day-carried-out-in-a-stretcher"),
             /*
              TrumpQuote(content: SoundBiteContent.obamaPositiveImactOnThugs, audioFile: "bomb-the-shit.wav", identifier: "foo234"),
              TrumpQuote(content: SoundBiteContent.iWontLoseAPenny, audioFile: "bomb-the-shit.wav", identifier: "foo234")
