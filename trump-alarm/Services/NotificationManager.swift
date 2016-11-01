@@ -75,7 +75,6 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
              TrumpQuote(content: SoundBiteContent.obamaPositiveImactOnThugs, audioFile: "bomb-the-shit.wav", identifier: "foo234"),
              TrumpQuote(content: SoundBiteContent.iWontLoseAPenny, audioFile: "bomb-the-shit.wav", identifier: "foo234")
              */
-            
         ]
         
         requestNotificationPermission(onAgree: {
@@ -96,7 +95,9 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
     
     func schedule(quote: TrumpQuote, interval: TimeInterval) {
-        let content = UNMutableNotificationContent()
+        
+        if interval > 0 {
+            let content = UNMutableNotificationContent()
         content.title = "Wake up and Vote"
         content.body = quote.content
         content.sound = UNNotificationSound(named: quote.audioFile)
@@ -110,6 +111,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
             if (error != nil) {
                 print("Error scheduling notification: \(error)")
             }
+        }
         }
     }
     

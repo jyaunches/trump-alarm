@@ -20,6 +20,7 @@ class TrumpAlarmUserDefaults: NSObject {
             return PollingAPIResponse(pollsOpen: pollsOpen, pollsClose: pollsClose)
         }
         set {
+            NotificationManager.sharedInstance.setupPollingDay(pollingHours: userPollingHours)
             UserDefaults.standard.set(newValue.pollsOpenDate, forKey: "userPollingOpeningHours")
             UserDefaults.standard.set(newValue.pollsCloseDate, forKey: "userPollingClosingHours")
         }

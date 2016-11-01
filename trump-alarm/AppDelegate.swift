@@ -28,9 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {                
         if Date.endOfelectionDay <= Date() {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
             self.window?.makeKeyAndVisible()

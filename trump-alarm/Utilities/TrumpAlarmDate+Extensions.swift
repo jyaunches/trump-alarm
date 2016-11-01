@@ -73,7 +73,7 @@ extension Date {
         
         if electionDay > Date() {
             //TODO: update the 0 below to Date() on Nov 1
-            let daysLeft = electionDay.day
+            let daysLeft = electionDay.day - today.day
 
             let todaysInterval = (22.minutes.fromNow() ?? Date()).timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate
             intervals.append(todaysInterval)

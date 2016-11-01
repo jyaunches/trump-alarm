@@ -17,13 +17,15 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.9</string>
+	<string>1.11</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Gotta get that pic of you voting!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The Trump Alarm will customize your alarms based on the hours your particular polling place is open.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Let's get that pic of your voting self!</string>
 	<key>UILaunchStoryboardName</key>
@@ -45,11 +47,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The Trump Alarm will customize your alarms based on the hours your particular polling place is open.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Let&apos;s get that pic of your voting self!</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The Trump Alarm will customize your alarms based on the hours your particular polling place is open.</string>
 </dict>
 </plist>
