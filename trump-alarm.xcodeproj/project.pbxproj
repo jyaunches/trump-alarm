@@ -135,11 +135,11 @@
 		7038D8EF1DC8410300EECF42 /* second-ammendment.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "second-ammendment.wav"; path = "SoundBites/second-ammendment.wav"; sourceTree = "<group>"; };
 		7038D8F01DC8410300EECF42 /* shoot_sombody.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shoot_sombody.wav; path = SoundBites/shoot_sombody.wav; sourceTree = "<group>"; };
 		7038D8F11DC8410300EECF42 /* take-their-guns-away.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "take-their-guns-away.wav"; path = "SoundBites/take-their-guns-away.wav"; sourceTree = "<group>"; };
-		7038D8F21DC8410300EECF42 /* they're-rapist.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "they're-rapist.wav"; path = "SoundBites/they're-rapist.wav"; sourceTree = "<group>"; };
+		7038D8F21DC8410300EECF42 /* they're-rapist.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "they\'re-rapist.wav"; path = "SoundBites/they\'re-rapist.wav"; sourceTree = "<group>"; };
 		7038D8F31DC8410300EECF42 /* try-and-fuck-her-she-was-married.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "try-and-fuck-her-she-was-married.wav"; path = "SoundBites/try-and-fuck-her-she-was-married.wav"; sourceTree = "<group>"; };
 		7038D8F41DC8410300EECF42 /* waterboarding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = waterboarding.wav; path = SoundBites/waterboarding.wav; sourceTree = "<group>"; };
-		7038D8F51DC8410300EECF42 /* won't-rule-out-nuclear-weapons.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "won't-rule-out-nuclear-weapons.wav"; path = "SoundBites/won't-rule-out-nuclear-weapons.wav"; sourceTree = "<group>"; };
-		7038D8F61DC8410300EECF42 /* you're-the-puppet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "you're-the-puppet.wav"; path = "SoundBites/you're-the-puppet.wav"; sourceTree = "<group>"; };
+		7038D8F51DC8410300EECF42 /* won't-rule-out-nuclear-weapons.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "won\'t-rule-out-nuclear-weapons.wav"; path = "SoundBites/won\'t-rule-out-nuclear-weapons.wav"; sourceTree = "<group>"; };
+		7038D8F61DC8410300EECF42 /* you're-the-puppet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "you\'re-the-puppet.wav"; path = "SoundBites/you\'re-the-puppet.wav"; sourceTree = "<group>"; };
 		7038D8F71DC8410300EECF42 /* bomb-the-shit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "bomb-the-shit.wav"; path = "SoundBites/bomb-the-shit.wav"; sourceTree = "<group>"; };
 		7038D8F81DC8410300EECF42 /* build-a-wall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "build-a-wall.wav"; path = "SoundBites/build-a-wall.wav"; sourceTree = "<group>"; };
 		7038D8F91DC8410300EECF42 /* carried-out-in-a-stretcher.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "carried-out-in-a-stretcher.wav"; path = "SoundBites/carried-out-in-a-stretcher.wav"; sourceTree = "<group>"; };
@@ -431,7 +431,7 @@
 				TargetAttributes = {
 					70A6CC7B1DC1238C00ED2D23 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T34EE4GLT2;
+						DevelopmentTeam = 45TSFBYZEE;
 						ProvisioningStyle = Automatic;
 					};
 					70A6CC8F1DC1238C00ED2D23 = {
@@ -532,7 +532,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CB17EF4D45B242381AABEFBF /* [CP] Copy Pods Resources */ = {
@@ -740,7 +740,7 @@
 			baseConfigurationReference = 603496EB1BB37306424435F1 /* Pods-trump-alarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T34EE4GLT2;
+				DEVELOPMENT_TEAM = 45TSFBYZEE;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
@@ -755,7 +755,7 @@
 			baseConfigurationReference = 9C41937C63BE0E0F94F56150 /* Pods-trump-alarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T34EE4GLT2;
+				DEVELOPMENT_TEAM = 45TSFBYZEE;
 				INFOPLIST_FILE = "trump-alarm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaunches.trump-alarm";
