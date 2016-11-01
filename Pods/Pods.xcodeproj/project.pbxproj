@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F99798BC374475E18F78503F7C26D8E /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C45F41EBD471E46398D98F3167FE4 /* ConstraintAttributes.swift */; };
+		18115734AFBA98870076452CA08214EF /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8957C98882330472732C68519C9D0 /* ConstraintRelatableTarget.swift */; };
+		2017B6231369FF9895F4CE4F03FE5AED /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B262C284E5087F21C63A913FE77322E /* ConstraintMakerRelatable.swift */; };
+		210FC15357DD1E71D0BB9ED8552D88E2 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB392F9B18CDA2AFFB13B433B3C3042 /* UILayoutSupport+Extensions.swift */; };
+		22A6741134A37675ACD79051E05BA833 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D165D999C9701D47ECA59987B56AAA8 /* ConstraintPriorityTarget.swift */; };
+		37A41D71B4E49941D6B9F398BA03E129 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DC198AF1D310C1316ACC48FE4ADCB /* Constraint.swift */; };
+		3D251902B7BB2F59D4D971664C5A5586 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8DA62949D82E36261BB621522B36E1E /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4429F28320D3DB4E7A7427B7D64BB45D /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A67016A12BBAA83C7BF1C28D3307D /* ConstraintRelation.swift */; };
+		4F3505280FBF6E9F7A75AE598B99AD48 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95986DA1CAC28B68B697CF512B1F5DD6 /* LayoutConstraint.swift */; };
+		5276FAD9E44E8D52ABC84349F8BF82D5 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A792A9DE9EABA9595E1860ED16147E /* ConstraintLayoutSupport.swift */; };
+		580061954FFB5697C32F8FC6C4ABB23F /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50439955FA0E0AC363F469AB7CD75316 /* ConstraintOffsetTarget.swift */; };
+		5CD29A820F4EDF47411B7386B544EA12 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670DBDF92EEE458998AC87DD47171E6C /* ConstraintMakerEditable.swift */; };
+		65AC4CE1DF7B13870834E905D7187ED9 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D87AC7CE49C393CF2BE2CAE12253CDB /* ConstraintViewDSL.swift */; };
+		6B5CDF279DB343569C3861D749570C63 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C3FD24362190EBEF655ABC6991ECE /* ConstraintView+Extensions.swift */; };
+		6BE5FAF0F9C45AA35ADD01A2B8578E0D /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEA8318DDCBFAFD0FE09ED2B3DD636 /* ConstraintInsetTarget.swift */; };
+		72D7230E4AA7B657235D942218A020E3 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1037BECB6FC8709141269EF2B480C6EF /* ConstraintLayoutGuide.swift */; };
+		822AFA943F066FF913BCC44C6FFF1DB1 /* Pods-trump-alarm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D5D87997CB536A96A6C4D50CBC636F /* Pods-trump-alarm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		831F208752D706A277E96D49EB362D26 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428AAB81F56FDAAEC3E8560943895AE7 /* ConstraintView.swift */; };
+		8BAE0FDFB2169CEFAD58E7D3AF83E170 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65F691E085B7D4DC7254B1B3D68F13 /* Debugging.swift */; };
+		8D3ECEE00F52DA6F5567283F3A4AC3F1 /* Pods-trump-alarm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F20652670B2318619CEADB67198CA4CF /* Pods-trump-alarm-dummy.m */; };
+		91F7BE98B4B8532230710B5F9D2A359A /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA70A0F8EF5A4BDA05FD16A8F2DF13 /* ConstraintMakerFinalizable.swift */; };
+		975ABFA45BFBB4F24C6A61080232043B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AC0EDD9F0BEFB306503352AA85A4E3E0 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738739EC23D33AE4E493801F74D1784 /* ConstraintMakerExtendable.swift */; };
+		B8481EBD2E26915FD8A19ED131A4A0B0 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10D1037B69E43A1DB4CFDEBAD6A4149 /* ConstraintDSL.swift */; };
+		BB393948C253E46356310C8DD233F9D6 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529EB634859D3126E19B1A2AD0C002CA /* ConstraintLayoutGuideDSL.swift */; };
+		BE1D0B8DF62B757FE880795B4593BA58 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D6B4C6802FC05D0DB0015856CB8E2 /* ConstraintItem.swift */; };
+		C1B2B65E8FB03CC4D02E6364665EB494 /* UILayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255209170F43075C816116D641F638E /* UILayoutGuide+Extensions.swift */; };
+		C5CC3E3C75611F2674BFF6371E92FE20 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF4BA7AB4D7E48954C2F2F0FB795C4 /* ConstraintDescription.swift */; };
+		C90F39763FA67FCCD5EAE19F30F76168 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84DFCDBC96120FCA9F25DC55AF1DE7 /* ConstraintConfig.swift */; };
+		C92E06EA7BF9A4D1E4E3A3F894CAB088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D5386CEBAD5FC5079AA17960213E6D70 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE630FF158AAA06118161E787E7CDF /* ConstraintMaker.swift */; };
+		D7A7B6CD88EC8FFC64678D9709AA1809 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8B303EB69DE2E44D210582651CE06 /* ConstraintConstantTarget.swift */; };
+		DE510446C182322D63F85DF4D2193FCF /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8395A3904C6EEEE8B460ACFE224D2 /* ConstraintInsets.swift */; };
+		E5B479490C793BF3E8583722A60028D4 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734849D042278FFF193D4A743483C923 /* ConstraintMakerPriortizable.swift */; };
+		E80E952DBDF9CE5F112A5160EA16D224 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954FE29666DBB88A3360A277961100BB /* ConstraintLayoutSupportDSL.swift */; };
+		F2B43EF403AE05C3030CDDB2A6D4D657 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47A6EED7D053A5FD1089C3CF7BB23A /* ConstraintMultiplierTarget.swift */; };
+		FB33E78E7E5D73C08823EE3BA54007C1 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C556AE842851313576F132C39876A1 /* SnapKit-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACD1C0B7888088E40D025BB6E68ADCC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B30489B84761028C94EFFD9031B3F3D2;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0428E2A057792C9451175BE520A4307A /* Pods-trump-alarm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-trump-alarm-frameworks.sh"; sourceTree = "<group>"; };
+		097B1DCA420D8C8975F2742F1C53ADB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B8B303EB69DE2E44D210582651CE06 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		0B644309EFC74EFDBB90AE130CA78171 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		0D87AC7CE49C393CF2BE2CAE12253CDB /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		1037BECB6FC8709141269EF2B480C6EF /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		1255209170F43075C816116D641F638E /* UILayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Extensions.swift"; path = "Source/UILayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		17151A4D81D88CACCB08C5E7046313D9 /* Pods_trump_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trump_alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235583202C0DBAAEA111A37F7167FE9F /* Pods-trump-alarm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-trump-alarm-acknowledgements.plist"; sourceTree = "<group>"; };
+		25C556AE842851313576F132C39876A1 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		279C3FD24362190EBEF655ABC6991ECE /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		318185605C30DFABBAC463482E4FEAF9 /* Pods-trump-alarm-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-trump-alarm-resources.sh"; sourceTree = "<group>"; };
+		322F6F8CB7D87808319E03C0EE054F50 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		3D165D999C9701D47ECA59987B56AAA8 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		428AAB81F56FDAAEC3E8560943895AE7 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		48C9053F7DDC9B71876667FD4CA15E72 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		4BB392F9B18CDA2AFFB13B433B3C3042 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		4CAE630FF158AAA06118161E787E7CDF /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		50439955FA0E0AC363F469AB7CD75316 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		5217B7BBA9616C9DF257AF1841218A32 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		529EB634859D3126E19B1A2AD0C002CA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		56AA70A0F8EF5A4BDA05FD16A8F2DF13 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		57AEA8318DDCBFAFD0FE09ED2B3DD636 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		5B262C284E5087F21C63A913FE77322E /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		670DBDF92EEE458998AC87DD47171E6C /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		734849D042278FFF193D4A743483C923 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		73B2665F880CC35A68BEA1CBE25F3D12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799A67016A12BBAA83C7BF1C28D3307D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		7E6E46D88CE9D7DE433D9741DB0A3775 /* Pods-trump-alarm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-trump-alarm-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E84DFCDBC96120FCA9F25DC55AF1DE7 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		830EB8FDA43312D8C920411EAC4FAD60 /* Pods-trump-alarm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-trump-alarm.modulemap"; sourceTree = "<group>"; };
+		8D85924D180D2AB02274079448B012C1 /* Pods-trump-alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trump-alarm.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		954FE29666DBB88A3360A277961100BB /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		95986DA1CAC28B68B697CF512B1F5DD6 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		9B9DC198AF1D310C1316ACC48FE4ADCB /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		9D2C45F41EBD471E46398D98F3167FE4 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		AAE8395A3904C6EEEE8B460ACFE224D2 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		B10D1037B69E43A1DB4CFDEBAD6A4149 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		B3A792A9DE9EABA9595E1860ED16147E /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		BB47A6EED7D053A5FD1089C3CF7BB23A /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		BBA526A9664816EEA0CD13A2561DFDCE /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = "RevealServer-2/iOS/RevealServer.framework"; sourceTree = "<group>"; };
+		C1D1BD8CF0024D9A31E9915995535695 /* Pods-trump-alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-trump-alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D5D87997CB536A96A6C4D50CBC636F /* Pods-trump-alarm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-trump-alarm-umbrella.h"; sourceTree = "<group>"; };
+		CAAF4BA7AB4D7E48954C2F2F0FB795C4 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DBB8957C98882330472732C68519C9D0 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		E25D6B4C6802FC05D0DB0015856CB8E2 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		E738739EC23D33AE4E493801F74D1784 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		E8DA62949D82E36261BB621522B36E1E /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		EE65F691E085B7D4DC7254B1B3D68F13 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		F20652670B2318619CEADB67198CA4CF /* Pods-trump-alarm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-trump-alarm-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FB7A1F97DC7E2CE931CDC691D18675C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92E06EA7BF9A4D1E4E3A3F894CAB088 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981118E3FDF324C193ECEBD8C31BD366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975ABFA45BFBB4F24C6A61080232043B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AA14D069C8357325735B117759074E9 /* Reveal-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEDAF436E5DC4CFD6846425F2734A0 /* Frameworks */,
+			);
+			path = "Reveal-SDK";
+			sourceTree = "<group>";
+		};
+		7165ABE395DC3422952C65A21FF115B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90718AEEC4CFFC78CC6F682BEEC8085D /* Pods-trump-alarm */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7302836334F5261F0FCFD4C17C21F2CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73B2665F880CC35A68BEA1CBE25F3D12 /* Info.plist */,
+				322F6F8CB7D87808319E03C0EE054F50 /* SnapKit.modulemap */,
+				0B644309EFC74EFDBB90AE130CA78171 /* SnapKit.xcconfig */,
+				25C556AE842851313576F132C39876A1 /* SnapKit-dummy.m */,
+				48C9053F7DDC9B71876667FD4CA15E72 /* SnapKit-prefix.pch */,
+				E8DA62949D82E36261BB621522B36E1E /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		769BE8B5BD4648E0547DF040FAB2DC33 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				9B9DC198AF1D310C1316ACC48FE4ADCB /* Constraint.swift */,
+				9D2C45F41EBD471E46398D98F3167FE4 /* ConstraintAttributes.swift */,
+				7E84DFCDBC96120FCA9F25DC55AF1DE7 /* ConstraintConfig.swift */,
+				09B8B303EB69DE2E44D210582651CE06 /* ConstraintConstantTarget.swift */,
+				CAAF4BA7AB4D7E48954C2F2F0FB795C4 /* ConstraintDescription.swift */,
+				B10D1037B69E43A1DB4CFDEBAD6A4149 /* ConstraintDSL.swift */,
+				AAE8395A3904C6EEEE8B460ACFE224D2 /* ConstraintInsets.swift */,
+				57AEA8318DDCBFAFD0FE09ED2B3DD636 /* ConstraintInsetTarget.swift */,
+				E25D6B4C6802FC05D0DB0015856CB8E2 /* ConstraintItem.swift */,
+				1037BECB6FC8709141269EF2B480C6EF /* ConstraintLayoutGuide.swift */,
+				529EB634859D3126E19B1A2AD0C002CA /* ConstraintLayoutGuideDSL.swift */,
+				B3A792A9DE9EABA9595E1860ED16147E /* ConstraintLayoutSupport.swift */,
+				954FE29666DBB88A3360A277961100BB /* ConstraintLayoutSupportDSL.swift */,
+				4CAE630FF158AAA06118161E787E7CDF /* ConstraintMaker.swift */,
+				670DBDF92EEE458998AC87DD47171E6C /* ConstraintMakerEditable.swift */,
+				E738739EC23D33AE4E493801F74D1784 /* ConstraintMakerExtendable.swift */,
+				56AA70A0F8EF5A4BDA05FD16A8F2DF13 /* ConstraintMakerFinalizable.swift */,
+				734849D042278FFF193D4A743483C923 /* ConstraintMakerPriortizable.swift */,
+				5B262C284E5087F21C63A913FE77322E /* ConstraintMakerRelatable.swift */,
+				BB47A6EED7D053A5FD1089C3CF7BB23A /* ConstraintMultiplierTarget.swift */,
+				50439955FA0E0AC363F469AB7CD75316 /* ConstraintOffsetTarget.swift */,
+				3D165D999C9701D47ECA59987B56AAA8 /* ConstraintPriorityTarget.swift */,
+				DBB8957C98882330472732C68519C9D0 /* ConstraintRelatableTarget.swift */,
+				799A67016A12BBAA83C7BF1C28D3307D /* ConstraintRelation.swift */,
+				428AAB81F56FDAAEC3E8560943895AE7 /* ConstraintView.swift */,
+				279C3FD24362190EBEF655ABC6991ECE /* ConstraintView+Extensions.swift */,
+				0D87AC7CE49C393CF2BE2CAE12253CDB /* ConstraintViewDSL.swift */,
+				EE65F691E085B7D4DC7254B1B3D68F13 /* Debugging.swift */,
+				95986DA1CAC28B68B697CF512B1F5DD6 /* LayoutConstraint.swift */,
+				1255209170F43075C816116D641F638E /* UILayoutGuide+Extensions.swift */,
+				4BB392F9B18CDA2AFFB13B433B3C3042 /* UILayoutSupport+Extensions.swift */,
+				7302836334F5261F0FCFD4C17C21F2CC /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		7CEEDAF436E5DC4CFD6846425F2734A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBA526A9664816EEA0CD13A2561DFDCE /* RevealServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C5661D89B99D1A3D01C786B738AB17D1 /* Pods */,
+				D69F3B8A236CF65A925EE4B4FC4DBA81 /* Products */,
+				7165ABE395DC3422952C65A21FF115B1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		90718AEEC4CFFC78CC6F682BEEC8085D /* Pods-trump-alarm */ = {
+			isa = PBXGroup;
+			children = (
+				097B1DCA420D8C8975F2742F1C53ADB5 /* Info.plist */,
+				830EB8FDA43312D8C920411EAC4FAD60 /* Pods-trump-alarm.modulemap */,
+				7E6E46D88CE9D7DE433D9741DB0A3775 /* Pods-trump-alarm-acknowledgements.markdown */,
+				235583202C0DBAAEA111A37F7167FE9F /* Pods-trump-alarm-acknowledgements.plist */,
+				F20652670B2318619CEADB67198CA4CF /* Pods-trump-alarm-dummy.m */,
+				0428E2A057792C9451175BE520A4307A /* Pods-trump-alarm-frameworks.sh */,
+				318185605C30DFABBAC463482E4FEAF9 /* Pods-trump-alarm-resources.sh */,
+				C3D5D87997CB536A96A6C4D50CBC636F /* Pods-trump-alarm-umbrella.h */,
+				C1D1BD8CF0024D9A31E9915995535695 /* Pods-trump-alarm.debug.xcconfig */,
+				8D85924D180D2AB02274079448B012C1 /* Pods-trump-alarm.release.xcconfig */,
+			);
+			name = "Pods-trump-alarm";
+			path = "Target Support Files/Pods-trump-alarm";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5661D89B99D1A3D01C786B738AB17D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AA14D069C8357325735B117759074E9 /* Reveal-SDK */,
+				769BE8B5BD4648E0547DF040FAB2DC33 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D69F3B8A236CF65A925EE4B4FC4DBA81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17151A4D81D88CACCB08C5E7046313D9 /* Pods_trump_alarm.framework */,
+				5217B7BBA9616C9DF257AF1841218A32 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24CD07928CF2F1CE11D8444025175F35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822AFA943F066FF913BCC44C6FFF1DB1 /* Pods-trump-alarm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5CD0912513C2898AA383D0A986109F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D251902B7BB2F59D4D971664C5A5586 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		094405BF9A89A666E1275D45C7939BF8 /* Pods-trump-alarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4D8EDCBE53A875A49ED7A3A3C10E35 /* Build configuration list for PBXNativeTarget "Pods-trump-alarm" */;
+			buildPhases = (
+				4DDC9466845030849A62599D5F31C0C7 /* Sources */,
+				981118E3FDF324C193ECEBD8C31BD366 /* Frameworks */,
+				24CD07928CF2F1CE11D8444025175F35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C301F72AA2A13E6988BC6093945EB52 /* PBXTargetDependency */,
+			);
+			name = "Pods-trump-alarm";
+			productName = "Pods-trump-alarm";
+			productReference = 17151A4D81D88CACCB08C5E7046313D9 /* Pods_trump_alarm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B30489B84761028C94EFFD9031B3F3D2 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F393927C48A947F7757E3C85F3E9E55E /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				5D47BADF3CFD35F0F4BC0FB1378E821F /* Sources */,
+				8FB7A1F97DC7E2CE931CDC691D18675C /* Frameworks */,
+				FD5CD0912513C2898AA383D0A986109F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 5217B7BBA9616C9DF257AF1841218A32 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D69F3B8A236CF65A925EE4B4FC4DBA81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				094405BF9A89A666E1275D45C7939BF8 /* Pods-trump-alarm */,
+				B30489B84761028C94EFFD9031B3F3D2 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DDC9466845030849A62599D5F31C0C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3ECEE00F52DA6F5567283F3A4AC3F1 /* Pods-trump-alarm-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D47BADF3CFD35F0F4BC0FB1378E821F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A41D71B4E49941D6B9F398BA03E129 /* Constraint.swift in Sources */,
+				0F99798BC374475E18F78503F7C26D8E /* ConstraintAttributes.swift in Sources */,
+				C90F39763FA67FCCD5EAE19F30F76168 /* ConstraintConfig.swift in Sources */,
+				D7A7B6CD88EC8FFC64678D9709AA1809 /* ConstraintConstantTarget.swift in Sources */,
+				C5CC3E3C75611F2674BFF6371E92FE20 /* ConstraintDescription.swift in Sources */,
+				B8481EBD2E26915FD8A19ED131A4A0B0 /* ConstraintDSL.swift in Sources */,
+				DE510446C182322D63F85DF4D2193FCF /* ConstraintInsets.swift in Sources */,
+				6BE5FAF0F9C45AA35ADD01A2B8578E0D /* ConstraintInsetTarget.swift in Sources */,
+				BE1D0B8DF62B757FE880795B4593BA58 /* ConstraintItem.swift in Sources */,
+				72D7230E4AA7B657235D942218A020E3 /* ConstraintLayoutGuide.swift in Sources */,
+				BB393948C253E46356310C8DD233F9D6 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				5276FAD9E44E8D52ABC84349F8BF82D5 /* ConstraintLayoutSupport.swift in Sources */,
+				E80E952DBDF9CE5F112A5160EA16D224 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				D5386CEBAD5FC5079AA17960213E6D70 /* ConstraintMaker.swift in Sources */,
+				5CD29A820F4EDF47411B7386B544EA12 /* ConstraintMakerEditable.swift in Sources */,
+				AC0EDD9F0BEFB306503352AA85A4E3E0 /* ConstraintMakerExtendable.swift in Sources */,
+				91F7BE98B4B8532230710B5F9D2A359A /* ConstraintMakerFinalizable.swift in Sources */,
+				E5B479490C793BF3E8583722A60028D4 /* ConstraintMakerPriortizable.swift in Sources */,
+				2017B6231369FF9895F4CE4F03FE5AED /* ConstraintMakerRelatable.swift in Sources */,
+				F2B43EF403AE05C3030CDDB2A6D4D657 /* ConstraintMultiplierTarget.swift in Sources */,
+				580061954FFB5697C32F8FC6C4ABB23F /* ConstraintOffsetTarget.swift in Sources */,
+				22A6741134A37675ACD79051E05BA833 /* ConstraintPriorityTarget.swift in Sources */,
+				18115734AFBA98870076452CA08214EF /* ConstraintRelatableTarget.swift in Sources */,
+				4429F28320D3DB4E7A7427B7D64BB45D /* ConstraintRelation.swift in Sources */,
+				6B5CDF279DB343569C3861D749570C63 /* ConstraintView+Extensions.swift in Sources */,
+				831F208752D706A277E96D49EB362D26 /* ConstraintView.swift in Sources */,
+				65AC4CE1DF7B13870834E905D7187ED9 /* ConstraintViewDSL.swift in Sources */,
+				8BAE0FDFB2169CEFAD58E7D3AF83E170 /* Debugging.swift in Sources */,
+				4F3505280FBF6E9F7A75AE598B99AD48 /* LayoutConstraint.swift in Sources */,
+				FB33E78E7E5D73C08823EE3BA54007C1 /* SnapKit-dummy.m in Sources */,
+				C1B2B65E8FB03CC4D02E6364665EB494 /* UILayoutGuide+Extensions.swift in Sources */,
+				210FC15357DD1E71D0BB9ED8552D88E2 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C301F72AA2A13E6988BC6093945EB52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = B30489B84761028C94EFFD9031B3F3D2 /* SnapKit */;
+			targetProxy = ACD1C0B7888088E40D025BB6E68ADCC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		82D9EC741823BD31CD0B236F2AAECE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B644309EFC74EFDBB90AE130CA78171 /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AB6A23734CA39197442B6B8DC541250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B644309EFC74EFDBB90AE130CA78171 /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A4BD93D9E8167DE76EBC980FEEF681A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D85924D180D2AB02274079448B012C1 /* Pods-trump-alarm.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-trump-alarm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trump-alarm/Pods-trump-alarm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_trump_alarm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5D891A2D8AFC7D275D1D2EC51CE67D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D1BD8CF0024D9A31E9915995535695 /* Pods-trump-alarm.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-trump-alarm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-trump-alarm/Pods-trump-alarm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_trump_alarm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C4D8EDCBE53A875A49ED7A3A3C10E35 /* Build configuration list for PBXNativeTarget "Pods-trump-alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D891A2D8AFC7D275D1D2EC51CE67D7 /* Debug */,
+				9A4BD93D9E8167DE76EBC980FEEF681A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F393927C48A947F7757E3C85F3E9E55E /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D9EC741823BD31CD0B236F2AAECE6D /* Debug */,
+				8AB6A23734CA39197442B6B8DC541250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
