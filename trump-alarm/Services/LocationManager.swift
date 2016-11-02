@@ -28,8 +28,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     func requestLocation(currentLocation: CLLocation) {
-        CLGeocoder().reverseGeocodeLocation(currentLocation) { (placemarks, error) in
-            print("geocoder returning: \(placemarks)")
+        CLGeocoder().reverseGeocodeLocation(currentLocation) { (placemarks, error) in            
             if let _ = error {
                 return
             }

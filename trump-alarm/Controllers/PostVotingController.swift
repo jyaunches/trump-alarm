@@ -13,7 +13,7 @@ class PostVotingController: UIViewController {
     @IBOutlet var snapshotView: UIView!
 
     @IBOutlet weak var votingImage: UIImageView!
-    
+
     var cachedImage: UIImage?
     var photoManager = PhotoManager()
     var appDelegate = AppDelegate()

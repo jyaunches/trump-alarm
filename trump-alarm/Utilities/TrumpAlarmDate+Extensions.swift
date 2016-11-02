@@ -23,6 +23,13 @@ extension Date {
             return Date(timeIntervalSinceReferenceDate: 500274000)
         }
     }
+    
+    static var isMoreThanThreeHoursFromPollsClose: Bool {
+        get {
+            let diff = Date().hour - TrumpAlarmUserDefaults.userPollingHours.pollsCloseDate.hour
+            return diff > 3
+        }
+    }
 
     static func defaultPollsOpen() -> Date {
         let calendar = Calendar.current
@@ -95,25 +102,48 @@ extension Date {
         return intervals
     }
 
-    static func intervalsOnElectionDay(electionDayStart: Date, electionDayEnd: Date) -> [TimeInterval] {
+    static func earlyIntervalsOnElectionDay(electionDayStart: Date, electionDayEnd: Date) -> [TimeInterval] {
         var intervals: [TimeInterval] = []
         let today = NSDate()
 
         var startHour = electionDayStart.hour
-        let endHour = electionDayEnd.hour
+        let endHour = electionDayEnd.hour - 3
 
         while startHour < endHour {
-            let randomSec = Int.random(range: 0 ..< 60)
-            let randomMin = Int.random(range: 0 ..< 60)
-
-            let intervalDate = try! electionDayStart.atTime(hour: startHour, minute: randomMin, second: randomSec)
-            intervals.append(intervalDate.timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate)
+            for _ in 1...2 {
+                let randomSec = Int.random(range: 0 ..< 60)
+                let randomMin = Int.random(range: 0 ..< 60)
+                
+                let intervalDate = try! electionDayStart.atTime(hour: startHour, minute: randomMin, second: randomSec)
+                intervals.append(intervalDate.timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate)
+            }
+            
             startHour += 1
         }
 
+        return intervals
+    }
 
-        let utcDate = (Date() + 5.second).inRegion()
-        return [utcDate.timeIntervalSinceReferenceDate]
+    static func laterIntervalsOnElectionDay(electionDayStart: Date, electionDayEnd: Date) -> [TimeInterval] {
+        var intervals: [TimeInterval] = []
+        let today = NSDate()
+
+        var startHour = electionDayEnd.hour - 3
+        let endHour = electionDayEnd.hour
+
+        while startHour < endHour {
+            for _ in 1...4 {
+                let randomSec = Int.random(range: 0 ..< 60)
+                let randomMin = Int.random(range: 0 ..< 60)
+
+                let intervalDate = try! electionDayStart.atTime(hour: startHour, minute: randomMin, second: randomSec)
+                intervals.append(intervalDate.timeIntervalSinceReferenceDate - today.timeIntervalSinceReferenceDate)
+            }
+
+            startHour += 1
+        }
+
+        return intervals
     }
 
 }

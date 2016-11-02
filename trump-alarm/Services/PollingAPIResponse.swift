@@ -22,7 +22,7 @@ class PollingAPIResponse: NSObject {
             
             let openingComponents = getPollingTimeComponents(openTime: dashSeperated[0])
             let closingComponents = getPollingTimeComponents(openTime: dashSeperated[1])
-            
+
             pollsOpenDate = timeUntilPollsOpen(timeArray: openingComponents)
             pollsCloseDate = timeUntilPollsClose(timeArray: closingComponents)
         }
