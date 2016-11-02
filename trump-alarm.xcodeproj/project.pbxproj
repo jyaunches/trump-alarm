@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		274EC1281DCA12C900CD7B0C /* TrumpAlarmNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EC1271DCA12C900CD7B0C /* TrumpAlarmNotification.swift */; };
+		70159E941DCA570D00C581DB /* TrumpAlarmShareItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70159E931DCA570D00C581DB /* TrumpAlarmShareItemSource.swift */; };
 		7038D8B01DC840E000EECF42 /* TrumpFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8AE1DC840E000EECF42 /* TrumpFace.swift */; };
 		7038D8B11DC840E000EECF42 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8AF1DC840E000EECF42 /* BorderedButton.swift */; };
 		7038D8B71DC840EA00EECF42 /* StoryboardDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038D8B21DC840EA00EECF42 /* StoryboardDirector.swift */; };
@@ -98,6 +99,7 @@
 		274EC1271DCA12C900CD7B0C /* TrumpAlarmNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpAlarmNotification.swift; sourceTree = "<group>"; };
 		4E11DA3BAD928EB0F078115A /* Pods_trump_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trump_alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		603496EB1BB37306424435F1 /* Pods-trump-alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trump-alarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trump-alarm/Pods-trump-alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		70159E931DCA570D00C581DB /* TrumpAlarmShareItemSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpAlarmShareItemSource.swift; sourceTree = "<group>"; };
 		7038D8AE1DC840E000EECF42 /* TrumpFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrumpFace.swift; path = Views/TrumpFace.swift; sourceTree = "<group>"; };
 		7038D8AF1DC840E000EECF42 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderedButton.swift; path = Views/BorderedButton.swift; sourceTree = "<group>"; };
 		7038D8B21DC840EA00EECF42 /* StoryboardDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardDirector.swift; path = Utilities/StoryboardDirector.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		7038D8AC1DC840CA00EECF42 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				70159E931DCA570D00C581DB /* TrumpAlarmShareItemSource.swift */,
 				274EC1271DCA12C900CD7B0C /* TrumpAlarmNotification.swift */,
 				7038D8B21DC840EA00EECF42 /* StoryboardDirector.swift */,
 				7038D8B31DC840EA00EECF42 /* TrumpAlarmDate+Extensions.swift */,
@@ -562,6 +565,7 @@
 			files = (
 				7038D8DF1DC840F400EECF42 /* Extensions.swift in Sources */,
 				7038D92B1DC8411D00EECF42 /* TrumpQuote.swift in Sources */,
+				70159E941DCA570D00C581DB /* TrumpAlarmShareItemSource.swift in Sources */,
 				7038D92A1DC8411D00EECF42 /* TrumpQuoteLibrary.swift in Sources */,
 				7038D8E51DC840F400EECF42 /* TimeZoneName.swift in Sources */,
 				7038D8E11DC840F400EECF42 /* LocaleName.swift in Sources */,
