@@ -13,6 +13,8 @@ class PostVotingController: UIViewController {
     @IBOutlet var snapshotView: UIView!
 
     @IBOutlet weak var votingImage: UIImageView!
+    
+    var cachedImage: UIImage?
     var photoManager = PhotoManager()
     var appDelegate = AppDelegate()
 
@@ -26,13 +28,15 @@ class PostVotingController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let photo = photoManager.getImage() {
+        if let cachedImage = cachedImage {
+            votingImage.image = cachedImage
+        } else if let photo = photoManager.getImage() {
             votingImage.image = photo
         }
     }
 
     @IBAction func closeButtonTapped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)        
+        let _ = self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func shareButtonTapped(_ sender: Any) {
