@@ -40,7 +40,10 @@ class PostVotingController: UIViewController {
     }
 
     @IBAction func shareButtonTapped(_ sender: Any) {
-        //actionViewController
+        if let votingImage = PhotoManager().getImage() {
+            let avc = UIActivityViewController(activityItems: [votingImage, TAPhotoShareItemSource()] as [AnyObject], applicationActivities: nil)
+            present(avc, animated: true, completion: nil)
+        }
     }
 
     @IBAction func saveButtonTapped(_ sender: Any) {

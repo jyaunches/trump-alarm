@@ -5,12 +5,12 @@
 
 import UIKit
 
-class TAAppShareItemSource: NSObject, UIActivityItemSource {
-    
+class TAPhotoShareItemSource: NSObject, UIActivityItemSource {
+
     func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
         return ""
     }
-    
+
     func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivityType) -> Any? {
 
         if activityType == UIActivityType.message {
@@ -28,9 +28,9 @@ class TAAppShareItemSource: NSObject, UIActivityItemSource {
     func activityViewController(_ activityViewController: UIActivityViewController, subjectForActivityType activityType: UIActivityType?) -> String {
         return "Trump Alarm - Wake up and vote!"
     }
-    
+
     func activityViewController(_ activityViewController: UIActivityViewController, thumbnailImageForActivityType activityType: UIActivityType?, suggestedSize size: CGSize) -> UIImage? {
-    
+
         if let beginningImage = UIImage(named: "TrumpMouth") {
             let newWidth = size.width
 
@@ -45,5 +45,4 @@ class TAAppShareItemSource: NSObject, UIActivityItemSource {
         }
         return nil
     }
-    
 }

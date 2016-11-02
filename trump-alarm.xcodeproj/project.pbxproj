@@ -82,6 +82,7 @@
 		70A6CC871DC1238C00ED2D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC861DC1238C00ED2D23 /* Assets.xcassets */; };
 		70A6CC8A1DC1238C00ED2D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */; };
 		70A6CC951DC1238C00ED2D23 /* trump_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */; };
+		E77701302ACB6BFD3BA50CEA /* ShareVotingImageActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7770D799294E4CB3E8552DD /* ShareVotingImageActivity.swift */; };
 		ED519B248C8F8FB39255A53D /* Pods_trump_alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E11DA3BAD928EB0F078115A /* Pods_trump_alarm.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +179,7 @@
 		70A6CC941DC1238C00ED2D23 /* trump_alarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trump_alarmTests.swift; sourceTree = "<group>"; };
 		70A6CC961DC1238C00ED2D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C41937C63BE0E0F94F56150 /* Pods-trump-alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trump-alarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-trump-alarm/Pods-trump-alarm.release.xcconfig"; sourceTree = "<group>"; };
+		E7770D799294E4CB3E8552DD /* ShareVotingImageActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVotingImageActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 				7038D8B41DC840EA00EECF42 /* Environment.swift */,
 				7038D8B51DC840EA00EECF42 /* SwiftyJSON.swift */,
 				7038D8B61DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift */,
+				E7770D799294E4CB3E8552DD /* ShareVotingImageActivity.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				7038D8E41DC840F400EECF42 /* TimeInterval+Extensions.swift in Sources */,
 				7038D8DB1DC840F400EECF42 /* DateInRegion+Formatter.swift in Sources */,
 				7038D9301DC8412500EECF42 /* MainViewController.swift in Sources */,
+				E77701302ACB6BFD3BA50CEA /* ShareVotingImageActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
