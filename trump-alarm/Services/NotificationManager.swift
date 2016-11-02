@@ -85,6 +85,10 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         })
     }
     
+    func setupElectionDayIntervals() {
+        
+    }
+    
     func requestNotificationPermission(onAgree: (() -> Void)?) {
         center.requestAuthorization(options: [.alert, .sound]) {
             (granted, error) in

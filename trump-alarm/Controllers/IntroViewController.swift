@@ -43,6 +43,8 @@ class IntroViewController: UIViewController {
             (error: Error) in
                 self.navigateToCountdown(userPollingHours: PollingAPIResponse())
         })
+        
+        NotificationManager.requestNotificationPermission(<#T##NotificationManager#>)
     }
     
     func navigateToCountdown(userPollingHours: PollingAPIResponse) {

@@ -24,6 +24,13 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !TrumpAlarmUserDefaults.hasSeenIntro {
+            let introVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntroViewController")
+            self.present(introVC, animated: false, completion: nil)
+
+        }
+        
         navigationItem.setHidesBackButton(true, animated: false)        
         trumpFaceImage.setup()
         
@@ -55,15 +62,15 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     
-    if let tempImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-        
+        if let tempImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
         photoManager.writeImage(image: tempImage)
-
         }
         
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             TrumpAlarmUserDefaults.hasVoted = true
-            appDelegate.setPostVotingAsRoot()
+            appDelegate.setThanksForVotingAsRoot()
+            let postVotingVC = storyboard?.instantiateViewController(withIdentifier: "PostVotingController")
+            self.navigationController?.topViewController?.present(postVotingVC!, animated: true, completion: nil)
         }
     }
     
