@@ -22,18 +22,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
     }
     
-    func setPostVotingVCAsRoot() {
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "PostVotingController")
-        self.window?.makeKeyAndVisible()
+    func setCountdownAsRoot() {
+        let mainCountDown = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC")
+        setMainNVCWith(stack: [mainCountDown])
     }
-    
-    
+
     func setQuotePlaying(quote: TrumpQuote) {
         if let quoteVC = storyboardDirector.buildQuotePlaying(quote: quote) {
-            setIntroNVCWith(stack: [quoteVC])
+            setMainNVCWith(stack: [quoteVC])
         }
     }
 
+    func setMainNVCWith(stack: [UIViewController]) {
+        if let rootNav = storyboard.instantiateViewController(withIdentifier: "IntroNVC") as? UINavigationController {
+            rootNav.viewControllers = stack
+            self.window?.rootViewController = rootNav
+            self.window?.makeKeyAndVisible()
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {                
         if Date.endOfelectionDay <= Date() {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
@@ -42,37 +49,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "IntroNVC")
             self.window?.makeKeyAndVisible()
         } else if TrumpAlarmUserDefaults.hasVoted {
-            setThanksForVotingAsRoot()
+            if Date() < Date.midnightOfelectionDay {
+                setCountdownAsRoot()
+            } else {
+                setThanksForVotingAsRoot()
+            }
         } else {
             if let mainCountDown = storyboardDirector.buildMainCountdown() {
-                setIntroNVCWith(stack: [mainCountDown])
+                setMainNVCWith(stack: [mainCountDown])
             }
         }
         return true
-    }
-    
-    
-    
-    func requestAuthorization() {
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound], completionHandler: {(granted, error) in
-            print("stuff happening")
-        })
-    }
-    
-    func setIntroNVCWith(stack: [UIViewController]) {
-        if let rootNav = storyboard.instantiateViewController(withIdentifier: "IntroNVC") as? UINavigationController {
-            rootNav.viewControllers = stack
-            self.window?.rootViewController = rootNav
-            self.window?.makeKeyAndVisible()
-        }
-    
-    }
-    
-    func setupNavigationBarAttributes() {
-    }
-    
-
-
+    }    
 }
 

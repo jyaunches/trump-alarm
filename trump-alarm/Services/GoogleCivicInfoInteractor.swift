@@ -49,15 +49,14 @@ class GoogleCivicInformationInteractor: NSObject {
         
         get(request: clientURLRequest(params: params), requestCompletion: { (success, object) in
             DispatchQueue.main.async {
+                let json = JSON(object as Any)
                 if success {
-                    let json = JSON(object as Any)
+                    print("Poll info API response: \(json)")
                     let time = json["pollingLocations"][0]["pollingHours"].stringValue
-                    
-                    // HERE IS SOURCE
+
                     completion(true, time)
                 } else {
-                    // HERE IS SOURCE
-                    // HERE IS SOURCE
+                    print("Poll info API response failure: \(json)")
                     completion(false, "8 am - 8 pm")
                 }
             }

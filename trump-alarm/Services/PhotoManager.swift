@@ -31,13 +31,14 @@ class PhotoManager: NSObject {
         if let picURL = picURL
             {
             
-            let picData = try! Data(contentsOf: picURL)
+                if let picData = try? Data(contentsOf: picURL) {
                 
             if let foo = UIImage(data: picData)?.cgImage {
                 let orientation = defaults.integer(forKey: "voting-photo-orientation")
                     result = UIImage(cgImage: foo, scale: 1.0, orientation: UIImageOrientation(rawValue: orientation) ?? .up)
                 }
             }
+        }
         return result
     }
     
