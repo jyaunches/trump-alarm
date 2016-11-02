@@ -595,7 +595,7 @@ Blasting Trump sound bites increasingly until polls close on election day.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geD-uD-oxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="1569.265367316342"/>
+            <point key="canvasLocation" x="2871" y="1570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6h3-hy-Cvf">
@@ -732,7 +732,7 @@ Blasting Trump sound bites increasingly until polls close on election day.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3W-EY-fog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="1571"/>
+            <point key="canvasLocation" x="2056.8000000000002" y="1570.1649175412294"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sFw-u5-oI3">
@@ -779,6 +779,24 @@ Blasting Trump sound bites increasingly until polls close on election day.
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hA0-9y-IbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="178" y="856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e4w-Qd-x2F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SQr-uh-jyw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l5y-vw-DgV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wp5-Xk-Dfb" kind="relationship" relationship="rootViewController" id="CSw-qN-mES"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4J-kY-fHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117.5999999999999" y="1570.1649175412294"/>
         </scene>
     </scenes>
     <resources>

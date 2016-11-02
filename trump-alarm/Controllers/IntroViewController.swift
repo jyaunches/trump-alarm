@@ -15,6 +15,8 @@ class IntroViewController: UIViewController {
 
     var civicInfoInteractor = GoogleCivicInformationInteractor()
     var locationManager = LocationManager()
+    var appDelegate = AppDelegate()
+    var notificationManager = NotificationManager()
 
     override func viewWillAppear(_ animated: Bool) {
 
@@ -38,19 +40,30 @@ class IntroViewController: UIViewController {
             self.civicInfoInteractor.getPollInfo(params: ["address": location, "fields": "pollingLocations/pollingHours"], completion: {
                 (success, pollHours) in                
                 self.navigateToCountdown(userPollingHours: PollingAPIResponse(response: pollHours))
-            })
+                })
+                self.appDelegate.requestAuthorization()
+                self.notificationManager.requestNotificationPermission {
+                    NotificationManager.sharedInstance.setupPrePolling(pollingDate: Date.midnightOfelectionDay)
+                }
+            self.dismiss(animated: true, completion: nil)
+            
         }, onFailure: {
             (error: Error) in
                 self.navigateToCountdown(userPollingHours: PollingAPIResponse())
+            self.appDelegate.requestAuthorization()
+            self.notificationManager.requestNotificationPermission {
+                NotificationManager.sharedInstance.setupPrePolling(pollingDate: Date.midnightOfelectionDay)
+            }
+            self.dismiss(animated: true, completion: nil)
         })
-        
-        NotificationManager.requestNotificationPermission(<#T##NotificationManager#>)
+
+
     }
     
     func navigateToCountdown(userPollingHours: PollingAPIResponse) {
         TrumpAlarmUserDefaults.hasSeenIntro = true
         TrumpAlarmUserDefaults.userPollingHours = userPollingHours
-        self.performSegue(withIdentifier: "ShowCountDownFromIntroSegue", sender: self)                
+//        self.performSegue(withIdentifier: "ShowCountDownFromIntroSegue", sender: self)                
     }
 
 }

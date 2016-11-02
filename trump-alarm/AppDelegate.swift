@@ -19,13 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setThanksForVotingAsRoot() {
         self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
-//        self.window?.makeKeyAndVisible()
+        self.window?.makeKeyAndVisible()
     }
     
-//    func presentPostVotingVC() {
-//        let postVotingVC = storyboard.instantiateViewController(withIdentifier: "PostVotingController")
-//        self.window?.rootViewController?.present(postVotingVC, animated: true, completion: nil)
-//    }
+    func setPostVotingVCAsRoot() {
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "PostVotingController")
+        self.window?.makeKeyAndVisible()
+    }
     
     
     func setQuotePlaying(quote: TrumpQuote) {
@@ -39,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
             self.window?.makeKeyAndVisible()
         } else if !TrumpAlarmUserDefaults.hasSeenIntro {
-            NotificationManager.sharedInstance.setupPrePolling(pollingDate: Date.midnightOfelectionDay)
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "IntroNVC")
             self.window?.makeKeyAndVisible()
         } else if TrumpAlarmUserDefaults.hasVoted {
@@ -49,12 +48,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 setIntroNVCWith(stack: [mainCountDown])
             }
         }
-        
+        return true
+    }
+    
+    
+    
+    func requestAuthorization() {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound], completionHandler: {(granted, error) in
             print("stuff happening")
         })
-        return true
     }
     
     func setIntroNVCWith(stack: [UIViewController]) {

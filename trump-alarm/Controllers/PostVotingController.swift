@@ -14,6 +14,7 @@ class PostVotingController: UIViewController {
    
     @IBOutlet weak var votingImage: UIImageView!
     var photoManager = PhotoManager()
+    var appDelegate = AppDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
