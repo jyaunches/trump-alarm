@@ -68,5 +68,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     
     }
+    
+    func setupNavigationBarAttributes() {
+    }
+    
+
+
 }
 
