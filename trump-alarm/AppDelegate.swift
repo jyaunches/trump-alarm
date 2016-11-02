@@ -60,6 +60,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         return true
-    }    
+    }
+    
+//    func activityViewController(activityViewController: UIActivityViewController, activityType: UIActivityType) -> AnyObject? {
+//        if activityType == UIActivityType.postToFacebook {
+//        } activityType == UIActivityType.postToFacebook {
+//            return NSLocalizedString("Retweet this!", comment: "comment")
+//        } else {
+//            return nil
+//        }
+//    }
 }
 
