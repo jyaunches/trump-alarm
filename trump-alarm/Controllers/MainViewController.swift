@@ -68,11 +68,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             TrumpAlarmUserDefaults.hasVoted = true
-            let thanksVC = appDelegate.storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
             let postVC = appDelegate.storyboard.instantiateViewController(withIdentifier: "PostVotingController")
-            
-            appDelegate.setIntroNVCWith(stack: [thanksVC, postVC])
-        
+
+            self.navigationController?.pushViewController(postVC, animated: false)
+            picker.dismiss(animated: true)
         }
     }
     

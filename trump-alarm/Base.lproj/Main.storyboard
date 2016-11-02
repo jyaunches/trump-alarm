@@ -280,11 +280,12 @@ Blasting Trump sound bites increasingly until polls close on election day.
                     <connections>
                         <outlet property="detailLabel" destination="rnc-qq-aYX" id="We1-gw-3bo"/>
                         <outlet property="reminderLabel" destination="kxV-g7-zeq" id="Yba-cU-iir"/>
+                        <segue destination="h1h-pq-3dQ" kind="show" identifier="ShowCountDownFromIntroSegue" id="mQ7-Dh-VX8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjP-gG-xGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1180" y="124"/>
+            <point key="canvasLocation" x="-471" y="115"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="RdX-BK-HxC">
@@ -326,7 +327,7 @@ Blasting Trump sound bites increasingly until polls close on election day.
                                 <rect key="frame" x="16" y="466.5" width="343" height="17.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-wn-wta">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="17.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -338,7 +339,7 @@ Blasting Trump sound bites increasingly until polls close on election day.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-oE-NBF">
-                                        <rect key="frame" x="228.5" y="0.0" width="114.5" height="17.5"/>
+                                        <rect key="frame" x="247.5" y="0.0" width="95.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -346,7 +347,7 @@ Blasting Trump sound bites increasingly until polls close on election day.
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="J3u-4X-aRs" userLabel="HMS">
-                                <rect key="frame" x="42.5" y="496" width="291" height="34.5"/>
+                                <rect key="frame" x="33" y="496" width="310" height="34.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="dek-gl-trB" userLabel="hours">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="34.5"/>
@@ -358,13 +359,13 @@ Blasting Trump sound bites increasingly until polls close on election day.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="796-bo-2nm" userLabel="BTW H &amp; M">
-                                        <rect key="frame" x="62" y="0.0" width="52.5" height="34.5"/>
+                                        <rect key="frame" x="62" y="0.0" width="62" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-SA-JxM" userLabel="min">
-                                        <rect key="frame" x="114.5" y="0.0" width="62" height="34.5"/>
+                                        <rect key="frame" x="124" y="0.0" width="62" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="62" id="U5s-WP-Pbg"/>
                                         </constraints>
@@ -373,13 +374,13 @@ Blasting Trump sound bites increasingly until polls close on election day.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="6B4-JW-Uxh" userLabel="BTW M &amp; S">
-                                        <rect key="frame" x="176.5" y="0.0" width="52.5" height="34.5"/>
+                                        <rect key="frame" x="186" y="0.0" width="62" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="P8i-bB-dWc" userLabel="sec">
-                                        <rect key="frame" x="229" y="0.0" width="62" height="34.5"/>
+                                        <rect key="frame" x="248" y="0.0" width="62" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="62" id="k79-FI-MGG"/>
                                         </constraints>
@@ -465,7 +466,7 @@ Blasting Trump sound bites increasingly until polls close on election day.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXb-6K-2sq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="134"/>
+            <point key="canvasLocation" x="450" y="115"/>
         </scene>
         <!--Post Voting Controller-->
         <scene sceneID="vAF-zz-QvS">
@@ -535,12 +536,13 @@ Blasting Trump sound bites increasingly until polls close on election day.
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQU-tu-n20">
-                                <rect key="frame" x="21" y="25" width="40" height="40"/>
+                                <rect key="frame" x="16" y="20" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="8QP-kx-x0b"/>
                                     <constraint firstAttribute="height" constant="40" id="HKE-Ne-miA"/>
                                 </constraints>
-                                <state key="normal" image="close">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -578,10 +580,10 @@ Blasting Trump sound bites increasingly until polls close on election day.
                             <constraint firstItem="yH1-PA-ung" firstAttribute="width" secondItem="aNm-8P-VlL" secondAttribute="width" multiplier="0.25" id="GpD-N2-t7K"/>
                             <constraint firstItem="8m9-iL-1jM" firstAttribute="centerY" secondItem="aNm-8P-VlL" secondAttribute="centerYWithinMargins" id="Lgd-lm-HW7"/>
                             <constraint firstItem="8m9-iL-1jM" firstAttribute="width" secondItem="aNm-8P-VlL" secondAttribute="width" id="MJ9-ix-995"/>
-                            <constraint firstItem="pQU-tu-n20" firstAttribute="leading" secondItem="aNm-8P-VlL" secondAttribute="leadingMargin" constant="5" id="RSr-UI-McV"/>
+                            <constraint firstItem="pQU-tu-n20" firstAttribute="leading" secondItem="aNm-8P-VlL" secondAttribute="leadingMargin" id="RSr-UI-McV"/>
                             <constraint firstItem="frx-QE-KTS" firstAttribute="top" secondItem="f9M-NX-XPH" secondAttribute="top" id="UZI-x9-4G7"/>
                             <constraint firstItem="8m9-iL-1jM" firstAttribute="centerX" secondItem="aNm-8P-VlL" secondAttribute="centerX" id="b8w-g4-a2R"/>
-                            <constraint firstItem="pQU-tu-n20" firstAttribute="top" secondItem="Vpi-ha-RhN" secondAttribute="bottom" constant="5" id="o6Q-0U-n9p"/>
+                            <constraint firstItem="pQU-tu-n20" firstAttribute="top" secondItem="Vpi-ha-RhN" secondAttribute="bottom" id="o6Q-0U-n9p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f9M-NX-XPH" secondAttribute="trailing" constant="5" id="w2s-M0-eNG"/>
                             <constraint firstItem="XcC-kA-WeG" firstAttribute="top" secondItem="Vpi-ha-RhN" secondAttribute="bottom" constant="55" id="w4l-HT-xkH"/>
                             <constraint firstItem="8m9-iL-1jM" firstAttribute="height" secondItem="aNm-8P-VlL" secondAttribute="height" id="znd-G3-Knd"/>
@@ -753,12 +755,12 @@ Blasting Trump sound bites increasingly until polls close on election day.
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="h1h-pq-3dQ" kind="relationship" relationship="rootViewController" id="KgR-cf-uqE"/>
+                        <segue destination="250-qW-4Uh" kind="relationship" relationship="rootViewController" id="t94-RN-1Bu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wD9-wb-Ge0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-260" y="135"/>
+            <point key="canvasLocation" x="-1308" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mte-JL-edU">
@@ -802,7 +804,6 @@ Blasting Trump sound bites increasingly until polls close on election day.
     <resources>
         <image name="TrumpFace" width="2133" height="2133"/>
         <image name="TrumpMouth" width="2133" height="2133"/>
-        <image name="close" width="350" height="350"/>
         <image name="saveIcon" width="350" height="350"/>
         <image name="shareIcon" width="350" height="350"/>
     </resources>

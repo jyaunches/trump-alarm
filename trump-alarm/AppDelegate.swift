@@ -21,19 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
         self.window?.makeKeyAndVisible()
     }
-    
-    func setPostVotingVCAsRoot() {
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "PostVotingController")
-        self.window?.makeKeyAndVisible()
-    }
-    
-    
+
     func setQuotePlaying(quote: TrumpQuote) {
         if let quoteVC = storyboardDirector.buildQuotePlaying(quote: quote) {
             setIntroNVCWith(stack: [quoteVC])
         }
     }
 
+    func setIntroNVCWith(stack: [UIViewController]) {
+        if let rootNav = storyboard.instantiateViewController(withIdentifier: "IntroNVC") as? UINavigationController {
+            rootNav.viewControllers = stack
+            self.window?.rootViewController = rootNav
+            self.window?.makeKeyAndVisible()
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {                
         if Date.endOfelectionDay <= Date() {
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ThanksForVotingVC")
@@ -60,13 +62,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    func setIntroNVCWith(stack: [UIViewController]) {
-        if let rootNav = storyboard.instantiateViewController(withIdentifier: "IntroNVC") as? UINavigationController {
-            rootNav.viewControllers = stack
-            self.window?.rootViewController = rootNav
-            self.window?.makeKeyAndVisible()
-        }
-    
-    }
+
 }
 
