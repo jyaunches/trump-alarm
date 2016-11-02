@@ -128,19 +128,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func shareButtonTapped(_ sender: Any) {
-        let activityProvider : CustomMessageActivityItemProvider = CustomMessageActivityItemProvider()
+        let activityItem : CustomMessageActivityItemProvider = CustomMessageActivityItemProvider(placeholderItem:Environment.Share.defaultCopy)
+        let sharingItems = [activityItem]
         
-        
-        let avc = UIActivityViewController(activityItems: , applicationActivities: nil)
-        avc.completionWithItemsHandler = {(activityType, completed, returnedItems, error) in
-            
-//                if (!completed) {
-//                    print("user clicked cancel")
-//                    return
-//                }
+        let avc = UIActivityViewController(activityItems: sharingItems, applicationActivities: nil)
 
-            
-        }
         present(avc, animated: true, completion:nil)
         }
 }

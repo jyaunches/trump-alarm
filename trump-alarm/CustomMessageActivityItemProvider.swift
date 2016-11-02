@@ -31,9 +31,7 @@ class CustomMessageActivityItemProvider: UIActivityItemProvider {
             else {
                     return placeholderItem ?? ""
             }
-        
-        
-        
         }
+        return Environment.Share.defaultCopy
     }
 }
