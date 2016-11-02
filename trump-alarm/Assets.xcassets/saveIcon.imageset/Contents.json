@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "TrumpMouth-2.png",
+      "filename" : "saveIcon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "TrumpMouth-1.png",
+      "filename" : "saveIcon-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "TrumpMouth.png",
+      "filename" : "saveIcon-2.png",
       "scale" : "3x"
     }
   ],

@@ -10,6 +10,7 @@ import UIKit
 import QuartzCore
 
 class PostVotingController: UIViewController {
+    @IBOutlet var snapshotView: UIView!
    
     @IBOutlet weak var votingImage: UIImageView!
     var photoManager = PhotoManager()
@@ -20,16 +21,41 @@ class PostVotingController: UIViewController {
             votingImage.image = photo
         }
     }
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func shareButtonTapped(_ sender: Any) {
+        //actionViewController
+    }
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        
+        let snapshot = takeSnapshot()
+        
+        UIImageWriteToSavedPhotosAlbum(snapshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        
+    }
 
+        func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
+            if let error = error {
+                let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
+            } else {
+                let ac = UIAlertController(title: "Saved!", message: "Your image has been saved to your photos.", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
+            }
+        }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func takeSnapshot() -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
+        UIGraphicsBeginImageContextWithOptions(snapshotView.bounds.size, false, UIScreen.main.scale)
 
-        view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        view.drawHierarchy(in: snapshotView.bounds, afterScreenUpdates: true)
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

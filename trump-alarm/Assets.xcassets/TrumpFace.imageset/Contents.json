@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "TrumpFace.png",
+      "filename" : "TrumpFace-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "TrumpFace-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "TrumpFace.png",
       "scale" : "3x"
     }
   ],
