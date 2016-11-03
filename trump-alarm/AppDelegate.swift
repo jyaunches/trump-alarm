@@ -60,6 +60,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 setMainNVCWith(stack: [mainCountDown])
             }
         }
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: "Verdana-Bold", size: 20)!
+        ]
         return true
     }
     

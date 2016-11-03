@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="34f-e6-ILq">
-    <device id="retina4_7" orientation="portrait">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="34f-e6-ILq">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,35 +22,35 @@
                         <viewControllerLayoutGuide type="bottom" id="nQh-Di-VRf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pUE-BK-DLB">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSj-bw-CiW">
-                                <rect key="frame" x="0.0" y="14" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="14" width="320" height="35"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                 <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evz-aY-QCC">
-                                <rect key="frame" x="87" y="59" width="201" height="18"/>
+                                <rect key="frame" x="59.5" y="59" width="201" height="18"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzO-5B-uV1" userLabel="AND VOTE AGAIN">
-                                <rect key="frame" x="116" y="79" width="143" height="18"/>
+                                <rect key="frame" x="88.5" y="79" width="143" height="18"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpMouth" translatesAutoresizingMaskIntoConstraints="NO" id="VOL-oO-S0T" customClass="TrumpFace" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="67" y="97" width="242" height="242"/>
+                                <rect key="frame" x="58.5" y="97" width="203" height="202.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VOL-oO-S0T" secondAttribute="height" multiplier="1:1" id="tBi-8H-M70"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-i7-etL" customClass="BorderedButton" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="63" y="523" width="250" height="50"/>
+                                <rect key="frame" x="35" y="424" width="250" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="ggL-JX-J3e"/>
@@ -69,7 +69,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
                                 <rect key="frame" x="194" y="480" width="151.5" height="17.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17.5" id="FPn-UJ-GdV"/>
@@ -78,7 +78,7 @@
                                 <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="I would bomb the shit out of 'em." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-vh-h2A">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="I would bomb the shit out of 'em." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-vh-h2A">
                                 <rect key="frame" x="32" y="345" width="311" height="128"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
@@ -134,56 +134,44 @@
                         <viewControllerLayoutGuide type="bottom" id="Slq-Q5-3X7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cwe-mJ-6N4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaW-oa-mzR" userLabel="AlarmHeadView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="330"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="279.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaZ-yk-jBs">
-                                        <rect key="frame" x="0.0" y="18" width="375" height="36.5"/>
+                                        <rect key="frame" x="36.5" y="18" width="247" height="36.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIa-iP-CAW">
-                                        <rect key="frame" x="73" y="59.5" width="229.5" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvg-BT-yAb" userLabel="AND VOTE AGAIN">
-                                        <rect key="frame" x="106" y="76.5" width="163.5" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIa-iP-CAW">
+                                        <rect key="frame" x="45.5" y="59.5" width="229.5" height="39"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpFace" translatesAutoresizingMaskIntoConstraints="NO" id="F48-d0-axO">
-                                        <rect key="frame" x="66" y="115.5" width="243" height="214.5"/>
+                                        <rect key="frame" x="56" y="98" width="208" height="181.5"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="xIa-iP-CAW" firstAttribute="centerX" secondItem="JaW-oa-mzR" secondAttribute="centerX" id="5mw-v4-mXI"/>
                                     <constraint firstAttribute="bottom" secondItem="F48-d0-axO" secondAttribute="bottom" id="8dh-We-yQC"/>
-                                    <constraint firstItem="EaZ-yk-jBs" firstAttribute="leading" secondItem="JaW-oa-mzR" secondAttribute="leading" id="Fde-ap-wbS"/>
-                                    <constraint firstItem="zvg-BT-yAb" firstAttribute="top" secondItem="EaZ-yk-jBs" secondAttribute="bottom" constant="22" id="Syt-Bc-aLV"/>
                                     <constraint firstItem="F48-d0-axO" firstAttribute="centerX" secondItem="JaW-oa-mzR" secondAttribute="centerX" id="Zft-VF-0xe"/>
                                     <constraint firstItem="F48-d0-axO" firstAttribute="height" secondItem="JaW-oa-mzR" secondAttribute="height" multiplier="0.65" id="l5k-kV-MIM"/>
                                     <constraint firstItem="F48-d0-axO" firstAttribute="width" secondItem="JaW-oa-mzR" secondAttribute="width" multiplier="0.65" id="ndY-tv-Ybe"/>
                                     <constraint firstItem="xIa-iP-CAW" firstAttribute="top" secondItem="EaZ-yk-jBs" secondAttribute="bottom" constant="5" id="rtH-ZX-x6O"/>
-                                    <constraint firstAttribute="trailing" secondItem="EaZ-yk-jBs" secondAttribute="trailing" id="uZy-CW-IVR"/>
-                                    <constraint firstItem="zvg-BT-yAb" firstAttribute="centerX" secondItem="JaW-oa-mzR" secondAttribute="centerX" id="vEn-bg-wMN"/>
+                                    <constraint firstItem="EaZ-yk-jBs" firstAttribute="centerX" secondItem="JaW-oa-mzR" secondAttribute="centerX" id="sI0-Fi-bh4"/>
                                     <constraint firstItem="EaZ-yk-jBs" firstAttribute="top" secondItem="JaW-oa-mzR" secondAttribute="top" constant="18" id="y0E-sF-OVq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtL-Wd-cGZ" userLabel="GotItView">
-                                <rect key="frame" x="0.0" y="350" width="375" height="317"/>
+                                <rect key="frame" x="0.0" y="299.5" width="320" height="268.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t snooze on this election. The Trump Alarm will make you wake up and vote by:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="kxV-g7-zeq" userLabel="Title label">
-                                        <rect key="frame" x="20" y="4" width="335" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="X6N-HO-ZYW"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Don’t snooze on this election!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="kxV-g7-zeq" userLabel="Title label">
+                                        <rect key="frame" x="20" y="5" width="280" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -192,28 +180,27 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rnc-qq-aYX" userLabel="DetailText">
-                                        <rect key="frame" x="38" y="75" width="299" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="vFz-dq-oVU"/>
-                                        </constraints>
-                                        <string key="text">Spewing Trump sound bites increasingly until polls close on November 8th.
-
-Counting down to when polls open, close and when you may need to move Canada.
-
-To disable the Trump Alarm, Vote for Hillary.
-</string>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                        <rect key="frame" x="20" y="27.5" width="280" height="111"/>
+                                        <string key="text">The Trump Alarm will make you wake up and vote by:  - Spewing Trump sound bites increasingly until polls close on November 8th.
+ - Counting down to when polls open, close and when you may need to move Canada.</string>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="To disable the Trump Alarm, vote for Hillary!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-m0-hRg" userLabel="Callout Text">
+                                        <rect key="frame" x="20" y="143.5" width="272" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jv7-Tb-C37" userLabel="ButtonContainer">
-                                        <rect key="frame" x="0.0" y="225" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="178" width="320" height="90.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lab-zM-dxP" customClass="BorderedButton" customModule="trump_alarm" customModuleProvider="target">
-                                                <rect key="frame" x="62" y="22.5" width="251" height="47"/>
+                                                <rect key="frame" x="53" y="26" width="214" height="40"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                                 <state key="normal" title="GOT IT!">
                                                     <color key="titleColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
@@ -238,17 +225,20 @@ To disable the Trump Alarm, Vote for Hillary.
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="rnc-qq-aYX" firstAttribute="top" secondItem="kxV-g7-zeq" secondAttribute="bottom" constant="1" id="4DT-Dz-881"/>
-                                    <constraint firstItem="jv7-Tb-C37" firstAttribute="height" relation="lessThanOrEqual" secondItem="MtL-Wd-cGZ" secondAttribute="height" multiplier="0.46" id="4oP-gH-gKF"/>
+                                    <constraint firstItem="rnc-qq-aYX" firstAttribute="top" secondItem="kxV-g7-zeq" secondAttribute="bottom" constant="5" id="4DT-Dz-881"/>
+                                    <constraint firstItem="jv7-Tb-C37" firstAttribute="height" relation="lessThanOrEqual" secondItem="MtL-Wd-cGZ" secondAttribute="height" multiplier="0.4" id="4oP-gH-gKF"/>
+                                    <constraint firstItem="abQ-m0-hRg" firstAttribute="top" secondItem="rnc-qq-aYX" secondAttribute="bottom" constant="5" id="611-yT-KFX"/>
+                                    <constraint firstItem="abQ-m0-hRg" firstAttribute="trailing" secondItem="rnc-qq-aYX" secondAttribute="trailingMargin" id="7FN-cE-fil"/>
                                     <constraint firstItem="kxV-g7-zeq" firstAttribute="leading" secondItem="MtL-Wd-cGZ" secondAttribute="leading" constant="20" id="Bv9-dG-QK9"/>
-                                    <constraint firstItem="rnc-qq-aYX" firstAttribute="leading" secondItem="MtL-Wd-cGZ" secondAttribute="leading" constant="38" id="CxI-QV-djC"/>
                                     <constraint firstAttribute="trailing" secondItem="jv7-Tb-C37" secondAttribute="trailing" id="LIi-IF-O0R"/>
-                                    <constraint firstAttribute="trailing" secondItem="rnc-qq-aYX" secondAttribute="trailing" constant="38" id="QdE-Pm-zgs"/>
-                                    <constraint firstItem="kxV-g7-zeq" firstAttribute="top" secondItem="MtL-Wd-cGZ" secondAttribute="top" constant="4" id="X3B-5c-RK8"/>
+                                    <constraint firstItem="abQ-m0-hRg" firstAttribute="leading" secondItem="rnc-qq-aYX" secondAttribute="leading" id="Oq1-aP-HVx"/>
+                                    <constraint firstItem="kxV-g7-zeq" firstAttribute="top" secondItem="MtL-Wd-cGZ" secondAttribute="top" constant="5" id="X3B-5c-RK8"/>
                                     <constraint firstAttribute="trailing" secondItem="kxV-g7-zeq" secondAttribute="trailing" constant="20" id="aJN-vn-6bP"/>
                                     <constraint firstAttribute="bottom" secondItem="jv7-Tb-C37" secondAttribute="bottom" id="iAM-SA-eN8"/>
+                                    <constraint firstItem="rnc-qq-aYX" firstAttribute="leading" secondItem="kxV-g7-zeq" secondAttribute="leading" id="ipu-u4-coK"/>
+                                    <constraint firstItem="jv7-Tb-C37" firstAttribute="top" secondItem="abQ-m0-hRg" secondAttribute="bottom" id="juj-f4-gbE"/>
+                                    <constraint firstItem="rnc-qq-aYX" firstAttribute="trailing" secondItem="kxV-g7-zeq" secondAttribute="trailing" id="kD6-Ph-W1d"/>
                                     <constraint firstItem="jv7-Tb-C37" firstAttribute="leading" secondItem="MtL-Wd-cGZ" secondAttribute="leading" id="s0P-hP-mPl"/>
-                                    <constraint firstItem="jv7-Tb-C37" firstAttribute="top" secondItem="rnc-qq-aYX" secondAttribute="bottom" id="zXT-mx-3Ii"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -276,12 +266,11 @@ To disable the Trump Alarm, Vote for Hillary.
                     <connections>
                         <outlet property="detailLabel" destination="rnc-qq-aYX" id="We1-gw-3bo"/>
                         <outlet property="reminderLabel" destination="kxV-g7-zeq" id="Yba-cU-iir"/>
-                        <segue destination="h1h-pq-3dQ" kind="show" identifier="ShowCountDownFromIntroSegue" id="mQ7-Dh-VX8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjP-gG-xGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="115"/>
+            <point key="canvasLocation" x="-1743.75" y="114.08450704225352"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="RdX-BK-HxC">
@@ -292,50 +281,50 @@ To disable the Trump Alarm, Vote for Hillary.
                         <viewControllerLayoutGuide type="bottom" id="gcl-hW-JSS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VSx-82-UWQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0o-lJ-OxP">
-                                <rect key="frame" x="0.0" y="78" width="375" height="34.5"/>
+                                <rect key="frame" x="0.0" y="78" width="320" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                 <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-Ab-s2r">
-                                <rect key="frame" x="87" y="122.5" width="201" height="17.5"/>
+                                <rect key="frame" x="59.5" y="122.5" width="201" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEN-Sm-8w5" userLabel="AND VOTE AGAIN">
-                                <rect key="frame" x="116" y="142" width="143" height="17.5"/>
+                                <rect key="frame" x="88.5" y="142" width="143" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpFace" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-nr-Cl0" customClass="TrumpFace" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="53.5" y="159.5" width="268" height="268"/>
+                                <rect key="frame" x="46" y="159.5" width="228" height="228"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6xI-nr-Cl0" secondAttribute="height" multiplier="1:1" id="WdW-6h-gDo"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ASB-Eo-WN2" userLabel="Labels">
-                                <rect key="frame" x="16" y="466.5" width="343" height="17.5"/>
+                                <rect key="frame" x="16" y="367.5" width="288" height="17.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-wn-wta">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="17.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTES" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-2I-Qlp">
-                                        <rect key="frame" x="114" y="0.0" width="114.5" height="17.5"/>
+                                        <rect key="frame" x="97" y="0.0" width="96" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-oE-NBF">
-                                        <rect key="frame" x="228.5" y="0.0" width="114.5" height="17.5"/>
+                                        <rect key="frame" x="193.5" y="0.0" width="94.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -343,7 +332,7 @@ To disable the Trump Alarm, Vote for Hillary.
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="J3u-4X-aRs" userLabel="HMS">
-                                <rect key="frame" x="42" y="496" width="291" height="34.5"/>
+                                <rect key="frame" x="33" y="397" width="255.5" height="34.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="dek-gl-trB" userLabel="hours">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="34.5"/>
@@ -355,13 +344,13 @@ To disable the Trump Alarm, Vote for Hillary.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="796-bo-2nm" userLabel="BTW H &amp; M">
-                                        <rect key="frame" x="62" y="0.0" width="53" height="34.5"/>
+                                        <rect key="frame" x="62" y="0.0" width="35" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-SA-JxM" userLabel="min">
-                                        <rect key="frame" x="115" y="0.0" width="62" height="34.5"/>
+                                        <rect key="frame" x="97" y="0.0" width="62" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="62" id="U5s-WP-Pbg"/>
                                         </constraints>
@@ -370,13 +359,13 @@ To disable the Trump Alarm, Vote for Hillary.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="6B4-JW-Uxh" userLabel="BTW M &amp; S">
-                                        <rect key="frame" x="177" y="0.0" width="52" height="34.5"/>
+                                        <rect key="frame" x="159" y="0.0" width="34.5" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="P8i-bB-dWc" userLabel="sec">
-                                        <rect key="frame" x="229" y="0.0" width="62" height="34.5"/>
+                                        <rect key="frame" x="193.5" y="0.0" width="62" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="62" id="k79-FI-MGG"/>
                                         </constraints>
@@ -387,13 +376,13 @@ To disable the Trump Alarm, Vote for Hillary.
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNTIL POLLS CLOSE" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c9-Iz-d9o">
-                                <rect key="frame" x="108.5" y="545.5" width="159.5" height="17.5"/>
+                                <rect key="frame" x="80.5" y="446.5" width="159.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkW-aY-92r" customClass="BorderedButton" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="63" y="587" width="250" height="50"/>
+                                <rect key="frame" x="35" y="488" width="250" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2jd-wL-QVV"/>
@@ -463,7 +452,7 @@ To disable the Trump Alarm, Vote for Hillary.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXb-6K-2sq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="115"/>
+            <point key="canvasLocation" x="-25" y="115"/>
         </scene>
         <!--Post Voting Controller-->
         <scene sceneID="vAF-zz-QvS">
@@ -474,41 +463,41 @@ To disable the Trump Alarm, Vote for Hillary.
                         <viewControllerLayoutGuide type="bottom" id="yFB-ee-XhY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aNm-8P-VlL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8m9-iL-1jM" userLabel="SnapshotView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QoN-Hn-Rq7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcC-kA-WeG">
-                                        <rect key="frame" x="72" y="75" width="231" height="35"/>
+                                        <rect key="frame" x="44.5" y="75" width="231" height="35"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764705882346" green="0.78823529411764703" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrX-cq-ma6">
-                                        <rect key="frame" x="87" y="124" width="201" height="18"/>
+                                        <rect key="frame" x="59.5" y="124" width="201" height="18"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jh-xf-jdU" userLabel="AND VOTE AGAIN">
-                                        <rect key="frame" x="116" y="144" width="143" height="18"/>
+                                        <rect key="frame" x="88.5" y="144" width="143" height="18"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpMouth" translatesAutoresizingMaskIntoConstraints="NO" id="yH1-PA-ung">
-                                        <rect key="frame" x="18" y="555" width="94" height="94"/>
+                                        <rect key="frame" x="18" y="470.5" width="80" height="79.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="yH1-PA-ung" secondAttribute="height" multiplier="1:1" id="vd6-ey-4E3"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I VOTED!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoq-AR-UiU">
-                                        <rect key="frame" x="127" y="585" width="143" height="35"/>
+                                        <rect key="frame" x="113" y="493" width="143" height="35"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -547,7 +536,7 @@ To disable the Trump Alarm, Vote for Hillary.
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frx-QE-KTS">
-                                <rect key="frame" x="259" y="25" width="40" height="45"/>
+                                <rect key="frame" x="204" y="25" width="40" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="fAP-q0-YEK"/>
                                     <constraint firstAttribute="width" constant="40" id="hJp-19-tkt"/>
@@ -558,7 +547,7 @@ To disable the Trump Alarm, Vote for Hillary.
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-NX-XPH">
-                                <rect key="frame" x="314" y="25" width="40" height="45"/>
+                                <rect key="frame" x="259" y="25" width="40" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7zg-lA-HLt"/>
                                     <constraint firstAttribute="width" constant="40" id="cTe-RD-Yzm"/>
@@ -605,44 +594,44 @@ To disable the Trump Alarm, Vote for Hillary.
                         <viewControllerLayoutGuide type="bottom" id="etp-fS-xvO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xVZ-8g-Eaw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQk-k8-ABO">
-                                <rect key="frame" x="0.0" y="78" width="375" height="34.5"/>
+                                <rect key="frame" x="0.0" y="78" width="320" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                 <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3p-9z-w72">
-                                <rect key="frame" x="87" y="122.5" width="201" height="17.5"/>
+                                <rect key="frame" x="60" y="122.5" width="201" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54K-07-JJF" userLabel="AND VOTE AGAIN">
-                                <rect key="frame" x="116" y="142" width="143" height="17.5"/>
+                                <rect key="frame" x="89" y="142" width="143" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-JM-TJE" userLabel="Labels">
-                                <rect key="frame" x="16" y="467.5" width="343" height="17.5"/>
+                                <rect key="frame" x="16" y="368.5" width="288" height="17.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YEARS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT2-Qv-3xN">
-                                        <rect key="frame" x="0.0" y="0.0" width="115.5" height="17.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTHS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5h-PZ-GP7">
-                                        <rect key="frame" x="114.5" y="0.0" width="113" height="17.5"/>
+                                        <rect key="frame" x="96" y="0.0" width="96" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAI-7M-bbu">
-                                        <rect key="frame" x="228.5" y="0.0" width="114.5" height="17.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="96" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -650,22 +639,22 @@ To disable the Trump Alarm, Vote for Hillary.
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Stc-MA-H6Z" userLabel="HMS">
-                                <rect key="frame" x="16.5" y="497" width="342" height="34.5"/>
+                                <rect key="frame" x="16" y="398" width="288" height="34.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="anh-ID-Glm" userLabel="hours">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="m88-cD-trI" userLabel="min">
-                                        <rect key="frame" x="114" y="0.0" width="114" height="34.5"/>
+                                        <rect key="frame" x="97" y="0.0" width="95" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="59z-K3-iZb" userLabel="sec">
-                                        <rect key="frame" x="228" y="0.0" width="114" height="34.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="96" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -673,13 +662,13 @@ To disable the Trump Alarm, Vote for Hillary.
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNTIL 2020 ELECTION" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiT-ki-EuO">
-                                <rect key="frame" x="99" y="546.5" width="178" height="17.5"/>
+                                <rect key="frame" x="71" y="447.5" width="178" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THANKS FOR VOTING!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-QL-Wjc">
-                                <rect key="frame" x="16" y="223" width="343" height="178"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THANKS FOR VOTING!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-QL-Wjc">
+                                <rect key="frame" x="16" y="189.5" width="288" height="175.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -745,12 +734,12 @@ To disable the Trump Alarm, Vote for Hillary.
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="250-qW-4Uh" kind="relationship" relationship="rootViewController" id="t94-RN-1Bu"/>
+                        <segue destination="h1h-pq-3dQ" kind="relationship" relationship="rootViewController" id="hEO-nn-5bU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wD9-wb-Ge0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1308" y="134"/>
+            <point key="canvasLocation" x="-783" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mte-JL-edU">

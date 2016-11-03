@@ -50,7 +50,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
         if !TrumpAlarmUserDefaults.hasSeenIntro {
             let introVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntroViewController")
-            self.present(introVC, animated: false, completion: nil)
+            self.present(introVC, animated: true, completion: { 
+                TrumpAlarmUserDefaults.hasSeenIntro = true
+            })
         }
 
         navigationItem.setHidesBackButton(true, animated: false)

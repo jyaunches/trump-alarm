@@ -102,7 +102,7 @@
 /* Begin PBXFileReference section */
 		172880821DCACC1E0031C149 /* ThanksForVotingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThanksForVotingViewController.swift; path = Controllers/ThanksForVotingViewController.swift; sourceTree = "<group>"; };
 		175F9E121DCA6621004CA58B /* CustomMessageActivityItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageActivityItemProvider.swift; sourceTree = "<group>"; };
-		17BADA251DCB047D0007A693 /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExt.swift; path = "trump-alarm/DateExt.swift"; sourceTree = "<group>"; };
+		17BADA251DCB047D0007A693 /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		274EC1271DCA12C900CD7B0C /* TrumpAlarmNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpAlarmNotification.swift; sourceTree = "<group>"; };
 		274EC1291DCAAF3400CD7B0C /* QuotePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotePlayer.swift; path = Utilities/QuotePlayer.swift; sourceTree = "<group>"; };
 		4E11DA3BAD928EB0F078115A /* Pods_trump_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trump_alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +305,8 @@
 		7038D8AC1DC840CA00EECF42 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				175F9E121DCA6621004CA58B /* CustomMessageActivityItemProvider.swift */,
+				17BADA251DCB047D0007A693 /* DateExt.swift */,
 				70159E931DCA570D00C581DB /* TrumpAlarmShareItemSource.swift */,
 				274EC1271DCA12C900CD7B0C /* TrumpAlarmNotification.swift */,
 				7038D8B21DC840EA00EECF42 /* StoryboardDirector.swift */,
@@ -330,7 +332,6 @@
 		70A6CC731DC1238C00ED2D23 = {
 			isa = PBXGroup;
 			children = (
-				17BADA251DCB047D0007A693 /* DateExt.swift */,
 				70A6CC7E1DC1238C00ED2D23 /* trump-alarm */,
 				70A6CC931DC1238C00ED2D23 /* trump-alarmTests */,
 				70A6CC7D1DC1238C00ED2D23 /* Products */,
@@ -364,7 +365,6 @@
 				70A6CC881DC1238C00ED2D23 /* LaunchScreen.storyboard */,
 				70A6CC8B1DC1238C00ED2D23 /* Info.plist */,
 				7038D9341DC8421300EECF42 /* Secret.swift */,
-				175F9E121DCA6621004CA58B /* CustomMessageActivityItemProvider.swift */,
 			);
 			path = "trump-alarm";
 			sourceTree = "<group>";
