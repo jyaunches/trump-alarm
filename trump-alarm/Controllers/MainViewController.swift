@@ -35,7 +35,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+                
         if TrumpAlarmUserDefaults.hasVoted {
             votingButton.setTitle("VOTING EVIDENCE", for: .normal)
             votingButton.setTitleColor(UIColor.white, for: .normal)

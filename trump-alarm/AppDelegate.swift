@@ -62,8 +62,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         UINavigationBar.appearance().titleTextAttributes = [
-            NSFontAttributeName: UIFont(name: "Verdana-Bold", size: 20)!
+            NSFontAttributeName: UIFont(name: "Verdana-Bold", size: 24)!, NSForegroundColorAttributeName : Environment.Styling.trumpGold
         ]
+        
         return true
     }
     

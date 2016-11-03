@@ -69,7 +69,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
                                 <rect key="frame" x="194" y="480" width="151.5" height="17.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17.5" id="FPn-UJ-GdV"/>
@@ -78,7 +78,7 @@
                                 <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="I would bomb the shit out of 'em." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-vh-h2A">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="I would bomb the shit out of 'em." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-vh-h2A">
                                 <rect key="frame" x="32" y="345" width="311" height="128"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
@@ -272,7 +272,7 @@
             </objects>
             <point key="canvasLocation" x="-1743.75" y="114.08450704225352"/>
         </scene>
-        <!--Main View Controller-->
+        <!--TRUMP ALARM-->
         <scene sceneID="RdX-BK-HxC">
             <objects>
                 <viewController storyboardIdentifier="MainCountDownVC" id="h1h-pq-3dQ" customClass="MainViewController" customModule="trump_alarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -284,55 +284,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0o-lJ-OxP">
-                                <rect key="frame" x="0.0" y="78" width="320" height="34.5"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
-                                <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-Ab-s2r">
-                                <rect key="frame" x="59.5" y="122.5" width="201" height="17.5"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEN-Sm-8w5" userLabel="AND VOTE AGAIN">
-                                <rect key="frame" x="88.5" y="142" width="143" height="17.5"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="WAKE UP AND VOTE AGAIN!" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-Ab-s2r">
+                                <rect key="frame" x="17.5" y="78" width="286" height="22"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpFace" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-nr-Cl0" customClass="TrumpFace" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="46" y="159.5" width="228" height="228"/>
+                                <rect key="frame" x="68.5" y="110" width="183.5" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6xI-nr-Cl0" secondAttribute="height" multiplier="1:1" id="WdW-6h-gDo"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ASB-Eo-WN2" userLabel="Labels">
-                                <rect key="frame" x="16" y="367.5" width="288" height="17.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ASB-Eo-WN2" userLabel="Labels">
+                                <rect key="frame" x="16" y="314" width="288" height="19.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-wn-wta">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="17.5"/>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTES" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-2I-Qlp">
-                                        <rect key="frame" x="97" y="0.0" width="96" height="17.5"/>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                        <rect key="frame" x="96" y="0.0" width="96" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-oE-NBF">
-                                        <rect key="frame" x="193.5" y="0.0" width="94.5" height="17.5"/>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                        <rect key="frame" x="192" y="0.0" width="96" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="J3u-4X-aRs" userLabel="HMS">
-                                <rect key="frame" x="33" y="397" width="255.5" height="34.5"/>
+                                <rect key="frame" x="33" y="348.5" width="254" height="34.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="dek-gl-trB" userLabel="hours">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="34.5"/>
@@ -344,13 +332,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="796-bo-2nm" userLabel="BTW H &amp; M">
-                                        <rect key="frame" x="62" y="0.0" width="35" height="34.5"/>
+                                        <rect key="frame" x="62" y="0.0" width="34" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-SA-JxM" userLabel="min">
-                                        <rect key="frame" x="97" y="0.0" width="62" height="34.5"/>
+                                        <rect key="frame" x="96" y="0.0" width="62" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="62" id="U5s-WP-Pbg"/>
                                         </constraints>
@@ -359,13 +347,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="6B4-JW-Uxh" userLabel="BTW M &amp; S">
-                                        <rect key="frame" x="159" y="0.0" width="34.5" height="34.5"/>
+                                        <rect key="frame" x="158" y="0.0" width="34" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="P8i-bB-dWc" userLabel="sec">
-                                        <rect key="frame" x="193.5" y="0.0" width="62" height="34.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="62" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="62" id="k79-FI-MGG"/>
                                         </constraints>
@@ -376,20 +364,19 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNTIL POLLS CLOSE" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c9-Iz-d9o">
-                                <rect key="frame" x="80.5" y="446.5" width="159.5" height="17.5"/>
+                                <rect key="frame" x="80.5" y="413" width="159.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkW-aY-92r" customClass="BorderedButton" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="35" y="488" width="250" height="50"/>
+                                <rect key="frame" x="32" y="468" width="256" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2jd-wL-QVV"/>
-                                    <constraint firstAttribute="width" constant="250" id="jaf-yP-fIv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
-                                <state key="normal" title="SHUT UP, I VOTED">
+                                <state key="normal" title="SHUT UP, I VOTED!">
                                     <color key="titleColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -407,36 +394,30 @@
                         </subviews>
                         <color key="backgroundColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6xI-nr-Cl0" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="1Ng-lP-8OD"/>
-                            <constraint firstItem="z0o-lJ-OxP" firstAttribute="top" secondItem="lEq-eR-dri" secondAttribute="bottom" constant="14" id="4cG-N0-238"/>
+                            <constraint firstItem="6xI-nr-Cl0" firstAttribute="bottom" secondItem="VSx-82-UWQ" secondAttribute="centerY" constant="10" id="2dX-Lo-IbB"/>
                             <constraint firstItem="Uhp-Ab-s2r" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="7Dn-8G-gFB"/>
+                            <constraint firstItem="ASB-Eo-WN2" firstAttribute="top" secondItem="VSx-82-UWQ" secondAttribute="centerY" constant="30" id="AuN-9h-2jK"/>
                             <constraint firstItem="ASB-Eo-WN2" firstAttribute="leading" secondItem="VSx-82-UWQ" secondAttribute="leadingMargin" id="CGv-zh-Ubv"/>
-                            <constraint firstItem="gcl-hW-JSS" firstAttribute="top" secondItem="zkW-aY-92r" secondAttribute="bottom" constant="30" id="Fl1-m2-NS4"/>
-                            <constraint firstItem="6c9-Iz-d9o" firstAttribute="top" secondItem="J3u-4X-aRs" secondAttribute="bottom" constant="15" id="Gjq-GI-wfE"/>
-                            <constraint firstItem="zkW-aY-92r" firstAttribute="top" secondItem="6c9-Iz-d9o" secondAttribute="bottom" constant="24" id="JHI-n2-M5E"/>
+                            <constraint firstItem="Uhp-Ab-s2r" firstAttribute="top" secondItem="lEq-eR-dri" secondAttribute="bottom" constant="14" id="Cm7-fh-xdI"/>
+                            <constraint firstItem="zkW-aY-92r" firstAttribute="width" secondItem="VSx-82-UWQ" secondAttribute="width" multiplier="0.8" id="FR7-UE-6qP"/>
+                            <constraint firstItem="gcl-hW-JSS" firstAttribute="top" secondItem="zkW-aY-92r" secondAttribute="bottom" constant="50" id="Fl1-m2-NS4"/>
+                            <constraint firstItem="6c9-Iz-d9o" firstAttribute="top" secondItem="J3u-4X-aRs" secondAttribute="bottom" constant="30" id="H31-8d-o2S"/>
+                            <constraint firstItem="6xI-nr-Cl0" firstAttribute="top" secondItem="Uhp-Ab-s2r" secondAttribute="bottom" constant="10" id="Lyu-Y8-McN"/>
                             <constraint firstItem="zkW-aY-92r" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="OO9-z8-1aY"/>
-                            <constraint firstItem="6xI-nr-Cl0" firstAttribute="top" secondItem="yEN-Sm-8w5" secondAttribute="bottom" id="Qaa-oz-2G5"/>
                             <constraint firstItem="ASB-Eo-WN2" firstAttribute="trailing" secondItem="VSx-82-UWQ" secondAttribute="trailingMargin" id="Tqj-xx-tKw"/>
-                            <constraint firstItem="yEN-Sm-8w5" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="WCk-lE-cBa"/>
-                            <constraint firstItem="J3u-4X-aRs" firstAttribute="top" secondItem="ASB-Eo-WN2" secondAttribute="bottom" constant="12" id="cG0-tg-1Zp"/>
-                            <constraint firstItem="z0o-lJ-OxP" firstAttribute="leading" secondItem="VSx-82-UWQ" secondAttribute="leading" id="cvH-S0-zmN"/>
+                            <constraint firstItem="J3u-4X-aRs" firstAttribute="top" secondItem="ASB-Eo-WN2" secondAttribute="bottom" constant="15" id="cG0-tg-1Zp"/>
+                            <constraint firstItem="6xI-nr-Cl0" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="gGR-CR-AgD"/>
                             <constraint firstItem="dek-gl-trB" firstAttribute="centerX" secondItem="7Oe-wn-wta" secondAttribute="centerX" id="gSw-aS-xVN"/>
-                            <constraint firstItem="6xI-nr-Cl0" firstAttribute="height" secondItem="VSx-82-UWQ" secondAttribute="height" multiplier="0.4" constant="1" id="jzB-tT-e8R"/>
+                            <constraint firstItem="ASB-Eo-WN2" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="nkk-ZB-oh1"/>
                             <constraint firstItem="6c9-Iz-d9o" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="opF-rp-hfv"/>
                             <constraint firstItem="XEb-SA-JxM" firstAttribute="centerX" secondItem="YSm-2I-Qlp" secondAttribute="centerX" id="oys-sq-uyj"/>
-                            <constraint firstItem="Uhp-Ab-s2r" firstAttribute="top" secondItem="z0o-lJ-OxP" secondAttribute="bottom" constant="10" id="qmx-ra-wLs"/>
                             <constraint firstItem="J3u-4X-aRs" firstAttribute="centerX" secondItem="VSx-82-UWQ" secondAttribute="centerX" id="rqt-Wj-B97"/>
-                            <constraint firstItem="z0o-lJ-OxP" firstAttribute="trailing" secondItem="VSx-82-UWQ" secondAttribute="trailing" id="uEJ-99-sBp"/>
                             <constraint firstItem="P8i-bB-dWc" firstAttribute="centerX" secondItem="G5P-oE-NBF" secondAttribute="centerX" id="vSE-tE-A5Z"/>
-                            <constraint firstItem="yEN-Sm-8w5" firstAttribute="top" secondItem="Uhp-Ab-s2r" secondAttribute="bottom" constant="2" id="yCx-nR-BuI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YeX-tI-Y3E">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="B5r-cz-cpf">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="shareButtonTapped:" destination="h1h-pq-3dQ" id="9it-fd-liV"/>
-                            </connections>
+                    <navigationItem key="navigationItem" title="TRUMP ALARM" id="91X-Yb-cNh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="htp-Hw-czu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -625,7 +606,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTHS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5h-PZ-GP7">
-                                        <rect key="frame" x="96" y="0.0" width="96" height="17.5"/>
+                                        <rect key="frame" x="95.5" y="0.0" width="96" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -648,7 +629,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="m88-cD-trI" userLabel="min">
-                                        <rect key="frame" x="97" y="0.0" width="95" height="34.5"/>
+                                        <rect key="frame" x="96" y="0.0" width="96" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
