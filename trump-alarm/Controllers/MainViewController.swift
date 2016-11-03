@@ -24,7 +24,11 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var countdownManager = CountdownManager()
     var quoteLibrary = TrumpQuoteLibrary()
     let storyboardDirector = StoryboardDirector()
-    
+
+    let currentDate = Date()
+    let countdownPollsOpen = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
+    let countdownPollsClose = TrumpAlarmUserDefaults.userPollingHours.pollsCloseDate
+
     var cachedVotingImage: UIImage?
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,7 +43,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         loadCachedVotingImage()
 
         if !TrumpAlarmUserDefaults.hasSeenIntro {
@@ -51,34 +55,31 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         trumpFaceImage.setup(onClick: {
             let quote = self.quoteLibrary.getRandomQuote(idPrefix: "in-app")
             if let quoteVC = self.storyboardDirector.buildQuotePlaying(quote: quote) {
-                self.navigationController?.pushViewController(quoteVC, animated: true)                
+                self.navigationController?.pushViewController(quoteVC, animated: true)
             }
         })
-
-        let countdownPollsOpen = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
-        let countdownPollsClose = TrumpAlarmUserDefaults.userPollingHours.pollsCloseDate
-
-        //countdownEndDate starts at today's date
-        if countdownEndDate < countdownPollsOpen {
-            countdownEndDate = countdownPollsOpen
-            untilPollsLabel.text = "UNTIL POLLS OPEN"
-        } else if countdownEndDate < countdownPollsClose {
-            countdownEndDate = countdownPollsClose
-            untilPollsLabel.text = "UNTIL POLLS CLOSE"
-        }
 
         let timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(onTick(timer:)), userInfo: nil, repeats: true)
         timer.fire()
     }
 
     func onTick(timer: Timer) {
+
+        if currentDate < countdownPollsOpen {
+            countdownEndDate = countdownPollsOpen
+            untilPollsLabel.text = "UNTIL POLLS OPEN"
+        } else if currentDate < countdownPollsClose {
+            countdownEndDate = countdownPollsClose
+            untilPollsLabel.text = "UNTIL POLLS CLOSE"
+        }
+
         let remainingTime = countdownEndDate.timeIntervalSinceNow
-        let a = Int(remainingTime) / (60 * 60)
-        let b = Int(remainingTime) % (60 * 60) / 60
-        let c = Int(remainingTime) % 60
-        hoursValueLabel.text = "\(a)"
-        minutesValueLabel.text = "\(b)"
-        secondsValueLabel.text = "\(c)"
+        let a = String(format: "%02d", (Int(remainingTime) / (60 * 60)))
+        let b = String(format: "%02d", (Int(remainingTime) % (60 * 60) / 60))
+        let c = String(format: "%02d", (Int(remainingTime) % 60))
+        hoursValueLabel.text = a
+        minutesValueLabel.text = b
+        secondsValueLabel.text = c
     }
 
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
@@ -132,17 +133,16 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func shareButtonTapped(_ sender: Any) {
-        let copy = "Need a reminder of why you should wake up and vote for Hillary on November 8th? The Trump Alarm spews frightening Trump sounds bites every hour on the hour from the time the polls open to the time polls close on election day. The only way to turn off the most annoying, offensive alarm clock ever is by voting. Download and Make America Wake Up and Vote Again!"
         if let url = NSURL(string: "http://www.trumpalarm.com") {
             let activityVC = UIActivityViewController(activityItems: [TAAppShareItemSource(), url], applicationActivities: nil)
             present(activityVC, animated: true, completion: nil)
         }
     }
-    
+
     func loadCachedVotingImage() {
         DispatchQueue.global(qos: .background).async {
             let photo = self.photoManager.getImage()
-            
+
             DispatchQueue.main.async {
                 self.cachedVotingImage = photo
             }
