@@ -68,6 +68,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="votedClicked:" destination="e6y-yh-Oim" eventType="touchUpInside" id="2th-m5-Bn6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
                                 <rect key="frame" x="194" y="480" width="151.5" height="17.5"/>
@@ -116,6 +119,7 @@
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="iVotedButton" destination="KhD-i7-etL" id="OLO-Cd-M7f"/>
                         <outlet property="quoteTextLabel" destination="8Zj-vh-h2A" id="bQZ-Jg-dQr"/>
                         <outlet property="trumpFaceImage" destination="VOL-oO-S0T" id="v05-fh-c25"/>
                         <outlet property="trumpNameLabel" destination="peG-dX-d0W" id="dvM-8X-3tB"/>
@@ -331,7 +335,7 @@ To disable the Trump Alarm, Vote for Hillary.
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ASB-Eo-WN2" userLabel="Labels">
-                                <rect key="frame" x="16" y="466.5" width="334" height="17.5"/>
+                                <rect key="frame" x="16" y="466.5" width="343.5" height="17.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-wn-wta">
                                         <rect key="frame" x="0.0" y="0.0" width="114.5" height="17.5"/>
@@ -340,13 +344,13 @@ To disable the Trump Alarm, Vote for Hillary.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTES" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-2I-Qlp">
-                                        <rect key="frame" x="114.5" y="0.0" width="114" height="17.5"/>
+                                        <rect key="frame" x="114.5" y="0.0" width="114.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-oE-NBF">
-                                        <rect key="frame" x="228.5" y="0.0" width="114.5" height="17.5"/>
+                                        <rect key="frame" x="229" y="0.0" width="114.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -366,7 +370,7 @@ To disable the Trump Alarm, Vote for Hillary.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="796-bo-2nm" userLabel="BTW H &amp; M">
-                                        <rect key="frame" x="62" y="0.0" width="54" height="34.5"/>
+                                        <rect key="frame" x="62" y="0.0" width="53" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -381,13 +385,13 @@ To disable the Trump Alarm, Vote for Hillary.
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="6B4-JW-Uxh" userLabel="BTW M &amp; S">
-                                        <rect key="frame" x="172.5" y="0.0" width="53" height="34.5"/>
+                                        <rect key="frame" x="177" y="0.0" width="52" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="P8i-bB-dWc" userLabel="sec">
-                                        <rect key="frame" x="227.5" y="0.0" width="62" height="34.5"/>
+                                        <rect key="frame" x="229" y="0.0" width="62" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="62" id="k79-FI-MGG"/>
                                         </constraints>
@@ -557,17 +561,6 @@ To disable the Trump Alarm, Vote for Hillary.
                                     <action selector="closeButtonTapped:" destination="tWW-pl-Odf" eventType="touchUpInside" id="A0R-e5-MwP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frx-QE-KTS">
-                                <rect key="frame" x="259" y="25" width="40" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="fAP-q0-YEK"/>
-                                    <constraint firstAttribute="width" constant="40" id="hJp-19-tkt"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="saveIcon"/>
-                                <connections>
-                                    <action selector="saveButtonTapped:" destination="tWW-pl-Odf" eventType="touchUpInside" id="Mkl-0R-sdc"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-NX-XPH">
                                 <rect key="frame" x="314" y="25" width="40" height="45"/>
                                 <constraints>
@@ -584,12 +577,10 @@ To disable the Trump Alarm, Vote for Hillary.
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="f9M-NX-XPH" firstAttribute="top" secondItem="Vpi-ha-RhN" secondAttribute="bottom" constant="5" id="7db-ot-EuE"/>
-                            <constraint firstItem="f9M-NX-XPH" firstAttribute="leading" secondItem="frx-QE-KTS" secondAttribute="trailing" constant="15" id="87u-B5-tHn"/>
                             <constraint firstItem="yH1-PA-ung" firstAttribute="width" secondItem="aNm-8P-VlL" secondAttribute="width" multiplier="0.25" id="GpD-N2-t7K"/>
                             <constraint firstItem="8m9-iL-1jM" firstAttribute="centerY" secondItem="aNm-8P-VlL" secondAttribute="centerYWithinMargins" id="Lgd-lm-HW7"/>
                             <constraint firstItem="8m9-iL-1jM" firstAttribute="width" secondItem="aNm-8P-VlL" secondAttribute="width" id="MJ9-ix-995"/>
                             <constraint firstItem="pQU-tu-n20" firstAttribute="leading" secondItem="aNm-8P-VlL" secondAttribute="leadingMargin" id="RSr-UI-McV"/>
-                            <constraint firstItem="frx-QE-KTS" firstAttribute="top" secondItem="f9M-NX-XPH" secondAttribute="top" id="UZI-x9-4G7"/>
                             <constraint firstItem="8m9-iL-1jM" firstAttribute="centerX" secondItem="aNm-8P-VlL" secondAttribute="centerX" id="b8w-g4-a2R"/>
                             <constraint firstItem="pQU-tu-n20" firstAttribute="top" secondItem="Vpi-ha-RhN" secondAttribute="bottom" id="o6Q-0U-n9p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f9M-NX-XPH" secondAttribute="trailing" constant="5" id="w2s-M0-eNG"/>
@@ -753,7 +744,6 @@ To disable the Trump Alarm, Vote for Hillary.
     <resources>
         <image name="TrumpFace" width="2133" height="2133"/>
         <image name="TrumpMouth" width="2133" height="2133"/>
-        <image name="saveIcon" width="350" height="350"/>
         <image name="shareIcon" width="350" height="350"/>
     </resources>
     <color key="tintColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
