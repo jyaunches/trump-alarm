@@ -8,6 +8,7 @@
 
 import UIKit
 import QuartzCore
+import Photos
 
 class PostVotingController: UIViewController {
     @IBOutlet var snapshotView: UIView!
@@ -49,7 +50,26 @@ class PostVotingController: UIViewController {
 
     @IBAction func saveButtonTapped(_ sender: Any) {
         let snapshot = takeSnapshot()
-        UIImageWriteToSavedPhotosAlbum(snapshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        
+        let status = PHPhotoLibrary.authorizationStatus()
+        if status == PHAuthorizationStatus.authorized {
+            UIImageWriteToSavedPhotosAlbum(snapshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        } else if status == PHAuthorizationStatus.denied {
+            let alert = UIAlertController(title: "Cannot access your photos", message: "To save your photo, we'll need access to your library. Please return to the app's settings to change permissions.", preferredStyle: .alert)
+            let nope = UIAlertAction(title: "No thanks", style: .cancel , handler: nil)
+            let openSettings = UIAlertAction(title: "Go to settings", style: .default, handler: { (_) in
+                if let url = URL(string: UIApplicationOpenSettingsURLString) {
+                    UIApplication.shared.open(url)
+                }
+            })
+            alert.addAction(nope)
+            alert.addAction(openSettings)
+            self.present(alert, animated: true, completion: nil)
+        } else if status == PHAuthorizationStatus.notDetermined {
+            PHPhotoLibrary.requestAuthorization({ (_) in
+                
+            })
+        }
     }
 
     func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
