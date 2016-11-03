@@ -148,7 +148,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             }
         }
     }
-
     @IBAction func shareButtonTapped(_ sender: Any) {
         if let url = NSURL(string: "http://www.trumpalarm.com") {
             let activityVC = UIActivityViewController(activityItems: [TAAppShareItemSource(), url], applicationActivities: nil)

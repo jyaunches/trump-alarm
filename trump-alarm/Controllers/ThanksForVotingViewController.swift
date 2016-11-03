@@ -18,9 +18,12 @@ class ThanksForVotingViewController: UIViewController {
     
     var nextElectionDate: Date!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: "Verdana-Bold", size: 24)!, NSForegroundColorAttributeName : Environment.Styling.trumpGold
+        ]
         
         let electionComponent = NSDateComponents()
         electionComponent.year = 2020

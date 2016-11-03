@@ -13,7 +13,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Quote Play View Controller-->
+        <!--TRUMP ALARM-->
         <scene sceneID="o2y-2N-Pn6">
             <objects>
                 <viewController storyboardIdentifier="QuotePlayViewController" id="e6y-yh-Oim" customClass="QuotePlayViewController" customModule="trump_alarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,35 +25,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSj-bw-CiW">
-                                <rect key="frame" x="0.0" y="14" width="320" height="35"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
-                                <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evz-aY-QCC">
-                                <rect key="frame" x="59.5" y="59" width="201" height="18"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzO-5B-uV1" userLabel="AND VOTE AGAIN">
-                                <rect key="frame" x="88.5" y="79" width="143" height="18"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpMouth" translatesAutoresizingMaskIntoConstraints="NO" id="VOL-oO-S0T" customClass="TrumpFace" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="58.5" y="97" width="203" height="202.5"/>
+                                <rect key="frame" x="63" y="73" width="194.5" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VOL-oO-S0T" secondAttribute="height" multiplier="1:1" id="tBi-8H-M70"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-i7-etL" customClass="BorderedButton" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="35" y="424" width="250" height="50"/>
+                                <rect key="frame" x="32" y="404" width="256" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="ggL-JX-J3e"/>
                                     <constraint firstAttribute="height" constant="50" id="tTm-uv-xBs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
@@ -69,8 +50,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
-                                <rect key="frame" x="194" y="480" width="151.5" height="17.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- DONALD J TRUMP" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peG-dX-d0W">
+                                <rect key="frame" x="142.5" y="309.5" width="151.5" height="17.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17.5" id="FPn-UJ-GdV"/>
                                 </constraints>
@@ -78,52 +59,54 @@
                                 <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="I would bomb the shit out of 'em." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-vh-h2A">
-                                <rect key="frame" x="32" y="345" width="311" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="MAKE AMERICA WAKE UP AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrl-8q-zV7">
+                                <rect key="frame" x="45.5" y="14" width="229.5" height="39"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would bomb the shit out of them." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zZ-MD-YP7">
+                                <rect key="frame" x="26" y="282" width="268" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VOL-oO-S0T" firstAttribute="height" secondItem="pUE-BK-DLB" secondAttribute="height" multiplier="0.4" constant="1" id="38I-Fj-Gdt"/>
                             <constraint firstItem="VOL-oO-S0T" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="3HY-Sz-a2r"/>
-                            <constraint firstItem="xSj-bw-CiW" firstAttribute="leading" secondItem="pUE-BK-DLB" secondAttribute="leading" id="D9Z-vA-5zj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8Zj-vh-h2A" secondAttribute="trailing" constant="16" id="HNY-DP-QdA"/>
-                            <constraint firstItem="xSj-bw-CiW" firstAttribute="trailing" secondItem="pUE-BK-DLB" secondAttribute="trailing" id="Hcz-de-wW4"/>
-                            <constraint firstItem="8Zj-vh-h2A" firstAttribute="top" secondItem="VOL-oO-S0T" secondAttribute="bottom" constant="8" id="OwQ-Ov-iF5"/>
+                            <constraint firstItem="mrl-8q-zV7" firstAttribute="top" secondItem="Lfe-KH-R2H" secondAttribute="bottom" constant="14" id="DOa-4N-6o9"/>
+                            <constraint firstItem="VOL-oO-S0T" firstAttribute="top" secondItem="mrl-8q-zV7" secondAttribute="bottom" constant="20" id="QGO-iN-hNk"/>
                             <constraint firstItem="KhD-i7-etL" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="QGe-FC-2E1"/>
-                            <constraint firstItem="VzO-5B-uV1" firstAttribute="top" secondItem="evz-aY-QCC" secondAttribute="bottom" constant="2" id="RM2-SO-8mw"/>
-                            <constraint firstItem="peG-dX-d0W" firstAttribute="top" secondItem="8Zj-vh-h2A" secondAttribute="bottom" constant="7" id="S3z-8g-cdJ"/>
-                            <constraint firstItem="VOL-oO-S0T" firstAttribute="top" secondItem="VzO-5B-uV1" secondAttribute="bottom" id="TeW-1M-9NC"/>
-                            <constraint firstItem="xSj-bw-CiW" firstAttribute="top" secondItem="Lfe-KH-R2H" secondAttribute="bottom" constant="14" id="Yro-GC-XIT"/>
-                            <constraint firstItem="evz-aY-QCC" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="bIx-ni-Z3N"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="peG-dX-d0W" secondAttribute="trailing" constant="31" id="cNm-6U-W7b"/>
-                            <constraint firstItem="nQh-Di-VRf" firstAttribute="top" secondItem="KhD-i7-etL" secondAttribute="bottom" constant="30" id="fSj-nN-1oP"/>
-                            <constraint firstItem="8Zj-vh-h2A" firstAttribute="leading" secondItem="pUE-BK-DLB" secondAttribute="leadingMargin" constant="16" id="jU0-Ho-aNt"/>
-                            <constraint firstItem="evz-aY-QCC" firstAttribute="top" secondItem="xSj-bw-CiW" secondAttribute="bottom" constant="10" id="r0f-L1-gd2"/>
-                            <constraint firstItem="VzO-5B-uV1" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="sfF-B3-AaQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8zZ-MD-YP7" secondAttribute="trailing" constant="10" id="RpY-Wa-bsH"/>
+                            <constraint firstItem="peG-dX-d0W" firstAttribute="trailing" secondItem="8zZ-MD-YP7" secondAttribute="trailing" id="SH2-6r-jes"/>
+                            <constraint firstItem="KhD-i7-etL" firstAttribute="width" secondItem="pUE-BK-DLB" secondAttribute="width" multiplier="0.8" id="TGt-TO-PQ5"/>
+                            <constraint firstItem="peG-dX-d0W" firstAttribute="top" secondItem="8zZ-MD-YP7" secondAttribute="bottom" constant="10" id="Vlu-Ce-oxE"/>
+                            <constraint firstItem="8zZ-MD-YP7" firstAttribute="leading" secondItem="pUE-BK-DLB" secondAttribute="leadingMargin" constant="10" id="X84-az-lkU"/>
+                            <constraint firstItem="nQh-Di-VRf" firstAttribute="top" secondItem="KhD-i7-etL" secondAttribute="bottom" constant="50" id="fSj-nN-1oP"/>
+                            <constraint firstItem="8zZ-MD-YP7" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="gYB-2M-2bZ"/>
+                            <constraint firstItem="mrl-8q-zV7" firstAttribute="centerX" secondItem="pUE-BK-DLB" secondAttribute="centerX" id="k3z-iL-zvx"/>
+                            <constraint firstItem="8zZ-MD-YP7" firstAttribute="top" secondItem="VOL-oO-S0T" secondAttribute="bottom" constant="15" id="u5b-F4-csf"/>
+                            <constraint firstItem="VOL-oO-S0T" firstAttribute="bottom" secondItem="pUE-BK-DLB" secondAttribute="centerY" constant="15" id="ywY-QP-mWK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZOt-Vj-R16">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="aSv-m1-COv">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <navigationItem key="navigationItem" title="TRUMP ALARM" id="Eqq-7z-2fO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="FDC-R2-kaB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="shareClicked:" destination="e6y-yh-Oim" id="0PP-se-eO3"/>
+                                <action selector="shareClicked:" destination="e6y-yh-Oim" id="6DE-3l-05T"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="quoteTextLabel" destination="8Zj-vh-h2A" id="bQZ-Jg-dQr"/>
                         <outlet property="trumpFaceImage" destination="VOL-oO-S0T" id="v05-fh-c25"/>
                         <outlet property="trumpNameLabel" destination="peG-dX-d0W" id="dvM-8X-3tB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ND-cC-if3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117.5999999999999" y="855.9220389805098"/>
+            <point key="canvasLocation" x="1117.5" y="855.63380281690138"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="p5C-Ge-tBf">
@@ -284,14 +267,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="WAKE UP AND VOTE AGAIN!" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-Ab-s2r">
-                                <rect key="frame" x="17.5" y="78" width="286" height="22"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="MAKE AMERICA WAKE UP AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-Ab-s2r">
+                                <rect key="frame" x="45.5" y="78" width="229.5" height="39"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrumpFace" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-nr-Cl0" customClass="TrumpFace" customModule="trump_alarm" customModuleProvider="target">
-                                <rect key="frame" x="68.5" y="110" width="183.5" height="184"/>
+                                <rect key="frame" x="77.5" y="127" width="166.5" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6xI-nr-Cl0" secondAttribute="height" multiplier="1:1" id="WdW-6h-gDo"/>
                                 </constraints>
@@ -418,6 +401,9 @@
                     <navigationItem key="navigationItem" title="TRUMP ALARM" id="91X-Yb-cNh">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="htp-Hw-czu">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="h1h-pq-3dQ" id="cgs-Zc-CjD"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -578,41 +564,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUMP ALARM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQk-k8-ABO">
-                                <rect key="frame" x="0.0" y="78" width="320" height="34.5"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
-                                <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAKE AMERICA WAKE UP" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3p-9z-w72">
-                                <rect key="frame" x="60" y="122.5" width="201" height="17.5"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" AND VOTE AGAIN" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54K-07-JJF" userLabel="AND VOTE AGAIN">
-                                <rect key="frame" x="89" y="142" width="143" height="17.5"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-JM-TJE" userLabel="Labels">
-                                <rect key="frame" x="16" y="368.5" width="288" height="17.5"/>
+                                <rect key="frame" x="16" y="367" width="288" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YEARS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT2-Qv-3xN">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="17.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="18"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTHS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5h-PZ-GP7">
-                                        <rect key="frame" x="95.5" y="0.0" width="96" height="17.5"/>
+                                        <rect key="frame" x="96" y="0.0" width="95" height="18"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYS" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAI-7M-bbu">
-                                        <rect key="frame" x="192" y="0.0" width="96" height="17.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="96" height="18"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -620,22 +588,22 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Stc-MA-H6Z" userLabel="HMS">
-                                <rect key="frame" x="16" y="398" width="288" height="34.5"/>
+                                <rect key="frame" x="16" y="397" width="288" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="anh-ID-Glm" userLabel="hours">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="35"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="m88-cD-trI" userLabel="min">
-                                        <rect key="frame" x="96" y="0.0" width="96" height="34.5"/>
+                                        <rect key="frame" x="96" y="0.0" width="96" height="35"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="59z-K3-iZb" userLabel="sec">
-                                        <rect key="frame" x="192" y="0.0" width="96" height="34.5"/>
+                                        <rect key="frame" x="192" y="0.0" width="96" height="35"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.78823529410000004" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -643,13 +611,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNTIL 2020 ELECTION" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiT-ki-EuO">
-                                <rect key="frame" x="71" y="447.5" width="178" height="17.5"/>
+                                <rect key="frame" x="71" y="447" width="178" height="18"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THANKS FOR VOTING!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-QL-Wjc">
-                                <rect key="frame" x="16" y="189.5" width="288" height="175.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="THANKS FOR VOTING!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-QL-Wjc">
+                                <rect key="frame" x="16" y="191.5" width="288" height="175.5"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -657,27 +625,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.64705882349999999" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WQk-k8-ABO" firstAttribute="leading" secondItem="xVZ-8g-Eaw" secondAttribute="leading" id="3cd-ZT-K4I"/>
-                            <constraint firstItem="Y3p-9z-w72" firstAttribute="centerX" secondItem="xVZ-8g-Eaw" secondAttribute="centerX" id="4Zm-pp-Q3h"/>
-                            <constraint firstItem="Y3p-9z-w72" firstAttribute="top" secondItem="WQk-k8-ABO" secondAttribute="bottom" constant="10" id="64W-RG-VyR"/>
-                            <constraint firstItem="WQk-k8-ABO" firstAttribute="trailing" secondItem="xVZ-8g-Eaw" secondAttribute="trailing" id="EEM-6h-bdq"/>
-                            <constraint firstItem="WQk-k8-ABO" firstAttribute="top" secondItem="fcc-Wn-cg7" secondAttribute="bottom" constant="14" id="EIP-ED-2j3"/>
                             <constraint firstItem="59z-K3-iZb" firstAttribute="centerX" secondItem="bAI-7M-bbu" secondAttribute="centerX" id="EKc-Ch-qqp"/>
                             <constraint firstItem="wiT-ki-EuO" firstAttribute="top" secondItem="Stc-MA-H6Z" secondAttribute="bottom" constant="15" id="HL4-H2-FMB"/>
                             <constraint firstItem="WQT-JM-TJE" firstAttribute="trailing" secondItem="xVZ-8g-Eaw" secondAttribute="trailingMargin" id="Iyw-AU-Hwr"/>
-                            <constraint firstItem="54K-07-JJF" firstAttribute="centerX" secondItem="xVZ-8g-Eaw" secondAttribute="centerX" id="LnW-wp-yLg"/>
                             <constraint firstItem="etp-fS-xvO" firstAttribute="top" secondItem="wiT-ki-EuO" secondAttribute="bottom" constant="103.5" id="Qog-aT-52m"/>
                             <constraint firstItem="m88-cD-trI" firstAttribute="centerX" secondItem="N5h-PZ-GP7" secondAttribute="centerX" id="T8d-eR-i9L"/>
                             <constraint firstAttribute="leadingMargin" secondItem="cRp-QL-Wjc" secondAttribute="leading" id="UX7-cK-aWR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cRp-QL-Wjc" secondAttribute="trailing" id="V4V-GO-e22"/>
-                            <constraint firstItem="54K-07-JJF" firstAttribute="top" secondItem="Y3p-9z-w72" secondAttribute="bottom" constant="2" id="Vci-M9-N8E"/>
                             <constraint firstItem="Stc-MA-H6Z" firstAttribute="centerX" secondItem="xVZ-8g-Eaw" secondAttribute="centerX" id="Xuz-W3-lGE"/>
                             <constraint firstItem="cRp-QL-Wjc" firstAttribute="centerX" secondItem="xVZ-8g-Eaw" secondAttribute="centerX" id="Y5z-qY-EaI"/>
                             <constraint firstItem="anh-ID-Glm" firstAttribute="centerX" secondItem="lT2-Qv-3xN" secondAttribute="centerX" id="eUi-44-YGZ"/>
                             <constraint firstItem="wiT-ki-EuO" firstAttribute="centerX" secondItem="xVZ-8g-Eaw" secondAttribute="centerX" id="p7P-pE-cDz"/>
                             <constraint firstItem="Stc-MA-H6Z" firstAttribute="top" secondItem="WQT-JM-TJE" secondAttribute="bottom" constant="12" id="paP-5a-zn1"/>
                             <constraint firstItem="WQT-JM-TJE" firstAttribute="leading" secondItem="xVZ-8g-Eaw" secondAttribute="leadingMargin" id="s1b-KU-wZY"/>
-                            <constraint firstItem="cRp-QL-Wjc" firstAttribute="top" secondItem="54K-07-JJF" secondAttribute="bottom" constant="30" id="v5w-20-jrW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7cv-hW-T0F">

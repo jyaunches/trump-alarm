@@ -22,6 +22,10 @@ class QuotePlayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: "Verdana-Bold", size: 24)!, NSForegroundColorAttributeName : Environment.Styling.trumpGold
+        ]
 
         layoutQuoteLabel()
         fixedWidth = quoteTextLabel.frame.size.width
