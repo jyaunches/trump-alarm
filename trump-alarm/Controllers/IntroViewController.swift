@@ -67,7 +67,7 @@ class IntroViewController: UIViewController {
 
         notificationManager.setupAppropriatePolling()
         
-        self.performSegue(withIdentifier: "ShowCountDownFromIntroSegue", sender: self)
+        self.dismiss(animated: true, completion: nil)
     }
 
 }

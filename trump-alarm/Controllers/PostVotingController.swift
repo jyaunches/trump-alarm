@@ -66,8 +66,10 @@ class PostVotingController: UIViewController {
             alert.addAction(openSettings)
             self.present(alert, animated: true, completion: nil)
         } else if status == PHAuthorizationStatus.notDetermined {
-            PHPhotoLibrary.requestAuthorization({ (_) in
-                
+            PHPhotoLibrary.requestAuthorization({ (status) in
+                if status == PHAuthorizationStatus.authorized {
+                    UIImageWriteToSavedPhotosAlbum(snapshot, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
+                }
             })
         }
     }
