@@ -27,7 +27,7 @@ class SoundBiteContent {
     
     static var waterboarding = "'I'd bring back waterboarding and I'd bring back a hell of a lot worse than waterboarding.'"
     
-    static var handSize = "'And he referred to my hands, if they're small, something else must be small. I gurantee there's no problem.'"
+    static var handSize = "'And he referred to my hands, if they're small, something else must be small. I guarantee there's no problem.'"
     
     static var obamaCofoundedIsis = "'Isis is honoring President Obama. He is the founder of Isis. He's the founder of Isis. He's the founder! He founded Isis! And I would say the co-founder would be crooked Hillary Clinton.'"
     
