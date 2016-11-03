@@ -29,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func setQuotePlaying(quote: TrumpQuote) {
         if let quoteVC = storyboardDirector.buildQuotePlaying(quote: quote) {
-            setMainNVCWith(stack: [quoteVC])
+            let mainCountDown = storyboard.instantiateViewController(withIdentifier: "MainCountDownVC")
+            setMainNVCWith(stack: [mainCountDown, quoteVC])
         }
     }
 

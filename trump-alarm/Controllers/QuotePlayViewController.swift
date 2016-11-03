@@ -11,39 +11,77 @@ import SnapKit
 
 class QuotePlayViewController: UIViewController {
 
+    @IBOutlet weak var trumpFaceImage: TrumpFace!
     var trumpQuote: TrumpQuote?
-
+    var quotePlayer: QuotePlayer = QuotePlayer()
+    var quoteLibrary = TrumpQuoteLibrary()
+    var fixedWidth: CGFloat = 310
+    
+    @IBOutlet weak var trumpNameLabel: UILabel!
     @IBOutlet weak var quoteTextLabel: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        quoteTextLabel.text = trumpQuote?.content
+        layoutQuoteLabel()
+        fixedWidth = quoteTextLabel.frame.size.width
+        
+        trumpFaceImage.setup(onClick: {
+            self.trumpQuote = self.quoteLibrary.getRandomQuote(idPrefix: "in-app")
+            self.layoutQuoteLabel()
+            self.playQuote()
+        })
+    }
 
-        let fixedWidth = quoteTextLabel.frame.size.width
+    override func viewWillDisappear(_ animated: Bool){
+        super.viewWillDisappear(animated)
+        quotePlayer.stop()
+    }
+    
+    func layoutQuoteLabel() {
+        quoteTextLabel.text = trumpQuote?.content
+        
+        let sizingLabel = UILabel()
+        sizingLabel.font = quoteTextLabel.font
+        sizingLabel.text = quoteTextLabel.text
+        sizingLabel.frame = quoteTextLabel.frame
+        
+        
         quoteTextLabel.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
         let newSize = quoteTextLabel.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-
-        quoteTextLabel.snp.makeConstraints {
+        
+        self.quoteTextLabel.snp.makeConstraints {
             (make) -> Void in
             make.height.equalTo(newSize.height)
         }
-
+        
+        self.trumpNameLabel.snp.makeConstraints {
+            (make) -> Void in
+            make.top.equalTo(self.quoteTextLabel.snp.bottom).offset(8)
+        }
+        
+        self.quoteTextLabel.setNeedsDisplay()
+        self.trumpNameLabel.setNeedsDisplay()
+        self.view.setNeedsLayout()
     }
-
-    @IBAction func shareClicked(_ sender: Any) {
-        if let audioFile = trumpQuote?.audioFile {
-            
-            let truncAudio = audioFile.replacingOccurrences(of: ".wav", with: "")
-            if let localPath = Bundle.main.path(forResource: truncAudio, ofType: "wav") {
-            let quoteURL = NSURL(fileURLWithPath: localPath)
-            let avc = UIActivityViewController(activityItems: [quoteURL, TAAudioShareItemSource()] as [AnyObject], applicationActivities: nil)
-            present(avc, animated: true, completion: nil)
-            }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        playQuote()
+    }
+    
+    func playQuote() {
+        if let quote = trumpQuote {
+            quotePlayer.playQuoteFile(trumpQuote: quote)
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func shareClicked(_ sender: Any) {
+        if let url = trumpQuote?.audioFileURL {
+            let avc = UIActivityViewController(activityItems: [url, TAAudioShareItemSource()] as [AnyObject], applicationActivities: nil)
+            present(avc, animated: true, completion: nil)
+            
+        }
     }
+
 }

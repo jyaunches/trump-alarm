@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 import Photos
 import AssetsLibrary
 
@@ -23,6 +24,13 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var photoManager = PhotoManager()
     var countdownManager = CountdownManager()
 
+    let currentDate = Date()
+    let countdownPollsOpen = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
+    let countdownPollsClose = TrumpAlarmUserDefaults.userPollingHours.pollsCloseDate
+
+    var quoteLibrary = TrumpQuoteLibrary()
+    let storyboardDirector = StoryboardDirector()
+    
     var cachedVotingImage: UIImage?
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,51 +45,50 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        cachedVotingImage = photoManager.getImage()
-
+        
+        loadCachedVotingImage()
 
         if !TrumpAlarmUserDefaults.hasSeenIntro {
             let introVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntroViewController")
             self.present(introVC, animated: false, completion: nil)
-
         }
 
         navigationItem.setHidesBackButton(true, animated: false)
-        trumpFaceImage.setup()
-
-        let countdownPollsOpen = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
-        let countdownPollsClose = TrumpAlarmUserDefaults.userPollingHours.pollsCloseDate
-
-        //countdownEndDate starts at today's date
-        if countdownEndDate < countdownPollsOpen {
-            countdownEndDate = countdownPollsOpen
-            untilPollsLabel.text = "UNTIL POLLS OPEN"
-        } else if countdownEndDate < countdownPollsClose {
-            countdownEndDate = countdownPollsClose
-            untilPollsLabel.text = "UNTIL POLLS CLOSE"
-        }
+        trumpFaceImage.setup(onClick: {
+            let quote = self.quoteLibrary.getRandomQuote(idPrefix: "in-app")
+            if let quoteVC = self.storyboardDirector.buildQuotePlaying(quote: quote) {
+                self.navigationController?.pushViewController(quoteVC, animated: true)                
+            }
+        })
 
         let timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(onTick(timer:)), userInfo: nil, repeats: true)
         timer.fire()
     }
 
     func onTick(timer: Timer) {
+        
+        if currentDate < countdownPollsOpen {
+            countdownEndDate = countdownPollsOpen
+            untilPollsLabel.text = "UNTIL POLLS OPEN"
+        } else if currentDate < countdownPollsClose {
+            countdownEndDate = countdownPollsClose
+            untilPollsLabel.text = "UNTIL POLLS CLOSE"
+        }
+        
         let remainingTime = countdownEndDate.timeIntervalSinceNow
-        let a = Int(remainingTime) / (60 * 60)
-        let b = Int(remainingTime) % (60 * 60) / 60
-        let c = Int(remainingTime) % 60
-        hoursValueLabel.text = "\(a)"
-        minutesValueLabel.text = "\(b)"
-        secondsValueLabel.text = "\(c)"
+        let a = String(format: "%02d", (Int(remainingTime) / (60 * 60)))
+        let b = String(format: "%02d", (Int(remainingTime) % (60 * 60) / 60))
+        let c = String(format: "%02d", (Int(remainingTime) % 60))
+        hoursValueLabel.text = a
+        minutesValueLabel.text = b
+        secondsValueLabel.text = c
     }
 
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
-
         if let tempImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             photoManager.writeImage(image: tempImage)
         }
+        NotificationManager.sharedInstance.cancelFutureNotififications()
 
         TrumpAlarmUserDefaults.hasVoted = true
         pushPostVoting()
@@ -101,13 +108,13 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         if TrumpAlarmUserDefaults.hasVoted {
             pushPostVoting()
         } else {
-            let alertController = UIAlertController(title: "Are you at you're polling station?", message: "You must must get photo evidence of yourself voting to silence these awful alarms! (while respecting your local polling places rules around photography.)", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Did you really vote?", message: "Prove it! To silence this awful Trump noise, take a picture of yourself after voting.)", preferredStyle: UIAlertControllerStyle.alert)
 
             let DestructiveAction = UIAlertAction(title: "Cancel", style: .cancel) {
                 (result: UIAlertAction) -> Void in
                 alertController.dismiss(animated: true, completion: nil)
             }
-            let okAction = UIAlertAction(title: "I'M VOTING", style: .default) {
+            let okAction = UIAlertAction(title: "I JUST VOTED", style: .default) {
                 (result: UIAlertAction) -> Void in
                 self.openCamera()
             }
@@ -119,19 +126,41 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     func openCamera() {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
+            if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == AVAuthorizationStatus.authorized {
+                let imagePicker = UIImagePickerController()
+                imagePicker.delegate = self
+                imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+                imagePicker.allowsEditing = false
+                self.present(imagePicker, animated: true, completion: nil)
+            } else {
+                let alert = UIAlertController(title: "Cannot access camera", message: "To use this feature, you must first allow access to your camera. Please return to the app's settings to change permissions.", preferredStyle: .alert)
+                let nope = UIAlertAction(title: "No thanks", style: .cancel , handler: nil)
+                let openSettings = UIAlertAction(title: "Go to settings", style: .default, handler: { (_) in
+                    if let url = URL(string: UIApplicationOpenSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                })
+                alert.addAction(nope)
+                alert.addAction(openSettings)
+                self.present(alert, animated: true, completion: nil)
+            }
         }
     }
 
     @IBAction func shareButtonTapped(_ sender: Any) {
-        let copy = "Need a reminder of why you should wake up and vote for Hillary on November 8th? The Trump Alarm spews frightening Trump sounds bites every hour on the hour from the time the polls open to the time polls close on election day. The only way to turn off the most annoying, offensive alarm clock ever is by voting. Download and Make America Wake Up and Vote Again!"
         if let url = NSURL(string: "http://www.trumpalarm.com") {
             let activityVC = UIActivityViewController(activityItems: [TAAppShareItemSource(), url], applicationActivities: nil)
             present(activityVC, animated: true, completion: nil)
+        }
+    }
+    
+    func loadCachedVotingImage() {
+        DispatchQueue.global(qos: .background).async {
+            let photo = self.photoManager.getImage()
+            
+            DispatchQueue.main.async {
+                self.cachedVotingImage = photo
+            }
         }
     }
 }
