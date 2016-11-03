@@ -64,7 +64,7 @@ class IntroViewController: UIViewController {
         TrumpAlarmUserDefaults.hasSeenIntro = true
         TrumpAlarmUserDefaults.userPollingHours = userPollingHours
 
-        NotificationManager.sharedInstance.setupAppropriatePolling()                
+        notificationManager.setupAppropriatePolling()
         
         self.performSegue(withIdentifier: "ShowCountDownFromIntroSegue", sender: self)
     }

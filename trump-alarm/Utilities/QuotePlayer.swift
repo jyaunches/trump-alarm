@@ -10,17 +10,12 @@ import UIKit
 import AVFoundation
 
 class QuotePlayer: NSObject, AVAudioPlayerDelegate {
-    var avPlayer:AVAudioPlayer!
-    
+    var avPlayer: AVAudioPlayer!
+
     func playQuoteFile(trumpQuote: TrumpQuote) {
-        
-        
         let truncAudio = trumpQuote.audioFile.replacingOccurrences(of: ".wav", with: "")
-        if let fileURL:URL = Bundle.main.url(forResource: truncAudio, withExtension: "wav") {
-            
-            
-            
-            // the player must be a field. Otherwise it will be released before playing starts.
+        if let fileURL: URL = Bundle.main.url(forResource: truncAudio, withExtension: "wav") {
+
             let foo = try? AVAudioPlayer(contentsOf: fileURL)
             if let foo = foo {
                 avPlayer = foo
@@ -30,20 +25,19 @@ class QuotePlayer: NSObject, AVAudioPlayerDelegate {
                 avPlayer.volume = 1.0
                 avPlayer.play()
             }
-            
-            
-            
         }
-        
+    }
+
+    func stop() {
+        avPlayer.stop()
     }
 
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer!, successfully flag: Bool) {
         print("finished playing \(flag)")
     }
-    
-    
-    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {                
+
+    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
         print("Audio error occurred.")
     }
-    
+
 }
