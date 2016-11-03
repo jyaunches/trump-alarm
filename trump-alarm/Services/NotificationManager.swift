@@ -24,7 +24,8 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func spew() {
-        schedule(intervals: [3], prefixId: "SPEW")
+        let randomNum = Int.random(range: 0..<100)
+        schedule(intervals: [1], prefixId: "SPEW-\(randomNum)")
     }
 
     func setupAppropriatePolling() {
@@ -89,6 +90,13 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Swift.Void) {
+        
+        let quote = notification.request.content.body
+        let trumpQuote = quoteLibrary.lookup(quote: quote)
+
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.setQuotePlaying(quote: trumpQuote)
+        }
         completionHandler([.alert, .sound])
     }
 
