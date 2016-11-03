@@ -134,7 +134,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
                 imagePicker.allowsEditing = false
                 self.present(imagePicker, animated: true, completion: nil)
-            } else {
+            } else if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == AVAuthorizationStatus.denied {
                 let alert = UIAlertController(title: "Cannot access camera", message: "To use this feature, you must first allow access to your camera. Please return to the app's settings to change permissions.", preferredStyle: .alert)
                 let nope = UIAlertAction(title: "No thanks", style: .cancel , handler: nil)
                 let openSettings = UIAlertAction(title: "Go to settings", style: .default, handler: { (_) in
@@ -145,6 +145,18 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 alert.addAction(nope)
                 alert.addAction(openSettings)
                 self.present(alert, animated: true, completion: nil)
+            } else if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == AVAuthorizationStatus.notDetermined {
+                AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: { (granted) in
+                    
+                    if granted {
+                        let imagePicker = UIImagePickerController()
+                        imagePicker.delegate = self
+                        imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+                        imagePicker.allowsEditing = false
+                        self.present(imagePicker, animated: true, completion: nil)
+                    }
+                    
+                })
             }
         }
     }
