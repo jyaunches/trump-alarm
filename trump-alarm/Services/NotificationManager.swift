@@ -24,7 +24,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func spew() {
-        schedule(intervals: [1, 5, 10, 15], prefixId: "SPEW")
+        schedule(intervals: [3], prefixId: "SPEW")
     }
 
     func setupAppropriatePolling() {

@@ -37,10 +37,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        cachedVotingImage = photoManager.getImage()
-
+        
+        loadCachedVotingImage()
 
         if !TrumpAlarmUserDefaults.hasSeenIntro {
             let introVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntroViewController")
@@ -132,6 +130,16 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         if let url = NSURL(string: "http://www.trumpalarm.com") {
             let activityVC = UIActivityViewController(activityItems: [TAAppShareItemSource(), url], applicationActivities: nil)
             present(activityVC, animated: true, completion: nil)
+        }
+    }
+    
+    func loadCachedVotingImage() {
+        DispatchQueue.global(qos: .background).async {
+            let photo = self.photoManager.getImage()
+            
+            DispatchQueue.main.async {
+                self.cachedVotingImage = photo
+            }
         }
     }
 }
