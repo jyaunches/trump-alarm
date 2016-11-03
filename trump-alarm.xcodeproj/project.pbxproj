@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172880831DCACC1E0031C149 /* ThanksForVotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172880821DCACC1E0031C149 /* ThanksForVotingViewController.swift */; };
+		174460ED1DCAF4D90062435E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174460EC1DCAF4D90062435E /* Date.swift */; };
+		175F9E131DCA6621004CA58B /* CustomMessageActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9E121DCA6621004CA58B /* CustomMessageActivityItemProvider.swift */; };
 		274EC1281DCA12C900CD7B0C /* TrumpAlarmNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EC1271DCA12C900CD7B0C /* TrumpAlarmNotification.swift */; };
 		274EC12A1DCAAF3400CD7B0C /* QuotePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EC1291DCAAF3400CD7B0C /* QuotePlayer.swift */; };
 		70159E941DCA570D00C581DB /* TrumpAlarmShareItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70159E931DCA570D00C581DB /* TrumpAlarmShareItemSource.swift */; };
@@ -97,6 +100,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		172880821DCACC1E0031C149 /* ThanksForVotingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThanksForVotingViewController.swift; path = Controllers/ThanksForVotingViewController.swift; sourceTree = "<group>"; };
+		174460EC1DCAF4D90062435E /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		175F9E121DCA6621004CA58B /* CustomMessageActivityItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageActivityItemProvider.swift; sourceTree = "<group>"; };
 		274EC1271DCA12C900CD7B0C /* TrumpAlarmNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpAlarmNotification.swift; sourceTree = "<group>"; };
 		274EC1291DCAAF3400CD7B0C /* QuotePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotePlayer.swift; path = Utilities/QuotePlayer.swift; sourceTree = "<group>"; };
 		4E11DA3BAD928EB0F078115A /* Pods_trump_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trump_alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +215,7 @@
 				7038D92D1DC8412500EECF42 /* QuotePlayViewController.swift */,
 				7038D92E1DC8412500EECF42 /* IntroViewController.swift */,
 				7038D92F1DC8412500EECF42 /* PostVotingController.swift */,
+				172880821DCACC1E0031C149 /* ThanksForVotingViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -306,7 +313,7 @@
 				7038D8B51DC840EA00EECF42 /* SwiftyJSON.swift */,
 				7038D8B61DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift */,
 				E777081AC3EA8FECCC5D7151 /* TAAudioShareItemSource.swift */,
-				274EC1291DCAAF3400CD7B0C /* QuotePlayer.swift */,
+				174460EC1DCAF4D90062435E /* Date.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -587,6 +594,7 @@
 				7038D9221DC8410F00EECF42 /* GoogleCivicInfoInteractor.swift in Sources */,
 				7038D8DA1DC840F400EECF42 /* DateInRegion+Components.swift in Sources */,
 				7038D9231DC8410F00EECF42 /* LocationManager.swift in Sources */,
+				172880831DCACC1E0031C149 /* ThanksForVotingViewController.swift in Sources */,
 				7038D9201DC8410F00EECF42 /* NotificationManager.swift in Sources */,
 				7038D9171DC8410300EECF42 /* SoundBiteContent.swift in Sources */,
 				7038D8D31DC840F400EECF42 /* Date+Compare.swift in Sources */,
@@ -596,6 +604,7 @@
 				7038D9331DC8412500EECF42 /* PostVotingController.swift in Sources */,
 				7038D9251DC8410F00EECF42 /* TrumpAlarmUserDefaults.swift in Sources */,
 				7038D8B01DC840E000EECF42 /* TrumpFace.swift in Sources */,
+				174460ED1DCAF4D90062435E /* Date.swift in Sources */,
 				7038D8BB1DC840EA00EECF42 /* TrumpAlarmInt+Extensions.swift in Sources */,
 				7038D8D61DC840F400EECF42 /* Date+Math.swift in Sources */,
 				7038D9241DC8410F00EECF42 /* PollingAPIResponse.swift in Sources */,

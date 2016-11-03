@@ -13,6 +13,16 @@ class TrumpAlarmUserDefaults: NSObject {
         
     }
     
+//    class var nextElection: Date {
+//        get {
+//            return UserDefaults.standard.set(<#T##value: Any?##Any?#>, forKey: <#T##String#>)(forKey: "nextElection") as? Date
+//        }
+//        set {
+//            UserDefaults.standard.object(forKey: "nextElection")
+//        }
+//    }
+
+    
     class var userPollingHours: PollingAPIResponse {
         get {
             let pollsOpen = UserDefaults.standard.object(forKey: "userPollingOpeningHours") as? Date
