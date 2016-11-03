@@ -23,9 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Gotta get that pic of you voting!</string>
+	<string>Did you really vote? Prove it! To silence this awful Trump noise, take a picture of yourself after voting.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The Trump Alarm will customize your alarms based on the hours your particular polling place is open.</string>
+	<string>The Trump Alarm will customize your countdown and alarms based on the hours of your polling place.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Keep the evidence that you voted!</string>
 	<key>UILaunchStoryboardName</key>
