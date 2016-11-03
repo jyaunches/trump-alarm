@@ -9,15 +9,18 @@
 import UIKit
 
 class TrumpFace: UIImageView {
+    
+    var onClick: (() -> ())?
 
-    func setup() {
+    func setup(onClick: (() -> ())?) {
+        self.onClick = onClick
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action: #selector(self.faceTapped(_:)))
         isUserInteractionEnabled = true
         addGestureRecognizer(tapGestureRecognizer)
     }
     
     func faceTapped(_ sender: UITapGestureRecognizer) {
-        NotificationManager.sharedInstance.spew()
+        onClick?()
     }
 
 }

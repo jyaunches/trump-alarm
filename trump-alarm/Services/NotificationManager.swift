@@ -24,16 +24,22 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func spew() {
-        schedule(intervals: [1, 5, 10, 15], prefixId: "SPEW")
+        let randomNum = Int.random(range: 0..<100)
+        schedule(intervals: [3], prefixId: "SPEW-\(randomNum)")
     }
 
     func setupAppropriatePolling() {
         requestNotificationPermission() {
             self.center.removeAllPendingNotificationRequests()
+            self.spew()
             self.setupPrePolling()
             self.setupEarlyPollingDay()
             self.setupLaterPollingDay()
         }
+    }
+
+    func cancelFutureNotififications() {
+        self.center.removeAllPendingNotificationRequests()
     }
 
     func setupPrePolling() {
@@ -44,18 +50,15 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func setupEarlyPollingDay() {
-
         let pollingHours = TrumpAlarmUserDefaults.userPollingHours
         let intervals = Date.earlyIntervalsOnElectionDay(electionDayStart: pollingHours.pollsOpenDate, electionDayEnd: pollingHours.pollsCloseDate)
         schedule(intervals: intervals, prefixId: "EARLY-ELECTION-DAY")
-
     }
 
     func setupLaterPollingDay() {
         let pollingHours = TrumpAlarmUserDefaults.userPollingHours
         let intervals = Date.laterIntervalsOnElectionDay(electionDayStart: pollingHours.pollsOpenDate, electionDayEnd: pollingHours.pollsCloseDate)
         schedule(intervals: intervals, prefixId: "LATER-ELECTION-DAY")
-
     }
 
     func requestNotificationPermission(onAgree: (() -> Void)?) {
@@ -89,6 +92,15 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Swift.Void) {
+        
+        /*
+        let quote = notification.request.content.body
+        let trumpQuote = quoteLibrary.lookup(quote: quote)
+
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.setQuotePlaying(quote: trumpQuote)
+        }
+ */
         completionHandler([.alert, .sound])
     }
 

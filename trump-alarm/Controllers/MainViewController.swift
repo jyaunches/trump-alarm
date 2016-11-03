@@ -23,10 +23,14 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var countdownEndDate = Date()
     var photoManager = PhotoManager()
     var countdownManager = CountdownManager()
+
     let currentDate = Date()
     let countdownPollsOpen = TrumpAlarmUserDefaults.userPollingHours.pollsOpenDate
     let countdownPollsClose = TrumpAlarmUserDefaults.userPollingHours.pollsCloseDate
 
+    var quoteLibrary = TrumpQuoteLibrary()
+    let storyboardDirector = StoryboardDirector()
+    
     var cachedVotingImage: UIImage?
 
     override func viewWillAppear(_ animated: Bool) {
@@ -41,19 +45,21 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        cachedVotingImage = photoManager.getImage()
-
+        
+        loadCachedVotingImage()
 
         if !TrumpAlarmUserDefaults.hasSeenIntro {
             let introVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntroViewController")
             self.present(introVC, animated: false, completion: nil)
-
         }
 
         navigationItem.setHidesBackButton(true, animated: false)
-        trumpFaceImage.setup()
+        trumpFaceImage.setup(onClick: {
+            let quote = self.quoteLibrary.getRandomQuote(idPrefix: "in-app")
+            if let quoteVC = self.storyboardDirector.buildQuotePlaying(quote: quote) {
+                self.navigationController?.pushViewController(quoteVC, animated: true)                
+            }
+        })
 
         let timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(onTick(timer:)), userInfo: nil, repeats: true)
         timer.fire()
@@ -79,10 +85,10 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
-
         if let tempImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             photoManager.writeImage(image: tempImage)
         }
+        NotificationManager.sharedInstance.cancelFutureNotififications()
 
         TrumpAlarmUserDefaults.hasVoted = true
         pushPostVoting()
@@ -102,13 +108,13 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         if TrumpAlarmUserDefaults.hasVoted {
             pushPostVoting()
         } else {
-            let alertController = UIAlertController(title: "Are you at you're polling station?", message: "You must must get photo evidence of yourself voting to silence these awful alarms! (while respecting your local polling places rules around photography.)", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Did you really vote?", message: "Prove it! To silence this awful Trump noise, take a picture of yourself after voting.)", preferredStyle: UIAlertControllerStyle.alert)
 
             let DestructiveAction = UIAlertAction(title: "Cancel", style: .cancel) {
                 (result: UIAlertAction) -> Void in
                 alertController.dismiss(animated: true, completion: nil)
             }
-            let okAction = UIAlertAction(title: "I'M VOTING", style: .default) {
+            let okAction = UIAlertAction(title: "I JUST VOTED", style: .default) {
                 (result: UIAlertAction) -> Void in
                 self.openCamera()
             }
@@ -145,6 +151,16 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         if let url = NSURL(string: "http://www.trumpalarm.com") {
             let activityVC = UIActivityViewController(activityItems: [TAAppShareItemSource(), url], applicationActivities: nil)
             present(activityVC, animated: true, completion: nil)
+        }
+    }
+    
+    func loadCachedVotingImage() {
+        DispatchQueue.global(qos: .background).async {
+            let photo = self.photoManager.getImage()
+            
+            DispatchQueue.main.async {
+                self.cachedVotingImage = photo
+            }
         }
     }
 }
