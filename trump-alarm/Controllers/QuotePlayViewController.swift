@@ -138,10 +138,8 @@ class QuotePlayViewController: UIViewController, UIImagePickerControllerDelegate
 
     @IBAction func shareClicked(_ sender: Any) {
         if let trumpQuote = trumpQuote {
-        if let url = trumpQuote.audioFileURL {
-            let avc = UIActivityViewController(activityItems: [url, TAAudioShareItemSource(quote: trumpQuote)] as [AnyObject], applicationActivities: nil)
-            present(avc, animated: true, completion: nil)
-        }
+            let avc = UIActivityViewController(activityItems: [TAAudioShareURLItemSource(quote: trumpQuote), TAAudioShareItemSource(quote: trumpQuote)] as [AnyObject], applicationActivities: nil)
+            present(avc, animated: true, completion: nil)        
         }
     }
 

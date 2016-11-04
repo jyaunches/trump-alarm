@@ -133,10 +133,8 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func shareButtonTapped(_ sender: Any) {
-        if let url = NSURL(string: "http://www.trumpalarm.com") {
-            let activityVC = UIActivityViewController(activityItems: [TAAppShareItemSource(), url], applicationActivities: nil)
-            present(activityVC, animated: true, completion: nil)
-        }
+        let activityVC = UIActivityViewController(activityItems: [TAAppShareItemSource(), TAShareURLItemSource()], applicationActivities: nil)
+        present(activityVC, animated: true, completion: nil)
     }
 
     func loadCachedVotingImage() {

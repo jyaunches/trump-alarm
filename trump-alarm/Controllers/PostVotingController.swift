@@ -42,8 +42,7 @@ class PostVotingController: UIViewController {
 
     @IBAction func shareButtonTapped(_ sender: Any) {
         if let votingImage = PhotoManager().getImage() {
-            let text = "I voted for Hillary! Need a push to the polls? Download the most offensive alarm clock."
-            let avc = UIActivityViewController(activityItems: [votingImage, text as AnyObject] as [AnyObject], applicationActivities: nil)
+            let avc = UIActivityViewController(activityItems: [votingImage, TAIVotedItemSource(), TAShareURLItemSource()] as [AnyObject], applicationActivities: nil)
             present(avc, animated: true, completion: nil)
         }
     }
